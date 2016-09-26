@@ -20,7 +20,7 @@
 		form{
 			display: flex;
     		flex-direction: column;
-    		padding: 50px;
+    		padding: percentage(120/1366);
     		input{
     			line-height: (64/16)*1em;
     			margin: (21/16)*1em 0;
