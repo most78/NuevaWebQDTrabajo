@@ -3,3 +3,9 @@ $mainFont: Oswald;
 $secondaryFont: Muli;
 
 @import "variables";
+@import "header";
+@import "reset";
+
+body{
+	background: grey;
+}
