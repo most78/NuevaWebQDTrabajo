@@ -3,9 +3,17 @@ $mainFont: Oswald;
 $secondaryFont: Muli;
 
 @import "variables";
-@import "header";
+@import "mixin";
 @import "reset";
+@import "header";
+
 
 body{
 	background: grey;
+	font-size:16px;
+}
+.wrapper{
+	width:(1366/(1em);
+	background:purple;
+	padding:20/1em;
 }

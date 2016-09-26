@@ -6,8 +6,8 @@
 	<title>La agencia de marketing online de las pymes: QDQ media</title>
 </head>
 <body>
-	<div class="wrapper">
-		<header>
+	<header>
+		<div class="wrapper">
 			<img src="" alt="La agencia de marketing online de las pymes: QDQ media">
 			<nav>
 				<ul>
@@ -19,8 +19,8 @@
 					<li><a href="">Contacto</a></li>
 				</ul>
 			</nav>
-		</header>
-	</div>
+		</div>
+	</header>
 	<section class="heroShot">
 		<div class="wrapper">
 			<div class="formBox">
