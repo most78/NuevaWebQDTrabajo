@@ -1,6 +1,6 @@
 /*Fuentes*/
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, .heroShot .heroClaim p strong, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -31,10 +31,6 @@ header {
   flex-direction: column;
   height: 5.625em;
   width: 100%; }
-  header img {
-    align-items: center;
-    display: flex;
-    max-width: 200px; }
 
 nav {
   display: flex;
@@ -49,7 +45,7 @@ nav {
     list-style: none;
     width: 100%; }
     nav ul li {
-      margin: 0 0.625em; }
+      margin: 0 1.5em; }
       nav ul li.menu_item_current {
         border-width: 2px 0 0 2px; }
         nav ul li.menu_item_current a:before {
@@ -83,7 +79,7 @@ nav {
       nav ul li a {
         text-decoration: none;
         color: #991359;
-        font-family: oswald;
+        font-family: 'Oswald', sans-serif;
         font-size: 1.25em; }
         nav ul li a:before {
           content: '';
@@ -97,9 +93,91 @@ nav {
           -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
           transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29); }
 
+.heroShot {
+  background: url(http://localhost:8888/QDQmedia/img/chromeBackground.jpg);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .heroShot .wrapper {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .heroShot .formBox {
+    background: rgba(7, 29, 49, 0.7);
+    width: 40%;
+    margin-left: auto;
+    margin-top: 0; }
+    .heroShot .formBox form {
+      display: flex;
+      flex-direction: column;
+      padding: 50px; }
+      .heroShot .formBox form input {
+        line-height: 4em;
+        margin: 1.3125em 0;
+        padding-left: 1em; }
+      .heroShot .formBox form p {
+        color: white;
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        font-size: 1.2em;
+        line-height: 1.6em; }
+        .heroShot .formBox form p strong {
+          font-family: 'Oswald', sans-serif;
+          font-size: 1.95em;
+          text-transform: uppercase;
+          line-height: 1.4em; }
+      .heroShot .formBox form .formButton {
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        background-color: #991359;
+        border: #991359;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.25em;
+        padding: 0.4em 0;
+        line-height: 1em;
+        text-transform: uppercase;
+        margin: 0.6em 0; }
+  .heroShot .heroClaim {
+    background: #135999;
+    width: 100%;
+    text-align: center;
+    padding: 1.9375em 0; }
+    .heroShot .heroClaim h2, .heroShot .heroClaim p strong {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3.375em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .heroShot .heroClaim p {
+      font-family: 'Muli', sans-serif;
+      font-size: 2.125em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1em; }
+      .heroShot .heroClaim p strong {
+        font-size: 1.5em; }
+    .heroShot .heroClaim:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 50px solid #135999;
+      right: 47.4%; }
+
 body {
   background: grey;
-  font-size: 16; }
+  font-size: 16;
+  border-top: 10px solid #131e33; }
 
 .wrapper {
   display: -webkit-flex;
@@ -108,7 +186,7 @@ body {
   display: -o-flex;
   display: flex;
   flex-direction: row;
-  width: 85.375em;
+  width: 71.14583%;
   padding: 1.25em; }
 
 /*# sourceMappingURL=style.css.map */

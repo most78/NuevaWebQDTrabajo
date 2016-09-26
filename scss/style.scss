@@ -6,11 +6,13 @@ $secondaryFont: Muli;
 @import "reset";
 @import "header";
 @import "mainNav";
+@import "heroShot";
 
 
 body{
 	background: grey;
 	font-size:$mainFontSize;
+	border-top:10px solid #131e33;
 }
 .wrapper{
 	display: -webkit-flex;

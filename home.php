@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Muli|Oswald" rel="stylesheet">
 <head>
 	<meta charset="UTF-8">
 	<title>La agencia de marketing online de las pymes: QDQ media</title>
@@ -24,21 +25,21 @@
 	<section class="heroShot">
 		<div class="wrapper">
 			<div class="formBox">
+				<form action="">
 				<p>
 					Si quieres mas información o asesoriamiento<strong> Llama gratis al 900 100 314</strong> o rellena nuestro formulario y nosotros nos pondremos en contacto contigo
 				</p>
-				<form action="">
 					<input type="text" name="firstname" placeholder="Nombre"></input>
 					<input type="tel" name="telephone" placeholder="Teléfono"></input>
 					<input type="mail" name="email" placeholder="Email"></input>
-					<input type="submit" name="Submit">
+					<input type="submit" name="Submit" class="formButton">
 				</form>
 			</div>
 		</div>
-	</section>
-	<section class="claim">
+		<div class="heroClaim">
 		<h2>Descubre qué atrae a tus clientes</h2>
 		<p>Haz que tu negocio<strong> crezca </strong>con una estrategía digital 360°</p>
+		</div>
 	</section>
 	<section class="productos">
 		<h1>Descubre qué podemos hacer por tu negocio</h1>

@@ -1,0 +1,84 @@
+@import "mixin";
+.heroShot{
+	background:url(http://localhost:8888/QDQmedia/img/chromeBackground.jpg);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items:center;
+	flex-direction:column;
+	.wrapper{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.formBox{
+		background:rgba(7,29,49,0.7);
+		width: 40%;
+		margin-left: auto;
+		margin-top:0;
+		form{
+			display: flex;
+    		flex-direction: column;
+    		padding: 50px;
+    		input{
+    			line-height: (64/16)*1em;
+    			margin: (21/16)*1em 0;
+    			padding-left: 1em;
+    		}
+    		p{
+    			color: white;
+    			text-align: center;
+    			font-family: 'Muli', sans-serif;
+    			font-size: 1.2em;
+    			line-height: 1.6em;
+    			strong {
+    				font-family: 'Oswald', sans-serif;
+    				font-size: 1.95em;
+    				text-transform: uppercase;
+    				line-height: 1.4em;
+				}
+    		}
+    		.formButton{
+    			@include buttom(2px, $secondaryColor);
+    			margin: 0.6em 0;
+    		}
+		}
+	}
+	.heroClaim{
+		background:$mainColor;
+		width: 100%;
+		text-align: center;
+		padding:(31/16)*1em 0;
+		h2{
+			font-family: 'Oswald', sans-serif;
+			font-size: (54/16)*1em;
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		p{
+			font-family: 'Muli', sans-serif;;
+			font-size: (34/16)*1em;
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 1.1em;
+			strong{
+				@extend h2;
+				font-size: (54/36)*1em;
+			} 
+		}
+		&:after{
+			position: absolute;
+    		content: "";
+    		width: 0;
+    		height: 0;
+    		border-left: 50px solid transparent;
+    		border-right: 50px solid transparent;
+    		border-top: 50px solid #135999;
+		    right: 47.4%;
+		}
+	}
+}
