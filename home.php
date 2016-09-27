@@ -41,26 +41,28 @@
 		<p>Haz que tu negocio<strong> crezca </strong>con una estrategía digital 360°</p>
 		</div>
 	</section>
-	<section class="productos">
-		<h1>Descubre qué podemos hacer por tu negocio</h1>
-		<p>somos la mayor agencia de marketing online para los negocios</p>
-		<div class="producto">
-			<h3>Diseñamos y gestionamos la web de tu negocio</h3>
-			<p>Mas de 20.000 clientes confían en nosotros.Nuestras páginas web están optimizadas para maximizar la conversión y el retorno de la inversión</p>
-		</div>
-		<div class="producto">
-			<h3>Garantizamos tu posicionamiento en los principales buscadores</h3>
-			<p>95% de nuestras campañas están entre las primeras posiciones (SEO)</p>
-		</div>
-		<div class="producto">
-			<h3>Garantizamos tráfico a tu web por muy poca inversión</h3>
-			<p>Gestionamos más de 18.000 campañas en Google AdWords y medios online</p>
-		</div>
-		<div class="producto">
-			<h3>Gestión integral y personalizada</h3>
-			<p>Nos ocupamos de gestionar tu estratégia de marketing digital con un trato personalizado, para que tú te encargues de tu negocio. Somos más de 400 profesionales que te ayudamos a crecer</p>
-		</div>
+	<section class="productosBox">
+		<div class="wrapper macBackground">
+			<h1 class="tituloSeccionProducto">Descubre qué podemos hacer por tu negocio</h1>
+			<p class="subTituloSeccionProducto">somos la mayor agencia de marketing online para los negocios</p>
+			<div class="producto">
+				<h3>Diseñamos y gestionamos la web de tu negocio</h3>
+				<p>Mas de 20.000 clientes confían en nosotros.Nuestras páginas web están optimizadas para maximizar la conversión y el retorno de la inversión</p>
+			</div>
+			<div class="producto">
+				<h3>Garantizamos tu posicionamiento en los principales buscadores</h3>
+				<p>95% de nuestras campañas están entre las primeras posiciones (SEO)</p>
+			</div>
+			<div class="producto">
+				<h3>Garantizamos tráfico a tu web por muy poca inversión</h3>
+				<p>Gestionamos más de 18.000 campañas en Google AdWords y medios online</p>
+			</div>
+			<div class="producto">
+				<h3>Gestión integral y personalizada</h3>
+				<p>Nos ocupamos de gestionar tu estratégia de marketing digital con un trato personalizado, para que tú te encargues de tu negocio. Somos más de 400 profesionales que te ayudamos a crecer</p>
+			</div>
 		<a href="" class="button">nuestros servicios</a>
+		</div>
 	</section>
 	<section class="blogSection">
 		<h2>Tendencias de marketing online</h2>
