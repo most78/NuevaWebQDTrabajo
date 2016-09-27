@@ -12,3 +12,10 @@
    		line-height:1em;
    		text-transform:uppercase;
 }
+@mixin flex{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
