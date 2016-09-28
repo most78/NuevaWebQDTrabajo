@@ -16,8 +16,9 @@
 	.wrapper{
 		flex-direction: column;
 		&.macBackground{
-			background-image:url(http://localhost:8888/NuevaWebQDTrabajo/img/backgroundMac.png);
+			background-image:url(http://localhost:8888/QDQmedia/img/backgroundMac.png);
 			background-repeat:no-repeat;
+			background-position-x:41%;
 		}	
 	}
 	.tituloSeccionProducto{
@@ -34,12 +35,58 @@
 		text-transform: uppercase;
 		text-align: center;
 		line-height: (27/16)*1em;
+		margin-bottom: 3em;
 	}
-	.producto{
-		@include flex;
-		flex-direction: column;
-		margin-left: auto;
-		width:20%;
-		padding:1em;
+	.contenedorProducto{
+		position: relative;
+		overflow: hidden;
+		&:after{
+			content: "";
+    		width: 900px;
+    		height: 1313px;
+    		background: transparent;
+		    -moz-border-radius: 50%;
+		    -webkit-border-radius: 50%;
+		    border-radius: 0 50% 50% 0%;
+		    border: 4px solid #cecece;
+		    position: absolute;
+		    left: -1%;
+		    top: -13em;
+		    overflow: hidden;
+		}
+		.producto{
+			@include flex;
+			flex-flow: row wrap;
+			margin-left: auto;
+			width:28%;
+			padding:1em;
+			&:before{
+				content: "";
+    			background: url(http://localhost:8888/QDQmedia/img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
+    			width: 150px;
+    			height: 150px;
+    			border-radius: 50%;
+    			border: 4px solid #cecece;
+    			overflow: hidden;
+    			background-size: 146%;
+    			margin-left: -62%;
+    			z-index: 50;
+    			float: left;
+			}
+		}
+		.tituloProducto{
+			font-family: $mainFont;
+			color: $mainColor;
+			font-size: (25.5/16)*1em;
+			text-transform: uppercase;
+			line-height: 1.1em;
+			margin-top: -5em;
+		}
+		p{
+			font-family: $secondaryFont;
+			font-size: (18/16)*1em;
+			margin-top: -3.3em;
+
+		}
 	}
 }

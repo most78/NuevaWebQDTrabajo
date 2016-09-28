@@ -196,8 +196,9 @@ nav {
   .productosBox .wrapper {
     flex-direction: column; }
     .productosBox .wrapper.macBackground {
-      background-image: url(http://localhost:8888/NuevaWebQDTrabajo/img/backgroundMac.png);
-      background-repeat: no-repeat; }
+      background-image: url(http://localhost:8888/QDQmedia/img/backgroundMac.png);
+      background-repeat: no-repeat;
+      background-position-x: 41%; }
   .productosBox .tituloSeccionProducto {
     font-family: Oswald;
     font-size: 2.5em;
@@ -210,17 +211,57 @@ nav {
     color: #135999;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1.6875em; }
-  .productosBox .producto {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    width: 20%;
-    padding: 1em; }
+    line-height: 1.6875em;
+    margin-bottom: 3em; }
+  .productosBox .contenedorProducto {
+    position: relative;
+    overflow: hidden; }
+    .productosBox .contenedorProducto:after {
+      content: "";
+      width: 900px;
+      height: 1313px;
+      background: transparent;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 0 50% 50% 0%;
+      border: 4px solid #cecece;
+      position: absolute;
+      left: -1%;
+      top: -13em;
+      overflow: hidden; }
+    .productosBox .contenedorProducto .producto {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-flow: row wrap;
+      margin-left: auto;
+      width: 28%;
+      padding: 1em; }
+      .productosBox .contenedorProducto .producto:before {
+        content: "";
+        background: url(http://localhost:8888/QDQmedia/img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #cecece;
+        overflow: hidden;
+        background-size: 146%;
+        margin-left: -62%;
+        z-index: 50;
+        float: left; }
+    .productosBox .contenedorProducto .tituloProducto {
+      font-family: Oswald;
+      color: #135999;
+      font-size: 1.59375em;
+      text-transform: uppercase;
+      line-height: 1.1em;
+      margin-top: -5em; }
+    .productosBox .contenedorProducto p {
+      font-family: Muli;
+      font-size: 1.125em;
+      margin-top: -3.3em; }
 
 body {
   background: grey;
