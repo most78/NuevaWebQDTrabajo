@@ -13,14 +13,14 @@
 		padding-bottom: 0;
 	}
 	.formBox{
-		background:rgba(7,29,49,0.7);
+		@include background-opacity($secondaryColor, .9);
 		width: 40%;
 		margin-left: auto;
 		margin-top:(95/16)*1em;
 		form{
 			display: flex;
     		flex-direction: column;
-    		padding: percentage(120/1366);
+    		padding: (48/16)*1em;
     		input{
     			line-height: (64/16)*1em;
     			margin: (21/16)*1em 0;
@@ -40,7 +40,7 @@
 				}
     		}
     		.formButton{
-    			@include buttom(2px, $secondaryColor);
+    			@include buttom(2px, $black);
     			margin: 0.6em 0;
     		}
 		}
@@ -50,6 +50,7 @@
 		width: 100%;
 		text-align: center;
 		padding:(31/16)*1em 0;
+		margin-top: (42/16)*1em;
 		h2{
 			font-family: 'Oswald', sans-serif;
 			font-size: (54/16)*1em;
@@ -77,7 +78,7 @@
     		height: 0;
     		border-left: 50px solid transparent;
     		border-right: 50px solid transparent;
-    		border-top: 50px solid #135999;
+    		border-top: 50px solid $mainColor;
 		    right: 47.4%;
 		}
 	}

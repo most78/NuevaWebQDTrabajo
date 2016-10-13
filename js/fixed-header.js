@@ -6,9 +6,9 @@ $(document).ready(function() {
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $("header").css('background-color', '#ff0000');
+          $("header").css('background-color', 'rgba(64, 78, 91, 1)');
        } else {
-          $('header').css('background-color', '#fff');
+          $('header').css('background-color', 'rgba(64, 78, 91, 0.9)');
        }
    });
     }
