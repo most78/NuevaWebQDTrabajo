@@ -7,6 +7,7 @@
 	<meta charset="UTF-8">
 	<title>La agencia de marketing online de las pymes: QDQ media</title>
 </head>
+<?php $sw="blog"; ?>
 <?php include("header.php"); ?>
 	<section class="heroShot">
 		<div class="wrapper">
