@@ -20,7 +20,7 @@ time, mark, audio, video {
 
 /*Main Header*/
 header {
-  background: white;
+  background: rgba(64, 78, 91, 0.9);
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -28,8 +28,9 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 5.625em;
-  width: 100%; }
+  height: 3.375em;
+  width: 100%;
+  position: fixed; }
 
 nav {
   display: flex;
@@ -108,7 +109,7 @@ nav {
     background: rgba(7, 29, 49, 0.7);
     width: 40%;
     margin-left: auto;
-    margin-top: 0; }
+    margin-top: 5.9375em; }
     .heroShot .formBox form {
       display: flex;
       flex-direction: column;
@@ -143,7 +144,7 @@ nav {
         text-transform: uppercase;
         margin: 0.6em 0; }
   .heroShot .heroClaim {
-    background: #135999;
+    background: #404e5b;
     width: 100%;
     text-align: center;
     padding: 1.9375em 0; }
@@ -208,7 +209,7 @@ nav {
   .productosBox .subTituloSeccionProducto {
     font-family: Muli;
     font-size: 1.25em;
-    color: #135999;
+    color: #404e5b;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.6875em;
@@ -253,7 +254,7 @@ nav {
         float: left; }
     .productosBox .contenedorProducto .tituloProducto {
       font-family: Oswald;
-      color: #135999;
+      color: #404e5b;
       font-size: 1.59375em;
       text-transform: uppercase;
       line-height: 1.1em;
@@ -265,8 +266,7 @@ nav {
 
 body {
   background: grey;
-  font-size: 16;
-  border-top: 10px solid #131e33; }
+  font-size: 16; }
 
 .wrapper {
   display: -webkit-flex;
