@@ -271,6 +271,52 @@ nav {
       font-size: 1.125em;
       margin-top: -3.3em; }
 
+footer {
+  width: 100%;
+  background-color: #2b343d;
+  display: flex;
+  justify-content: center;
+  height: 332px;
+  font-family: Muli; }
+  footer .wrapper {
+    flex-direction: column; }
+    footer .wrapper .footer_logo_section, footer .wrapper .footer_redes .legal {
+      display: flex;
+      list-style: none;
+      border-bottom: 1px dotted #556879;
+      justify-content: space-around;
+      padding: 10px 0 20px; }
+      footer .wrapper .footer_logo_section .logoSolocal, footer .wrapper .footer_redes .legal .logoSolocal {
+        border-right: 1px solid rgba(255, 255, 255, 0.21); }
+      footer .wrapper .footer_logo_section img, footer .wrapper .footer_redes .legal img {
+        opacity: 0.2;
+        transition: opacity 0.5s linear; }
+        footer .wrapper .footer_logo_section img:hover, footer .wrapper .footer_redes .legal img:hover {
+          opacity: 1; }
+    footer .wrapper .footer_redes {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.875em; }
+      footer .wrapper .footer_redes .legal {
+        border-bottom: 0; }
+        footer .wrapper .footer_redes .legal li {
+          margin: 0 1em; }
+          footer .wrapper .footer_redes .legal li a {
+            color: white;
+            opacity: 0.2;
+            transition: opacity 0.8s ease-in; }
+            footer .wrapper .footer_redes .legal li a:hover {
+              opacity: 1; }
+          footer .wrapper .footer_redes .legal li:after {
+            content: "-";
+            position: absolute;
+            padding: 0 1em;
+            color: white;
+            opacity: 0.2; }
+          footer .wrapper .footer_redes .legal li:last-child:after {
+            content: ""; }
+
 body {
   background: grey;
   font-size: 16; }

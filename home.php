@@ -2,7 +2,7 @@
 <html lang="es">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.css">
-<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli:300,400|Oswald:300,400" rel="stylesheet">
 <head>
 	<meta charset="UTF-8">
 	<title>La agencia de marketing online de las pymes: QDQ media</title>
@@ -73,31 +73,6 @@
 		</article>
 		<a href="" class="button">trabaja con nosotros</a>
 	</section>
-	<footer>
-		<section class="footer_logo_section">
-			<a href="" alt="Solocal Group, líder en el sector de la comunicación y marketing digital a nivel europeo"><img src="" alt="logotipo Solocal Group"></a>
-			<a href="" alt="Solocal Group, líder en el sector de la comunicación y marketing digital a nivel europeo"><img src="" alt="logotipo Solocal Group"></a>
-			<a href="" alt="Solocal Group, líder en el sector de la comunicación y marketing digital a nivel europeo"><img src="" alt="logotipo Solocal Group"></a>
-			<a href="" alt="Solocal Group, líder en el sector de la comunicación y marketing digital a nivel europeo"><img src="" alt="logotipo Solocal Group"></a>
-			<a href="" alt="Solocal Group, líder en el sector de la comunicación y marketing digital a nivel europeo"><img src="" alt="logotipo Solocal Group"></a>
-			<a href="" alt="Solocal Group, líder en el sector de la comunicación y marketing digital a nivel europeo"><img src="" alt="logotipo Solocal Group"></a>
-			<a href="" alt="Solocal Group, líder en el sector de la comunicación y marketing digital a nivel europeo"><img src="" alt="logotipo Solocal Group"></a>
-		</section>
-		<section class="footer_redes">
-			<a href="">Aviso Legal</a>
-			<a href="">Política de privacidad</a>
-			<a href="">Política de cookies</a>
-			<a href="">Opiniones QDQ media</a>
-			<a href=""><img src="" alt="">Twitter</a>
-			<a href=""><img src="" alt="">Facebook</a>
-			<a href=""><img src="" alt="">Gmail</a>
-			<a href=""><img src="" alt="">youtube</a>
-			<a href=""><img src="" alt="">Linkedin</a>
-			<a href=""><img src="" alt="">Pinterest</a>
-		</section>
-		<section class="footer_copyright">
-			<p>Copyright</p>
-		</section>
-	</footer>
+	<?php include("footer.php"); ?>
 </body>
 </html>
