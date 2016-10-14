@@ -36,13 +36,17 @@ header {
     align-items: center; }
     header .wrapper .logotipoQDQmedia {
       height: 38px; }
+  header.backgroundDarken {
+    background: #404e5b;
+    transition: background-color 0.5s ease; }
 
 nav {
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   nav .menu-toggle {
     width: 40px;
     height: 40px;
@@ -50,7 +54,9 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    visibility: visible;
+    z-index: 50; }
     nav .menu-toggle .ion-close {
       color: white;
       font-size: 1.2em; }
@@ -60,7 +66,13 @@ nav {
     justify-content: flex-end;
     list-style: none;
     width: 100%;
-    visibility: visible; }
+    transform: translate(0em, 0px);
+    transition-duration: 1s;
+    transition-timing-function: ease-in; }
+    nav .fadeInRight.translate {
+      transform: translate(40em, 0px);
+      transition-duration: 1s;
+      transition-timing-function: ease-in; }
     nav .fadeInRight li {
       margin: 0 1.5em; }
       nav .fadeInRight li.menu_item_current {
@@ -80,7 +92,7 @@ nav {
           color: #6a8197; }
 
 .heroShot {
-  background: url(http://localhost:8888/QDQmedia/img/chromeBackground.jpg);
+  background: url(../img/chromeBackground.jpg);
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -188,7 +200,7 @@ nav {
   .productosBox .wrapper {
     flex-direction: column; }
     .productosBox .wrapper.macBackground {
-      background-image: url(http://localhost:8888/QDQmedia/img/backgroundMac.png);
+      background-image: url(../img/backgroundMac.png);
       background-repeat: no-repeat;
       background-position-x: 41%; }
   .productosBox .tituloSeccionProducto {
@@ -233,7 +245,7 @@ nav {
       padding: 1em; }
       .productosBox .contenedorProducto .producto:before {
         content: "";
-        background: url(http://localhost:8888/QDQmedia/img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
+        background: url(../img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
         width: 150px;
         height: 150px;
         border-radius: 50%;
@@ -303,7 +315,7 @@ footer {
 
 body {
   background: grey;
-  font-size: 16; }
+  font-size: 1em; }
 
 .wrapper {
   display: -webkit-flex;

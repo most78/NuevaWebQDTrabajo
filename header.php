@@ -13,12 +13,12 @@
 		<div class="wrapper">
 			<figure itemscope itemtype="http://schema.org/Organization" >
 				<a href="https://www.qdqmedia.com/" itemprop="url" title="La agencia de marketing online de las pymes">
-					<img itemprop="logo" src="http://localhost:8888/QDQmedia/img/logo_qdqmedia_grupo_solocal.png" alt="La agencia de marketing online de las pymes: QDQ media" class="logotipoQDQmedia" />
+					<img itemprop="logo" src="img/logo_qdqmedia_grupo_solocal.png" alt="La agencia de marketing online de las pymes: QDQ media" class="logotipoQDQmedia" />
 				</a>
 			</figure>
 			<nav  itemscope itemtype='http://schema.org/SiteNavigationElement' role='navigation' class="main-nav">
 				<div class="menu-toggle">
-    				<a href="#" class="ion-close"></a>
+    				<span class="ion-close"></span>
   				</div>
 				<ul class="fadeInRight">
 					<li><a itemprop='url' class="<?php echo ($page_name=='home.php')?'active':'';?>" href="index.php"><span itemprop='name'>inicio</span></a></li>

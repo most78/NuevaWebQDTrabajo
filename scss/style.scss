@@ -10,7 +10,7 @@
 
 body{
 	background: grey;
-	font-size:$mainFontSize;
+	font-size:($mainFontSize/16)*1em;
 }
 .wrapper{
 	display: -webkit-flex;

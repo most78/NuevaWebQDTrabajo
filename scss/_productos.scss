@@ -16,7 +16,7 @@
 	.wrapper{
 		flex-direction: column;
 		&.macBackground{
-			background-image:url(http://localhost:8888/QDQmedia/img/backgroundMac.png);
+			background-image:url(../img/backgroundMac.png);
 			background-repeat:no-repeat;
 			background-position-x:41%;
 		}	
@@ -62,7 +62,7 @@
 			padding:1em;
 			&:before{
 				content: "";
-    			background: url(http://localhost:8888/QDQmedia/img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
+    			background: url(../img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
     			width: 150px;
     			height: 150px;
     			border-radius: 50%;

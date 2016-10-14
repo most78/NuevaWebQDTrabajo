@@ -4,6 +4,7 @@ nav{
     flex-direction: row-reverse;
     width: 100%;
     align-items: center;
+    overflow: hidden;
     .menu-toggle {
       width: 40px;
       height: 40px;
@@ -12,6 +13,8 @@ nav{
       display: flex;
       align-items:center;
       justify-content: center;
+      visibility: visible;
+      z-index: 50;
       .ion-close{
         color: white;
         font-size: 1.2em;
@@ -23,8 +26,15 @@ nav{
     	justify-content: flex-end;
     	list-style: none;
     	width: 100%;
-      visibility: visible;
-    	li{
+      transform:translate(0em, 0px);
+      transition-duration: 1s;
+      transition-timing-function:ease-in;
+      &.translate{
+        transform:translate(40em, 0px);
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+      }
+      li{
     		margin: 0 (24/$mainFontSize)*1em;
     		&.menu_item_current{
     			border-width:2px 0 0 2px;
