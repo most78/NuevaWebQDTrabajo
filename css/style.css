@@ -39,27 +39,26 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
   width: 100%;
   align-items: center; }
   nav .menu-toggle {
     width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    cursor: pointer; }
-    nav .menu-toggle.on .two {
-      opacity: 0; }
-  nav .one,
-  nav .two,
-  nav .three {
-    width: 100%;
-    height: 5px;
-    background: white;
-    margin: 6px auto;
-    backface-visibility: hidden; }
+    height: 40px;
+    background: #35414c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    nav .menu-toggle .ion-navicon {
+      color: white;
+      font-size: 2em; }
+      nav .menu-toggle .ion-navicon:before {
+        transition: opacity 0.5s ease;
+        -webkit-transition: opacity 0.5s ease; }
+      nav .menu-toggle .ion-navicon:hover:before {
+        content: "\f2d7"; }
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -68,16 +67,6 @@ nav {
     width: 100%; }
     nav ul.hidden {
       display: none;
-      -webkit-transition: display 5s;
-      /* Safari */
-      transition: display 5s; }
-    nav ul.on {
-      z-index: 10;
-      width: 100%;
-      height: 100%;
-      display: block;
-      background-color: rgba(0, 0, 0, 0.5);
-      position: absolute;
       -webkit-transition: display 5s;
       /* Safari */
       transition: display 5s; }
@@ -123,7 +112,9 @@ nav {
       .heroShot .formBox form input {
         line-height: 4em;
         margin: 1.3125em 0;
-        padding-left: 1em; }
+        padding-left: 1em;
+        border-radius: 2px;
+        border: 0px; }
       .heroShot .formBox form p {
         color: white;
         text-align: center;

@@ -21,7 +21,6 @@ switch($page) {
         break; 
 } 
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -37,6 +36,8 @@ switch($page) {
 <meta property="og:image" content="<?php echo $meta_og_Image; ?>" />
 <meta property="fb:admins" content="<?php echo $meta_fb_Admins; ?>"/>
 <meta property="og:description" content="<?php echo $meta_og_description; ?>"/>
+<link rel="shortcut icon" href="http://estaticos.qdq.com/premiumsw/img/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Muli:300,400|Oswald:300,400" rel="stylesheet">
+<link rel="stylesheet" href="css/ionicons.min.css">
 </head>

@@ -11,17 +11,19 @@
 <body>
 	<header>
 		<div class="wrapper">
-			<img src="http://localhost:8888/QDQmedia/img/logo_qdqmedia_grupo_solocal.png" alt="La agencia de marketing online de las pymes: QDQ media" class="logotipoQDQmedia">
-			<nav class="main-nav">
+			<figure itemscope itemtype="http://schema.org/Organization" >
+				<a href="https://www.qdqmedia.com/" itemprop="url" title="La agencia de marketing online de las pymes">
+					<img itemprop="logo" src="http://localhost:8888/QDQmedia/img/logo_qdqmedia_grupo_solocal.png" alt="La agencia de marketing online de las pymes: QDQ media" class="logotipoQDQmedia" />
+				</a>
+			</figure>
+			<nav  itemscope itemtype='http://schema.org/SiteNavigationElement' role='navigation' class="main-nav">
 				<div class="menu-toggle">
-    				<div class="one"></div>
-    				<div class="two"></div>
-    				<div class="three"></div>
+    				<a href="" class="ion-navicon"></a>
   				</div>
 				<ul class="fadeInRight">
-					<li><a class="<?php echo ($page_name=='home.php')?'active':'';?>" href="index.php">Home</a></li>
-					<li><a class="<?php echo ($page_name=='about.php')?'active':'';?>" href="about.php">About</a></li>
-					<li><a class="<?php echo ($page_name=='contact.php')?'active':'';?>" href="contact.php">Contact</a></li>
+					<li><a itemprop='url' class="<?php echo ($page_name=='home.php')?'active':'';?>" href="index.php"><span itemprop='name'>Home</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='about.php')?'active':'';?>" href="about.php"><span itemprop='name'>About</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='contact.php')?'active':'';?>" href="contact.php"><span itemprop='name'>Contact</span></a></li>
 				</ul>
   			</nav>
 		</div>
