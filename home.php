@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Muli|Oswald" rel="stylesheet">
-<head>
-	<meta charset="UTF-8">
-	<title>La agencia de marketing online de las pymes: QDQ media</title>
-</head>
-<body>
-	<header>
-		<div class="wrapper">
-			<img src="http://localhost:8888/QDQmedia/img/logo_qdqmedia_grupo_solocal.png" alt="La agencia de marketing online de las pymes: QDQ media">
-			<nav>
-				<ul>
-					<li class="menu_item_current"><a href="">Inicio</a></li>
-					<li><a href="">Quienes somos</a></li>
-					<li><a href="">Servicios</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Opiniones</a></li>
-					<li><a href="">Contacto</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+<?php include ("head.php"); ?>
+<?php include("header.php"); ?>
 	<section class="heroShot">
 		<div class="wrapper">
 			<div class="formBox">
@@ -45,23 +23,26 @@
 		<div class="wrapper macBackground">
 			<h1 class="tituloSeccionProducto">Descubre qué podemos hacer por tu negocio</h1>
 			<p class="subTituloSeccionProducto">somos la mayor agencia de marketing online para los negocios</p>
-			<div class="producto">
-				<h3>Diseñamos y gestionamos la web de tu negocio</h3>
-				<p>Mas de 20.000 clientes confían en nosotros.Nuestras páginas web están optimizadas para maximizar la conversión y el retorno de la inversión</p>
+			<div class="contenedorProducto">
+				<div class="producto">
+					<h3 class="tituloProducto">Diseñamos y gestionamos la web de tu negocio</h3>
+					<p>Mas de 20.000 clientes confían en nosotros.
+				   Nuestras páginas web están optimizadas para maximizar la conversión y el retorno de la inversión</p>
+				</div>
+				<div class="producto">
+					<h3 class="tituloProducto">Garantizamos tu posicionamiento en los principales buscadores</h3>
+					<p>95% de nuestras campañas están entre las primeras posiciones (SEO)</p>
+				</div>
+				<div class="producto">
+					<h3 class="tituloProducto">Garantizamos tráfico a tu web por muy poca inversión</h3>
+					<p>Gestionamos más de 18.000 campañas en Google AdWords y medios online</p>
+				</div>
+				<div class="producto">
+					<h3 class="tituloProducto">Gestión integral y personalizada</h3>
+					<p>Nos ocupamos de gestionar tu estratégia de marketing digital con un trato personalizado, para que tú te encargues de tu negocio. Somos más de 400 profesionales que te ayudamos a crecer</p>
+				</div>
+				<a href="" class="button">nuestros servicios</a>
 			</div>
-			<div class="producto">
-				<h3>Garantizamos tu posicionamiento en los principales buscadores</h3>
-				<p>95% de nuestras campañas están entre las primeras posiciones (SEO)</p>
-			</div>
-			<div class="producto">
-				<h3>Garantizamos tráfico a tu web por muy poca inversión</h3>
-				<p>Gestionamos más de 18.000 campañas en Google AdWords y medios online</p>
-			</div>
-			<div class="producto">
-				<h3>Gestión integral y personalizada</h3>
-				<p>Nos ocupamos de gestionar tu estratégia de marketing digital con un trato personalizado, para que tú te encargues de tu negocio. Somos más de 400 profesionales que te ayudamos a crecer</p>
-			</div>
-		<a href="" class="button">nuestros servicios</a>
 		</div>
 	</section>
 	<section class="blogSection">
@@ -84,5 +65,6 @@
 		</article>
 		<a href="" class="button">trabaja con nosotros</a>
 	</section>
+	<?php include("footer.php"); ?>
 </body>
 </html>

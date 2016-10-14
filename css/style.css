@@ -20,7 +20,7 @@ time, mark, audio, video {
 
 /*Main Header*/
 header {
-  background: white;
+  background: rgba(64, 78, 91, 0.9);
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -28,69 +28,56 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 5.625em;
-  width: 100%; }
+  height: 3.375em;
+  width: 100%;
+  position: fixed;
+  z-index: 500; }
+  header .wrapper {
+    align-items: center; }
+    header .wrapper .logotipoQDQmedia {
+      height: 38px; }
 
 nav {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
   width: 100%;
   align-items: center; }
-  nav ul {
+  nav .menu-toggle {
+    width: 40px;
+    height: 40px;
+    background: #35414c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    nav .menu-toggle .ion-close {
+      color: white;
+      font-size: 1.2em; }
+  nav .fadeInRight {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
-    width: 100%; }
-    nav ul li {
+    width: 100%;
+    visibility: visible; }
+    nav .fadeInRight li {
       margin: 0 1.5em; }
-      nav ul li.menu_item_current {
+      nav .fadeInRight li.menu_item_current {
         border-width: 2px 0 0 2px; }
-        nav ul li.menu_item_current a:before {
-          content: '';
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          opacity: 1;
-          border: 2px solid #000;
-          border-bottom: 0px;
-          border-right: 0px;
-          -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-          transition: transform 0.3s, opacity 0.3s;
-          -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
-          transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
-          margin: -0.2em 0em 0 -0.5em; }
-        nav ul li.menu_item_current a:after {
-          content: '';
-          position: absolute;
-          margin: 1em -3px;
-          width: 10px;
-          height: 10px;
-          opacity: 1;
-          border: 2px solid #000;
-          border-top: 0px;
-          border-left: 0px;
-          -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-          transition: transform 0.3s, opacity 0.3s;
-          -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
-          transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29); }
-      nav ul li a {
+        nav .fadeInRight li.menu_item_current a {
+          color: #6a8197; }
+      nav .fadeInRight li a {
         text-decoration: none;
-        color: #991359;
+        color: #fff;
         font-family: 'Oswald', sans-serif;
-        font-size: 1.25em; }
-        nav ul li a:before {
-          content: '';
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          opacity: 0;
-          border: 2px solid #d94f5c;
-          -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-          transition: transform 0.3s, opacity 0.3s;
-          -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
-          transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29); }
+        font-size: 1em;
+        font-weight: 300;
+        text-transform: uppercase; }
+        nav .fadeInRight li a:hover {
+          color: #6a8197; }
+        nav .fadeInRight li a.active {
+          color: #6a8197; }
 
 .heroShot {
   background: url(http://localhost:8888/QDQmedia/img/chromeBackground.jpg);
@@ -105,18 +92,22 @@ nav {
     padding-top: 0;
     padding-bottom: 0; }
   .heroShot .formBox {
-    background: rgba(7, 29, 49, 0.7);
+    background: #991359;
+    /* The Fallback */
+    background: rgba(153, 19, 89, 0.9);
     width: 40%;
     margin-left: auto;
-    margin-top: 0; }
+    margin-top: 5.9375em; }
     .heroShot .formBox form {
       display: flex;
       flex-direction: column;
-      padding: 8.78477%; }
+      padding: 3em; }
       .heroShot .formBox form input {
         line-height: 4em;
         margin: 1.3125em 0;
-        padding-left: 1em; }
+        padding-left: 1em;
+        border-radius: 2px;
+        border: 0px; }
       .heroShot .formBox form p {
         color: white;
         text-align: center;
@@ -133,8 +124,8 @@ nav {
         -moz-border-radius: 2px;
         -ms-border-radius: 2px;
         border-radius: 2px;
-        background-color: #991359;
-        border: #991359;
+        background-color: #000;
+        border: #000;
         color: white;
         font-family: 'Oswald', sans-serif;
         font-size: 2.25em;
@@ -143,10 +134,11 @@ nav {
         text-transform: uppercase;
         margin: 0.6em 0; }
   .heroShot .heroClaim {
-    background: #135999;
+    background: #404e5b;
     width: 100%;
     text-align: center;
-    padding: 1.9375em 0; }
+    padding: 1.9375em 0;
+    margin-top: 2.625em; }
     .heroShot .heroClaim h2, .heroShot .heroClaim p strong {
       font-family: 'Oswald', sans-serif;
       font-size: 3.375em;
@@ -170,7 +162,7 @@ nav {
       height: 0;
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
-      border-top: 50px solid #135999;
+      border-top: 50px solid #404e5b;
       right: 47.4%; }
 
 .productosBox {
@@ -196,8 +188,9 @@ nav {
   .productosBox .wrapper {
     flex-direction: column; }
     .productosBox .wrapper.macBackground {
-      background-image: url(http://localhost:8888/NuevaWebQDTrabajo/img/backgroundMac.png);
-      background-repeat: no-repeat; }
+      background-image: url(http://localhost:8888/QDQmedia/img/backgroundMac.png);
+      background-repeat: no-repeat;
+      background-position-x: 41%; }
   .productosBox .tituloSeccionProducto {
     font-family: Oswald;
     font-size: 2.5em;
@@ -207,25 +200,110 @@ nav {
   .productosBox .subTituloSeccionProducto {
     font-family: Muli;
     font-size: 1.25em;
-    color: #135999;
+    color: #404e5b;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1.6875em; }
-  .productosBox .producto {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    width: 20%;
-    padding: 1em; }
+    line-height: 1.6875em;
+    margin-bottom: 3em; }
+  .productosBox .contenedorProducto {
+    position: relative;
+    overflow: hidden; }
+    .productosBox .contenedorProducto:after {
+      content: "";
+      width: 900px;
+      height: 1313px;
+      background: transparent;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 0 50% 50% 0%;
+      border: 4px solid #cecece;
+      position: absolute;
+      left: -1%;
+      top: -13em;
+      overflow: hidden; }
+    .productosBox .contenedorProducto .producto {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-flow: row wrap;
+      margin-left: auto;
+      width: 28%;
+      padding: 1em; }
+      .productosBox .contenedorProducto .producto:before {
+        content: "";
+        background: url(http://localhost:8888/QDQmedia/img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #cecece;
+        overflow: hidden;
+        background-size: 146%;
+        margin-left: -62%;
+        z-index: 50;
+        float: left; }
+    .productosBox .contenedorProducto .tituloProducto {
+      font-family: Oswald;
+      color: #404e5b;
+      font-size: 1.59375em;
+      text-transform: uppercase;
+      line-height: 1.1em;
+      margin-top: -5em; }
+    .productosBox .contenedorProducto p {
+      font-family: Muli;
+      font-size: 1.125em;
+      margin-top: -3.3em; }
+
+footer {
+  width: 100%;
+  background-color: #2b343d;
+  display: flex;
+  justify-content: center;
+  height: 332px;
+  font-family: Muli; }
+  footer .wrapper {
+    flex-direction: column; }
+    footer .wrapper .footer_logo_section, footer .wrapper .footer_redes .legal {
+      display: flex;
+      list-style: none;
+      border-bottom: 1px dotted #556879;
+      justify-content: space-around;
+      padding: 10px 0 20px; }
+      footer .wrapper .footer_logo_section .logoSolocal, footer .wrapper .footer_redes .legal .logoSolocal {
+        border-right: 1px solid rgba(255, 255, 255, 0.21); }
+      footer .wrapper .footer_logo_section img, footer .wrapper .footer_redes .legal img {
+        opacity: 0.2;
+        transition: opacity 0.5s linear; }
+        footer .wrapper .footer_logo_section img:hover, footer .wrapper .footer_redes .legal img:hover {
+          opacity: 1; }
+    footer .wrapper .footer_redes {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.875em; }
+      footer .wrapper .footer_redes .legal {
+        border-bottom: 0; }
+        footer .wrapper .footer_redes .legal li {
+          margin: 0 1em; }
+          footer .wrapper .footer_redes .legal li a {
+            color: white;
+            opacity: 0.2;
+            transition: opacity 0.8s ease-in; }
+            footer .wrapper .footer_redes .legal li a:hover {
+              opacity: 1; }
+          footer .wrapper .footer_redes .legal li:after {
+            content: "-";
+            position: absolute;
+            padding: 0 1em;
+            color: white;
+            opacity: 0.2; }
+          footer .wrapper .footer_redes .legal li:last-child:after {
+            content: ""; }
 
 body {
   background: grey;
-  font-size: 16;
-  border-top: 10px solid #131e33; }
+  font-size: 16; }
 
 .wrapper {
   display: -webkit-flex;

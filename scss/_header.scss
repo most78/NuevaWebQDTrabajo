@@ -1,7 +1,7 @@
 /*Main Header*/
 
 header{
-	background: white;
+	background: rgba($mainColor, 0.9);
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -9,6 +9,14 @@ header{
 	display: flex;
   	align-items: center;
   	flex-direction:column;
-	height: (90/$mainFontSize)*1em;
+	height: (54/$mainFontSize)*1em;
 	width: 100%;
+	position: fixed;
+	z-index:500;
+	.wrapper{
+		align-items:center;
+		.logotipoQDQmedia{
+			height: 38px;
+		}
+	}
 }
