@@ -12,32 +12,18 @@ nav{
       display: flex;
       align-items:center;
       justify-content: center;
-      .ion-navicon{
+      .ion-close{
         color: white;
-        font-size: 2em;
-        &:before{
-          transition: opacity 0.5s ease;
-    -webkit-transition: opacity 0.5s ease;
-        }
-        &:hover{
-          &:before{
-            content: "\f2d7";
-            
-          }
-        }
+        font-size: 1.2em;
       }
     }
-  ul{
+  .fadeInRight{
    		display: flex;
     	flex-wrap: wrap;
     	justify-content: flex-end;
     	list-style: none;
     	width: 100%;
-    	&.hidden {
-    		display: none;
-    		-webkit-transition: display 5s; /* Safari */
-    		transition: display 5s;
-  }
+      visibility: visible;
     	li{
     		margin: 0 (24/$mainFontSize)*1em;
     		&.menu_item_current{
@@ -56,6 +42,9 @@ nav{
     			&:hover{
     				color:lighten( $mainColor, 20% );
     			}
+          &.active{
+            color:lighten( $mainColor, 20% );
+          }
 			}
 		}
 	}

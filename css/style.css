@@ -51,39 +51,32 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center; }
-    nav .menu-toggle .ion-navicon {
+    nav .menu-toggle .ion-close {
       color: white;
-      font-size: 2em; }
-      nav .menu-toggle .ion-navicon:before {
-        transition: opacity 0.5s ease;
-        -webkit-transition: opacity 0.5s ease; }
-      nav .menu-toggle .ion-navicon:hover:before {
-        content: "\f2d7"; }
-  nav ul {
+      font-size: 1.2em; }
+  nav .fadeInRight {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
-    width: 100%; }
-    nav ul.hidden {
-      display: none;
-      -webkit-transition: display 5s;
-      /* Safari */
-      transition: display 5s; }
-    nav ul li {
+    width: 100%;
+    visibility: visible; }
+    nav .fadeInRight li {
       margin: 0 1.5em; }
-      nav ul li.menu_item_current {
+      nav .fadeInRight li.menu_item_current {
         border-width: 2px 0 0 2px; }
-        nav ul li.menu_item_current a {
+        nav .fadeInRight li.menu_item_current a {
           color: #6a8197; }
-      nav ul li a {
+      nav .fadeInRight li a {
         text-decoration: none;
         color: #fff;
         font-family: 'Oswald', sans-serif;
         font-size: 1em;
         font-weight: 300;
         text-transform: uppercase; }
-        nav ul li a:hover {
+        nav .fadeInRight li a:hover {
+          color: #6a8197; }
+        nav .fadeInRight li a.active {
           color: #6a8197; }
 
 .heroShot {

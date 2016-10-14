@@ -18,12 +18,15 @@
 			</figure>
 			<nav  itemscope itemtype='http://schema.org/SiteNavigationElement' role='navigation' class="main-nav">
 				<div class="menu-toggle">
-    				<a href="" class="ion-navicon"></a>
+    				<a href="#" class="ion-close"></a>
   				</div>
 				<ul class="fadeInRight">
-					<li><a itemprop='url' class="<?php echo ($page_name=='home.php')?'active':'';?>" href="index.php"><span itemprop='name'>Home</span></a></li>
-					<li><a itemprop='url'  class="<?php echo ($page_name=='about.php')?'active':'';?>" href="about.php"><span itemprop='name'>About</span></a></li>
-					<li><a itemprop='url'  class="<?php echo ($page_name=='contact.php')?'active':'';?>" href="contact.php"><span itemprop='name'>Contact</span></a></li>
+					<li><a itemprop='url' class="<?php echo ($page_name=='home.php')?'active':'';?>" href="index.php"><span itemprop='name'>inicio</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='quienes_somos.php')?'active':'';?>" href="quienes_somos.php"><span itemprop='name'>quíenes somos</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='ofertas.php')?'active':'';?>" href="ofertas.php"><span itemprop='name'>ofertas</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='blog.php')?'active':'';?>" href="blog.php"><span itemprop='name'>blog</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='opiniones.php')?'active':'';?>" href="opiniones.php"><span itemprop='name'>opiniones</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='contacto.php')?'active':'';?>" href="contacto.php"><span itemprop='name'>contacto</span></a></li>
 				</ul>
   			</nav>
 		</div>

@@ -1,7 +1,8 @@
-$(document).ready(function(){
-	$(".menu-toggle").on('click', function() {
-  		$(this).toggleClass("on");
-  		$('.menu-section').toggleClass("on");
-  		$("nav ul").toggleClass('hidden');
+$(document).ready(function() { 
+	$('.menu-toggle').click(function(){
+  		if ( $('.fadeInRight').css('visibility') == 'hidden' )
+    		$('.fadeInRight').css('visibility','visible');
+  		else
+    		$('.fadeInRight').css('visibility','hidden');
 	});
 });
