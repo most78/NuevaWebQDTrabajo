@@ -1,6 +1,13 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/fixed-header.js"></script>
 <script src="js/hide_show_mainMenu.js"></script>
+
+<?php
+	$full_name = $_SERVER[ 'PHP_SELF' ];
+	$name_array = explode( '/', $full_name );
+	$count = count( $name_array );
+	$page_name = $name_array[$count-1];       
+?>
 <body>
 	<header>
 		<div class="wrapper">
@@ -12,11 +19,10 @@
     				<div class="three"></div>
   				</div>
 				<ul class="fadeInRight">
-					 					   <li><a <?php if ($sw=="inicio") { ?>class="marcado"<?php } ?> href="#" title="Inicio">Inicio</a></li>
-  					      <li><a <?php if ($sw=="contacto") { ?>class="marcado"<?php } ?> href="contacto.html" title="Contacto">Contacto</a></li>
-  					         <li><a <?php if ($sw=="blog") { ?>class="marcado"<?php } ?> href="contacto.html" title="blog">blog</a></li>
-  				  
+					<li><a class="<?php echo ($page_name=='home.php')?'active':'';?>" href="index.php">Home</a></li>
+					<li><a class="<?php echo ($page_name=='about.php')?'active':'';?>" href="about.php">About</a></li>
+					<li><a class="<?php echo ($page_name=='contact.php')?'active':'';?>" href="contact.php">Contact</a></li>
 				</ul>
-			</nav>
+  			</nav>
 		</div>
 	</header>

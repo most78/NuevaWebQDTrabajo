@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animate.css">
-<link href="https://fonts.googleapis.com/css?family=Muli:300,400|Oswald:300,400" rel="stylesheet">
-<head>
-	<meta charset="UTF-8">
-	<title>La agencia de marketing online de las pymes: QDQ media</title>
-</head>
-<?php $sw="blog"; ?>
+<?php include ("head.php"); ?>
 <?php include("header.php"); ?>
 	<section class="heroShot">
 		<div class="wrapper">
