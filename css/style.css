@@ -107,30 +107,77 @@ nav {
     background: #991359;
     /* The Fallback */
     background: rgba(153, 19, 89, 0.9);
-    width: 40%;
+    width: 40.11713%;
     margin-left: auto;
-    margin-top: 5.9375em; }
+    margin-top: 5.9375em;
+    box-sizing: border-box;
+    max-width: 34.25em;
+    display: flex;
+    align-items: center; }
     .heroShot .formBox form {
       display: flex;
       flex-direction: column;
-      padding: 3em; }
+      width: 78.46715%;
+      margin: auto; }
       .heroShot .formBox form input {
-        line-height: 4em;
-        margin: 1.3125em 0;
-        padding-left: 1em;
+        width: 100%;
         border-radius: 2px;
-        border: 0px; }
+        margin-bottom: 20px;
+        padding: 0;
+        padding-left: 1em;
+        border-width: 0px;
+        border-style: outset;
+        line-height: 2em;
+        vertical-align: middle;
+        font-family: Oswald;
+        color: #ccc;
+        font-size: 1.5em;
+        background: #eee; }
+        .heroShot .formBox form input:focus {
+          background: #fff;
+          transition: background .3s ease-in-out;
+          outline: 0; }
+        .heroShot .formBox form input::-webkit-input-placeholder {
+          font-family: Oswald;
+          text-transform: uppercase;
+          transition: opacity 0.35s ease-in-out; }
+        .heroShot .formBox form input:-moz-placeholder {
+          font-family: Oswald;
+          text-transform: uppercase;
+          transition: opacity 0.35s ease-in-out; }
+        .heroShot .formBox form input::-moz-placeholder {
+          font-family: Oswald;
+          text-transform: uppercase;
+          transition: opacity 0.35s ease-in-out; }
+        .heroShot .formBox form input:-ms-input-placeholder {
+          font-family: Oswald;
+          text-transform: uppercase;
+          transition: opacity 0.35s ease-in-out; }
+        .heroShot .formBox form input:focus::-webkit-input-placeholder {
+          opacity: 0.2;
+          transition: opacity 0.5s ease-in-out; }
+        .heroShot .formBox form input:focus:-moz-placeholder {
+          opacity: 0.2;
+          transition: opacity 0.5s ease-in-out; }
+        .heroShot .formBox form input:focus::-moz-placeholder {
+          opacity: 0.2;
+          transition: opacity 0.5s ease-in-out; }
+        .heroShot .formBox form input:focus:-ms-input-placeholder {
+          opacity: 0.2;
+          transition: opacity 0.5s ease-in-out; }
       .heroShot .formBox form p {
         color: white;
         text-align: center;
         font-family: 'Muli', sans-serif;
-        font-size: 1.2em;
-        line-height: 1.6em; }
-        .heroShot .formBox form p strong {
+        font-size: 1.125vw;
+        line-height: 1.5em; }
+        .heroShot .formBox form p span {
           font-family: 'Oswald', sans-serif;
-          font-size: 1.95em;
-          text-transform: uppercase;
-          line-height: 1.4em; }
+          font-size: 2.375vw;
+          line-height: 1.5em;
+          text-transform: uppercase; }
+          .heroShot .formBox form p span strong {
+            font-weight: bold; }
       .heroShot .formBox form .formButton {
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -324,7 +371,7 @@ body {
   display: -o-flex;
   display: flex;
   flex-direction: row;
-  width: 71.14583%;
+  width: 85.375%;
   padding: 1.25em; }
 
 /*# sourceMappingURL=style.css.map */

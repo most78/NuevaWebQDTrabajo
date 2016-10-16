@@ -14,31 +14,62 @@
 	}
 	.formBox{
 		@include background-opacity($secondaryColor, .9);
-		width: 40%;
+		width: (548/$mainWidth)*100%;
 		margin-left: auto;
 		margin-top:(95/16)*1em;
+		box-sizing:border-box;
+		max-width: (548/$mainFontSize)*1em;
+		display:flex;
+		align-items:center;
 		form{
 			display: flex;
     		flex-direction: column;
-    		padding: (48/16)*1em;
+    		width: (430/548)*100%;
+    		margin: auto;
     		input{
-    			line-height: (64/16)*1em;
-    			margin: (21/16)*1em 0;
+    			width: 100%;
+    			border-radius: 2px;
+    			margin-bottom: 20px;
+    			padding: 0;
     			padding-left: 1em;
-    			border-radius:2px;
-    			border:0px;
+    			border-width: 0px;
+    			border-style: outset;
+    			line-height: 2em;
+    			vertical-align: middle;
+    			font-family:$mainFont;
+    			color: #ccc;
+    			font-size: (24/$mainFontSize)*1em;
+    			background:#eee;
+    			&:focus{
+					background:#fff;
+					transition: background .3s ease-in-out;
+					outline: 0;
+    			}
+    			@include placeholder {
+    				font-family:$mainFont;
+    				text-transform: uppercase;
+	    			transition: opacity 0.35s ease-in-out;
+				}
+    			@include placeholder_focus{
+   				opacity: 0.2;
+				transition: opacity 0.5s ease-in-out;
+				}
+	
     		}
     		p{
     			color: white;
     			text-align: center;
     			font-family: 'Muli', sans-serif;
-    			font-size: 1.2em;
-    			line-height: 1.6em;
-    			strong {
+    			font-size: (18/$mainFontSize)*1vw;
+    			line-height: (24/$mainFontSize)*1em;
+    			span {
     				font-family: 'Oswald', sans-serif;
-    				font-size: 1.95em;
+    				font-size: (38/$mainFontSize)*1vw;
+    				line-height: (24/$mainFontSize)*1em;
     				text-transform: uppercase;
-    				line-height: 1.4em;
+    				strong{
+    					font-weight: bold;
+    				}
 				}
     		}
     		.formButton{

@@ -5,7 +5,7 @@
 			<div class="formBox">
 				<form action="">
 				<p>
-					Si quieres mas información o asesoriamiento<strong> Llama gratis al 900 100 314</strong> o rellena nuestro formulario y nosotros nos pondremos en contacto contigo
+					Si quieres mas información o asesoriamiento<span> Llama gratis al <strong>900 100 314</strong></span> o rellena nuestro formulario y nosotros nos pondremos en contacto contigo
 				</p>
 					<input type="text" name="firstname" placeholder="Nombre"></input>
 					<input type="tel" name="telephone" placeholder="Teléfono"></input>
