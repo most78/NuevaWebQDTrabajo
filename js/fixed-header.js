@@ -12,4 +12,7 @@ $(document).ready(function() {
        }
    });
     }
+    $(document).scroll(function() {
+      $('.claimBox').addClass('in-view');
+    });
 });

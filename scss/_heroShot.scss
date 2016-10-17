@@ -1,6 +1,7 @@
 @import "mixin";
 .heroShot{
 	background:url(../img/chromeBackground.jpg);
+	background-size:cover;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -12,96 +13,31 @@
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	.formBox{
-		@include background-opacity($secondaryColor, .9);
-		width: (548/$mainWidth)*100%;
-		margin-left: auto;
-		margin-top:(95/16)*1em;
-		box-sizing:border-box;
-		max-width: (548/$mainFontSize)*1em;
-		display:flex;
-		align-items:center;
-		form{
-			display: flex;
-    		flex-direction: column;
-    		width: (430/548)*100%;
-    		margin: auto;
-    		input{
-    			width: 100%;
-    			border-radius: 2px;
-    			margin-bottom: 20px;
-    			padding: 0;
-    			padding-left: 1em;
-    			border-width: 0px;
-    			border-style: outset;
-    			line-height: 2em;
-    			vertical-align: middle;
-    			font-family:$mainFont;
-    			color: #ccc;
-    			font-size: (24/$mainFontSize)*1em;
-    			background:#eee;
-    			&:focus{
-					background:#fff;
-					transition: background .3s ease-in-out;
-					outline: 0;
-    			}
-    			@include placeholder {
-    				font-family:$mainFont;
-    				text-transform: uppercase;
-	    			transition: opacity 0.35s ease-in-out;
-				}
-    			@include placeholder_focus{
-   				opacity: 0.2;
-				transition: opacity 0.5s ease-in-out;
-				}
-	
-    		}
-    		p{
-    			color: white;
-    			text-align: center;
-    			font-family: 'Muli', sans-serif;
-    			font-size: (18/$mainFontSize)*1vw;
-    			line-height: (24/$mainFontSize)*1em;
-    			span {
-    				font-family: 'Oswald', sans-serif;
-    				font-size: (38/$mainFontSize)*1vw;
-    				line-height: (24/$mainFontSize)*1em;
-    				text-transform: uppercase;
-    				strong{
-    					font-weight: bold;
-    				}
-				}
-    		}
-    		.formButton{
-    			@include buttom(2px, $black);
-    			margin: 0.6em 0;
-    		}
-		}
-	}
 	.heroClaim{
 		background:$mainColor;
 		width: 100%;
 		text-align: center;
 		padding:(31/16)*1em 0;
 		margin-top: (42/16)*1em;
-		h2{
-			font-family: 'Oswald', sans-serif;
-			font-size: (54/16)*1em;
+		.mainClaim{
+			font-family: $mainFont;
+			font-size: (50/16)*1em;
 			color: white;
 			text-align: center;
 			text-transform: uppercase;
-			font-weight: bold;
 		}
 		p{
-			font-family: 'Muli', sans-serif;;
+			font-family: $secondaryFont;
+			font-weight: 300;
 			font-size: (34/16)*1em;
 			color: white;
 			text-align: center;
 			text-transform: uppercase;
 			line-height: 1.1em;
 			strong{
-				@extend h2;
-				font-size: (54/36)*1em;
+				@extend .mainClaim;
+				font-size: (50/34)*1em;
+				font-weight: 400;
 			} 
 		}
 		&:after{

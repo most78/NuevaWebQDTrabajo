@@ -38,6 +38,11 @@ switch($page) {
 <meta property="og:description" content="<?php echo $meta_og_description; ?>"/>
 <link rel="shortcut icon" href="http://estaticos.qdq.com/premiumsw/img/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Muli:300,400|Oswald:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli:300,400|Oswald:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="css/ionicons.min.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/fixed-header.js"></script>
+<script type="text/javascript" src="js/hide_show_mainMenu.js"></script>
+<script type="text/javascript" src="js/animation_elements.js"></script>
+
 </head>

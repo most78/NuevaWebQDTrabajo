@@ -1,0 +1,85 @@
+.formBox{
+		@include background-opacity($secondaryColor, .9);
+		width: (548/$mainWidth)*100%;
+		margin-left: auto;
+		margin-top:(95/16)*1em;
+		box-sizing:border-box;
+		max-width: (548/$mainFontSize)*1em;
+		display:flex;
+		align-items:center;
+		form{
+			display: flex;
+    		flex-direction: column;
+    		width: (430/548)*100%;
+    		margin: auto;
+    		label{
+    			font-weight: 300;
+    			font-style: italic;
+    			font-family: $secondaryFont;
+                color: #fff;
+                a{
+                    color: #fff;
+                }
+    		}
+    		input{
+    			width: 100%;
+    			border-radius: 2px;
+    			margin-bottom: 20px;
+    			padding: 0;
+    			padding-left: 1em;
+    			border-width: 0px;
+    			border-style: outset;
+    			line-height: (60/24)*1em;
+    			vertical-align: middle;
+    			font-family:$mainFont;
+    			color: #ccc;
+    			font-size: (24/$mainFontSize)*1em;
+    			background:#eee;
+    			box-sizing:border-box;
+    			&[type="checkbox"]{
+    				width: 18px;
+    				height: 18px;
+    				margin: 0 9px 0 0;
+                    &:checked+label{
+                        opacity: 0.2;
+                        transition: opacity 1s ease;
+                    }
+    			}
+    			&:focus{
+					background:#fff;
+					transition: background .3s ease-in-out;
+					outline: 0;
+    			}
+    			@include placeholder {
+    				font-family:$mainFont;
+    				text-transform: uppercase;
+	    			transition: opacity 0.35s ease-in-out;
+				}
+    			@include placeholder_focus{
+   				opacity: 0.2;
+				transition: opacity 0.5s ease-in-out;
+				}
+	
+    		}
+    		legend{
+    			color: white;
+    			display: inline-block;
+    			text-align: center;
+    			font-family: $secondaryFont;
+    			font-size: (18/$mainFontSize)*1em;
+    			margin: (34/18)*1em 0;
+    			span {
+    				font-family: $mainFont;
+    				font-size: (36/18)*1em;
+    				text-transform: uppercase;
+    				strong{
+    					font-weight: 700;
+    				}
+				}
+    		}
+    		.formButton{
+    			@include buttom(2px, $black);
+    			margin: 0.6em 0 1em;
+    		}
+		}
+	}

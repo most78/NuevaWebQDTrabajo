@@ -4,19 +4,25 @@
 		<div class="wrapper">
 			<div class="formBox">
 				<form action="">
-				<p>
+				<fieldset>
+				<legend>
 					Si quieres mas información o asesoriamiento<span> Llama gratis al <strong>900 100 314</strong></span> o rellena nuestro formulario y nosotros nos pondremos en contacto contigo
-				</p>
-					<input type="text" name="firstname" placeholder="Nombre"></input>
-					<input type="tel" name="telephone" placeholder="Teléfono"></input>
-					<input type="mail" name="email" placeholder="Email"></input>
-					<input type="submit" name="Submit" class="formButton">
+				</legend>
+					<input type="text" name="firstname" placeholder="Nombre">
+					<input type="tel" name="telephone" placeholder="Teléfono">
+					<input type="mail" name="email" placeholder="Email">
+					<input type="checkbox" name="conditionsOK" value="conditionsOK">
+					<label>He leido y acepto la <a href=""> política de uso de datos</a></label>
+					<input type="submit" name="Submit" class="formButton"/>
+				</fieldset>
 				</form>
 			</div>
 		</div>
 		<div class="heroClaim">
-		<h2>Descubre qué atrae a tus clientes</h2>
+		<div class="claimBox animation-element slide-left">
+		<h2 class="mainClaim">Descubre qué atrae a tus clientes</h2>
 		<p>Haz que tu negocio<strong> crezca </strong>con una estrategía digital 360°</p>
+		</div>
 		</div>
 	</section>
 	<section class="productosBox">

@@ -31,12 +31,12 @@
 					<li><a href="">Opiniones QDQ media</a></li>
 				</ul>
 				<div class="redes">
-					<a href=""><img src="" alt="">Twitter</a>
-					<a href=""><img src="" alt="">Facebook</a>
-					<a href=""><img src="" alt="">Gmail</a>
-					<a href=""><img src="" alt="">youtube</a>
-					<a href=""><img src="" alt="">Linkedin</a>
-					<a href=""><img src="" alt="">Pinterest</a>
+					<a href="" class="twitter"><span class="ion-social-twitter"></span></a>
+					<a href="" class="facebook"><span class="ion-social-facebook"></span></a>
+					<a href="" class="google"><span class="ion-social-google"></span></a>
+					<a href="" class="youtube"><span class="ion-social-youtube"></span></a>
+					<a href="" class="linkedin"><span class="ion-social-linkedin"></span></a>
+					<a href="" class="pinterest"><span class="ion-social-pinterest"></span></a>
 				</div>
 			</section>
 			<section class="footer_copyright">

@@ -31,6 +31,8 @@ footer{
 			display:flex;
 			flex-direction: column;
 			font-size: (14/16)*1em;
+			border-bottom: 1px dotted #556879;
+			padding: 10px 0 20px;
 			.legal{
 				@extend .footer_logo_section;
 				border-bottom:0;
@@ -59,6 +61,63 @@ footer{
 					}
 				}
 			}
+			.redes{
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 20px;
+				a{
+					text-decoration: none;
+					color: $mainColor;
+					margin-right: 1em;
+					span{
+						font-size: 16px;
+	    				width: 30px;
+	    				height: 30px;
+	    				background: lighten($mainColor, 10);
+	    				border-radius:2px;
+	    				display: flex;
+	    				align-items: center;
+	    				justify-content: center;
+	    				&:hover{
+	    					background:white;
+	    					transition: background 0.5s ease-in;
+	    				}
+					}
+					&.twitter:hover{
+						color:#00aced;
+						transition: color 0.5s ease-in;
+					}
+					&.facebook:hover{
+						color: #3b5998;
+						transition: color 0.5s ease-in;
+					}
+					&.google:hover{
+						color:#d34836;
+						transition: color 0.5s ease-in;
+					}
+					&.youtube:hover{
+						color: #E62117;
+						transition: color 0.5s ease-in; 
+					}
+					&.linkedin:hover{
+						color: #4875B4;
+						transition: color 0.5s ease-in;
+					}
+					&.pinterest:hover{
+						color: #cb2027;
+						transition: color 0.5s ease-in;
+					}
+				}
+			}
+		}
+	}
+	.footer_copyright{
+		display: flex;
+		justify-content: center;
+		padding:20px;
+		p{
+			color: white;
+			opacity: 0.2;
 		}
 	}
 }

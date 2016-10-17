@@ -1,7 +1,3 @@
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/fixed-header.js"></script>
-<script src="js/hide_show_mainMenu.js"></script>
-
 <?php
 	$full_name = $_SERVER[ 'PHP_SELF' ];
 	$name_array = explode( '/', $full_name );
