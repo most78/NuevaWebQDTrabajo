@@ -2,11 +2,7 @@
 .heroShot{
 	background:url(../img/chromeBackground.jpg);
 	background-size:cover;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	@include flex;
 	align-items:center;
 	flex-direction:column;
 	.wrapper{
@@ -14,41 +10,17 @@
 		padding-bottom: 0;
 	}
 	.heroClaim{
-		background:$mainColor;
-		width: 100%;
-		text-align: center;
-		padding:(31/16)*1em 0;
-		margin-top: (42/16)*1em;
+		@include homeTitles($mainColor,(42/16)*1em);
 		.mainClaim{
-			font-family: $mainFont;
-			font-size: (50/16)*1em;
-			color: white;
-			text-align: center;
-			text-transform: uppercase;
+			@include mainClaim((50/16)*1em);
 		}
-		p{
-			font-family: $secondaryFont;
-			font-weight: 300;
-			font-size: (34/16)*1em;
-			color: white;
-			text-align: center;
-			text-transform: uppercase;
-			line-height: 1.1em;
+		.secondaryClaim{
+			@include secondaryClaim((34/16)*1em, $mainFont);
 			strong{
 				@extend .mainClaim;
 				font-size: (50/34)*1em;
 				font-weight: 400;
 			} 
-		}
-		&:after{
-			position: absolute;
-    		content: "";
-    		width: 0;
-    		height: 0;
-    		border-left: 50px solid transparent;
-    		border-right: 50px solid transparent;
-    		border-top: 50px solid $mainColor;
-		    right: 47.4%;
 		}
 	}
 }

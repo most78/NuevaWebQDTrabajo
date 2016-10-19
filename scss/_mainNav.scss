@@ -1,5 +1,5 @@
 nav{
-	   display: flex;
+	  @include flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
     width: 100%;
@@ -10,7 +10,7 @@ nav{
       height: 40px;
       background: darken($mainColor, 5%);
       cursor: pointer;
-      display: flex;
+      @include flex;
       align-items:center;
       justify-content: center;
       visibility: visible;
@@ -21,7 +21,7 @@ nav{
       }
     }
   .fadeInRight{
-   		display: flex;
+   		@include flex;
     	flex-wrap: wrap;
     	justify-content: flex-end;
     	list-style: none;

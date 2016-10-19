@@ -1,0 +1,10 @@
+.blogSection{
+	.headerBlogSection{
+		@include homeTitles($secondaryColor, 0em);
+		.mainClaim{
+			@include mainClaim((36/16)*1em);
+		}
+		.secondaryClaim{
+			@include secondaryClaim((18/16)*1em, $secondaryFont);
+		}
+	}}

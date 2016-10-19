@@ -2,11 +2,7 @@
 
 header{
 	background: rgba($mainColor, 0.9);
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	@include flex;
   	align-items: center;
   	flex-direction:column;
 	height: (54/$mainFontSize)*1em;

@@ -19,9 +19,9 @@
 			</div>
 		</div>
 		<div class="heroClaim">
-		<div class="claimBox animation-element slide-left">
+		<div class="claimBox">
 		<h2 class="mainClaim">Descubre qué atrae a tus clientes</h2>
-		<p>Haz que tu negocio<strong> crezca </strong>con una estrategía digital 360°</p>
+		<p class="secondaryClaim">Haz que tu negocio<strong> crezca </strong>con una estrategía digital 360°</p>
 		</div>
 		</div>
 	</section>
@@ -52,14 +52,34 @@
 		</div>
 	</section>
 	<section class="blogSection">
-		<h2>Tendencias de marketing online</h2>
-		<p>El blogl de QDQMEDIA, activa internet</p>
-		<ul>
+		<div class="headerBlogSection">
+			<h2 class="mainClaim">Tendencias de marketing online</h2>
+			<p class="secondaryClaim">El blog de QDQMEDIA, activa internet</p>
+		</div>
+		<!--<ul>
 			<li><a href="">Qdq media participa en la sexta edición de bizbarcelona</a></li>
 			<li><a href="">Test A/B y mapas de calor: El camino hacia la nueva web evolutiva</a></li>
 			<li><a href="">Cómo aumentar el nivel de satisfaccion del usuario</a></li>
 			<li><a href="">QDQ media participa en la sexta edicion de Bizbarcelona</a></li>
-		</ul>
+		</ul>-->
+		<?php
+  			$xml = new DomDocument();
+  			$xml->load('http://feeds.feedburner.com/BlogCorporativoQdqmedia');
+  			$raiz = $xml->documentElement;
+  			$entradas = $raiz->getElementsByTagName('item');
+  			for($i=0;$i<4;$i++){
+    		$titulo = $entradas->item($i)->getElementsByTagName('title')->item(0)->nodeValue;
+    		$vinculo = $entradas->item($i)->getElementsByTagName('link')->item(0)->nodeValue;
+    		$fecha = $entradas->item($i)->getElementsByTagName('pubDate')->item(0)->nodeValue;
+    		$fecha_unix = strtotime($fecha);
+    		$fecha = strftime("%d/%m/%Y",$fecha_unix);
+    		$post_content = $entradas->item($i)->getElementsByTagName('encoded')->item(0)->nodeValue;
+    		$matches = [];
+    		preg_match_all("/<img [^>]+>/", $post_content, $matches);
+    		$img = $matches[0][0];
+    		echo '<a href="'.$vinculo.'"title="'.$titulo.'"><h3>'.$titulo.'</h3><figure>'.$img.'</figure></a>';
+    	  }
+		?>
 	</section>
 	<section class="nuestroEquipo">
 		<h2>¿Quieres formar parte de nuestro equipo?</h2>

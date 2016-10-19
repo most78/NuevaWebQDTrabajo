@@ -1,12 +1,14 @@
 
 @import "variables";
 @import "reset";
+@import "mixin";
 @import "header";
 @import "mainNav";
 @import "heroShot";
 @import "form";
 @import "animation-element";
 @import "productos";
+@import "blogSection";
 @import "footer";
 
 
@@ -15,11 +17,7 @@ body{
 	font-size:($mainFontSize/16)*1em;
 }
 .wrapper{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	@include flex;
 	flex-direction:row;
 	width:$fullWidth;
 	padding:(20/$mainFontSize)*1em;

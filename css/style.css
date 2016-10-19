@@ -41,6 +41,10 @@ header {
     transition: background-color 0.5s ease; }
 
 nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
@@ -52,6 +56,10 @@ nav {
     height: 40px;
     background: #35414c;
     cursor: pointer;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,6 +69,10 @@ nav {
       color: white;
       font-size: 1.2em; }
   nav .fadeInRight {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -110,23 +122,6 @@ nav {
     text-align: center;
     padding: 1.9375em 0;
     margin-top: 2.625em; }
-    .heroShot .heroClaim .mainClaim, .heroShot .heroClaim p strong {
-      font-family: "Oswald", sans-serif;
-      font-size: 3.125em;
-      color: white;
-      text-align: center;
-      text-transform: uppercase; }
-    .heroShot .heroClaim p {
-      font-family: "Muli", sans-serif;
-      font-weight: 300;
-      font-size: 2.125em;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 1.1em; }
-      .heroShot .heroClaim p strong {
-        font-size: 1.47059em;
-        font-weight: 400; }
     .heroShot .heroClaim:after {
       position: absolute;
       content: "";
@@ -136,6 +131,23 @@ nav {
       border-right: 50px solid transparent;
       border-top: 50px solid #404e5b;
       right: 47.4%; }
+    .heroShot .heroClaim .mainClaim, .heroShot .heroClaim .secondaryClaim strong {
+      font-family: "Oswald", sans-serif;
+      font-size: 3.125em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase; }
+    .heroShot .heroClaim .secondaryClaim {
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      font-size: 2.125em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1em; }
+      .heroShot .heroClaim .secondaryClaim strong {
+        font-size: 1.47059em;
+        font-weight: 400; }
 
 .formBox {
   background: #991359;
@@ -146,9 +158,17 @@ nav {
   margin-top: 5.9375em;
   box-sizing: border-box;
   max-width: 34.25em;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   align-items: center; }
   .formBox form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: column;
     width: 78.46715%;
@@ -318,9 +338,9 @@ nav {
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
       border-radius: 0 50% 50% 0%;
-      border: 4px solid #cecece;
+      border-right: 4px solid #cecece;
       position: absolute;
-      left: -1%;
+      left: 9%;
       top: -13em;
       overflow: hidden; }
     .productosBox .contenedorProducto .producto {
@@ -345,6 +365,8 @@ nav {
         margin-left: -62%;
         z-index: 50;
         float: left; }
+      .productosBox .contenedorProducto .producto:first-child {
+        margin-left: 0; }
     .productosBox .contenedorProducto .tituloProducto {
       font-family: "Oswald", sans-serif;
       color: #404e5b;
@@ -357,9 +379,43 @@ nav {
       font-size: 1.125em;
       margin-top: -3.3em; }
 
+.blogSection .headerBlogSection {
+  background: #991359;
+  width: 100%;
+  text-align: center;
+  padding: 1.9375em 0;
+  margin-top: 0em; }
+  .blogSection .headerBlogSection:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #991359;
+    right: 47.4%; }
+  .blogSection .headerBlogSection .mainClaim, .blogSection .headerBlogSection .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .blogSection .headerBlogSection strong {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.25em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase; }
+  .blogSection .headerBlogSection .secondaryClaim {
+    font-family: "Muli", sans-serif;
+    font-weight: 300;
+    font-size: 1.125em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1em; }
+
 footer {
   width: 100%;
   background-color: #2b343d;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: center;
   height: 332px;
@@ -367,6 +423,10 @@ footer {
   footer .wrapper {
     flex-direction: column; }
     footer .wrapper .footer_logo_section, footer .wrapper .footer_redes .legal {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       list-style: none;
       border-bottom: 1px dotted #556879;
@@ -381,6 +441,10 @@ footer {
           opacity: 1; }
     footer .wrapper .footer_redes {
       align-items: center;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       flex-direction: column;
       font-size: 0.875em;
@@ -405,6 +469,10 @@ footer {
           footer .wrapper .footer_redes .legal li:last-child:after {
             content: ""; }
       footer .wrapper .footer_redes .redes {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         flex-direction: row;
         margin-bottom: 20px; }
@@ -418,6 +486,10 @@ footer {
             height: 30px;
             background: #556879;
             border-radius: 2px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
             display: flex;
             align-items: center;
             justify-content: center; }
@@ -443,6 +515,10 @@ footer {
             color: #cb2027;
             transition: color 0.5s ease-in; }
   footer .footer_copyright {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     justify-content: center;
     padding: 20px; }

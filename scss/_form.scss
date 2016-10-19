@@ -5,10 +5,10 @@
 		margin-top:(95/16)*1em;
 		box-sizing:border-box;
 		max-width: (548/$mainFontSize)*1em;
-		display:flex;
+		@include flex;
 		align-items:center;
 		form{
-			display: flex;
+			@include flex;
     		flex-direction: column;
     		width: (430/548)*100%;
     		margin: auto;

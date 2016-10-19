@@ -2,14 +2,14 @@
 footer{
 	width: 100%;
 	background-color: darken($mainColor, 10%);
-	display: flex;
+	@include flex;
     justify-content: center;
     height: 332px;
     font-family: $secondaryFont;
 	.wrapper{
 		flex-direction: column;
 		.footer_logo_section{
-			display: flex;
+			@include flex;
 			list-style: none;
 			border-bottom: 1px dotted lighten($mainColor, 10%);
 			justify-content: space-around;
@@ -28,7 +28,7 @@ footer{
 		}
 		.footer_redes{
 			align-items: center;
-			display:flex;
+			@include flex;
 			flex-direction: column;
 			font-size: (14/16)*1em;
 			border-bottom: 1px dotted #556879;
@@ -62,7 +62,7 @@ footer{
 				}
 			}
 			.redes{
-				display: flex;
+				@include flex;
 				flex-direction: row;
 				margin-bottom: 20px;
 				a{
@@ -75,7 +75,7 @@ footer{
 	    				height: 30px;
 	    				background: lighten($mainColor, 10);
 	    				border-radius:2px;
-	    				display: flex;
+	    				@include flex;
 	    				align-items: center;
 	    				justify-content: center;
 	    				&:hover{
@@ -112,7 +112,7 @@ footer{
 		}
 	}
 	.footer_copyright{
-		display: flex;
+		@include flex;
 		justify-content: center;
 		padding:20px;
 		p{
