@@ -25,14 +25,16 @@
     text-align: center;
     padding:(31/16)*1em 0;
     margin-top: $margin;
-    &:after{
+}
+@mixin homeTitlesAfter($color){
+  &:after{
       position: absolute;
         content: "";
         width: 0;
         height: 0;
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
-        border-top: 50px solid $background;
+        border-top: 50px solid $color;
         right: 47.4%;
     }
 }

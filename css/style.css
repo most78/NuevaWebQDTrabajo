@@ -379,35 +379,98 @@ nav {
       font-size: 1.125em;
       margin-top: -3.3em; }
 
-.blogSection .headerBlogSection {
-  background: #991359;
+.blogSection {
   width: 100%;
-  text-align: center;
-  padding: 1.9375em 0;
-  margin-top: 0em; }
-  .blogSection .headerBlogSection:after {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .blogSection:after {
     position: absolute;
     content: "";
     width: 0;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 50px solid #991359;
+    border-top: 50px solid #404e5b;
     right: 47.4%; }
-  .blogSection .headerBlogSection .mainClaim, .blogSection .headerBlogSection .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .blogSection .headerBlogSection strong {
-    font-family: "Oswald", sans-serif;
-    font-size: 2.25em;
-    color: white;
+  .blogSection:after {
+    bottom: -1em;
+    z-index: -1; }
+  .blogSection .headerBlogSection {
+    z-index: 5;
+    background: #991359;
+    width: 100%;
     text-align: center;
-    text-transform: uppercase; }
-  .blogSection .headerBlogSection .secondaryClaim {
-    font-family: "Muli", sans-serif;
-    font-weight: 300;
-    font-size: 1.125em;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.1em; }
+    padding: 1.9375em 0;
+    margin-top: 0em; }
+    .blogSection .headerBlogSection:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 50px solid #991359;
+      right: 47.4%; }
+    .blogSection .headerBlogSection .mainClaim, .blogSection .headerBlogSection .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .blogSection .headerBlogSection strong {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.25em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase; }
+    .blogSection .headerBlogSection .secondaryClaim {
+      font-family: "Muli", sans-serif;
+      font-weight: 300;
+      font-size: 1.125em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1em; }
+  .blogSection .lastPostContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 4px solid #404e5b; }
+    .blogSection .lastPostContainer .lastPost {
+      position: relative;
+      width: 25%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; }
+      .blogSection .lastPostContainer .lastPost:before {
+        content: "";
+        background: rgba(64, 78, 91, 0.6);
+        position: absolute;
+        width: 100%;
+        height: 250px; }
+      .blogSection .lastPostContainer .lastPost a {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .blogSection .lastPostContainer .lastPost a .lastPostTitle {
+          font-family: "Oswald", sans-serif;
+          font-size: 1.375em;
+          color: white;
+          text-align: center;
+          text-transform: uppercase;
+          position: absolute;
+          text-align: center;
+          width: 90%;
+          top: 50%;
+          margin-top: -1.5em; }
+        .blogSection .lastPostContainer .lastPost a figure {
+          width: 100%;
+          max-height: 250px; }
+          .blogSection .lastPostContainer .lastPost a figure img {
+            width: 100%;
+            max-height: 250px; }
 
 footer {
   width: 100%;

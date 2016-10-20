@@ -62,10 +62,10 @@
 			<li><a href="">Cómo aumentar el nivel de satisfaccion del usuario</a></li>
 			<li><a href="">QDQ media participa en la sexta edicion de Bizbarcelona</a></li>
 		</ul>-->
-		<ul>
+		<ul class="lastPostContainer">
 		<?php
   			$xml = new DomDocument();
-  			$xml->load('http://feeds.feedburner.com/BlogCorporativoQdqmedia');
+  			$xml->load('https://www.qdqmedia.com/blog/feed/');
   			$raiz = $xml->documentElement;
   			$entradas = $raiz->getElementsByTagName('item');
   			for($i=0;$i<4;$i++){
@@ -78,7 +78,7 @@
     		$matches = [];
     		preg_match_all("/<img [^>]+>/", $post_content, $matches);
     		$img = $matches[0][0];
-    		echo '<li><a href="'.$vinculo.'"title="'.$titulo.'"><h3>'.$titulo.'</h3><figure>'.$img.'</figure></a></li>';
+    		echo '<li class="lastPost"><a href="'.$vinculo.'"title="'.$titulo.'"><h3 class="lastPostTitle">'.$titulo.'</h3><figure>'.$img.'</figure></a></li>';
     	  }
 		?>
 		</ul>

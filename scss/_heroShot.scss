@@ -11,6 +11,7 @@
 	}
 	.heroClaim{
 		@include homeTitles($mainColor,(42/16)*1em);
+		@include homeTitlesAfter($mainColor);
 		.mainClaim{
 			@include mainClaim((50/16)*1em);
 		}
