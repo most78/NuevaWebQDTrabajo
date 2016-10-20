@@ -292,96 +292,107 @@ nav {
   transform: translate3d(0px, 0px, 0px); }
 
 .productosBox {
-  width: 100%;
-  height: 1398px;
+  background: white;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: flex;
-  justify-content: center;
-  padding-top: 2.8125em;
-  /*background: rgba(255,255,255,1);
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(231,231,231,1)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7', GradientType=0 );*/
-  background: linear-gradient(to bottom, white 0%, white 50%, #ffffff 50%, #f6f6f6 50%, #f6f6f6 100%);
-  /* W3C */ }
-  .productosBox .wrapper {
-    flex-direction: column; }
-    .productosBox .wrapper.macBackground {
-      background-image: url(../img/backgroundMac.png);
-      background-repeat: no-repeat;
-      background-position-x: 41%; }
-  .productosBox .tituloSeccionProducto {
-    font-family: "Oswald", sans-serif;
-    font-size: 2.5em;
-    color: #131e33;
-    text-transform: uppercase;
-    text-align: center; }
-  .productosBox .subTituloSeccionProducto {
-    font-family: "Muli", sans-serif;
-    font-size: 1.25em;
-    color: #404e5b;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.6875em;
-    margin-bottom: 3em; }
+  display: flex; }
+  .productosBox .macBackground {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-end;
+    background-image: url(../img/backgroundMac.png);
+    background-position: left top;
+    background-repeat: no-repeat; }
+    .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.75em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      color: #404e5b;
+      text-align: left; }
+    .productosBox .macBackground .secondaryClaim {
+      font-family: "Muli", sans-serif;
+      font-weight: 300;
+      font-size: 0.9375em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1em;
+      color: #404e5b;
+      text-align: left;
+      margin-top: 0.1em;
+      margin-bottom: 1.5em; }
+    .productosBox .macBackground .button {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      background-color: #991359;
+      border: #991359;
+      color: white;
+      display: inline-block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.25em;
+      padding: 0.5em 1.5em;
+      line-height: 1em;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.875em;
+      width: 45%; }
   .productosBox .contenedorProducto {
-    position: relative;
-    overflow: hidden; }
-    .productosBox .contenedorProducto:after {
-      content: "";
-      width: 900px;
-      height: 1313px;
-      background: transparent;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 0 50% 50% 0%;
-      border-right: 4px solid #cecece;
-      position: absolute;
-      left: 9%;
-      top: -13em;
-      overflow: hidden; }
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
     .productosBox .contenedorProducto .producto {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
       display: flex;
-      flex-flow: row wrap;
-      margin-left: auto;
-      width: 28%;
-      padding: 1em; }
-      .productosBox .contenedorProducto .producto:before {
-        content: "";
-        background: url(../img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
+      flex-direction: row;
+      padding-left: 8%; }
+      .productosBox .contenedorProducto .producto .circle {
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: 4px solid #cecece;
-        overflow: hidden;
-        background-size: 146%;
-        margin-left: -62%;
-        z-index: 50;
-        float: left; }
-      .productosBox .contenedorProducto .producto:first-child {
-        margin-left: 0; }
-    .productosBox .contenedorProducto .tituloProducto {
-      font-family: "Oswald", sans-serif;
-      color: #404e5b;
-      font-size: 1.59375em;
-      text-transform: uppercase;
-      line-height: 1.1em;
-      margin-top: -5em; }
-    .productosBox .contenedorProducto p {
-      font-family: "Muli", sans-serif;
-      font-size: 1.125em;
-      margin-top: -3.3em; }
+        background: purple;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-width: 150px;
+        border: 4px solid #cecece; }
+      .productosBox .contenedorProducto .producto .textoProducto {
+        display: flex;
+        flex-direction: column;
+        width: 58%;
+        margin-left: 5%;
+        justify-content: center; }
+        .productosBox .contenedorProducto .producto .textoProducto .mainClaim, .productosBox .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .contenedorProducto .producto .textoProducto strong {
+          font-family: "Oswald", sans-serif;
+          font-size: 1.375em;
+          color: white;
+          text-align: center;
+          text-transform: uppercase;
+          color: #404e5b;
+          text-align: left;
+          margin-bottom: 0.5em; }
+        .productosBox .contenedorProducto .producto .textoProducto p {
+          font-family: "Muli", sans-serif;
+          font-size: 1em;
+          font-weight: 300; }
 
 .blogSection {
   width: 100%;
@@ -663,6 +674,7 @@ body {
   flex-direction: row;
   width: 85.375%;
   max-width: 1366px;
-  padding: 1.25em; }
+  padding: 1.25em;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

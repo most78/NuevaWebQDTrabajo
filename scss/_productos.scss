@@ -1,95 +1,70 @@
 .productosBox{
-	width: 100%;
-	height:1398px;
+	background:white;
 	@include flex;
-	justify-content:center;
-	padding-top: (45/16)*1em;
-	/*background: rgba(255,255,255,1);
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(231,231,231,1)));
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7', GradientType=0 );*/
-	background: linear-gradient(to bottom, white 0%,white 50%,#ffffff 50%,#f6f6f6 50%,#f6f6f6 100%); /* W3C */
-	.wrapper{
+	.macBackground{
+		@include flex;
 		flex-direction: column;
-		&.macBackground{
-			background-image:url(../img/backgroundMac.png);
-			background-repeat:no-repeat;
-			background-position-x:41%;
-		}	
-	}
-	.tituloSeccionProducto{
-		font-family: $mainFont;
-		font-size: (40/16)*1em;
-		color: #131e33;
-		text-transform: uppercase;
-	    text-align: center;
-	}
-	.subTituloSeccionProducto{
-		font-family: $secondaryFont;
-		font-size: (20/16)*1em;
-		color: $mainColor;
-		text-transform: uppercase;
-		text-align: center;
-		line-height: (27/16)*1em;
-		margin-bottom: 3em;
+		width: 50%;
+		justify-content: flex-end;
+		background-image:url(../img/backgroundMac.png);
+		background-position:left top;
+		background-repeat:no-repeat;
+		.mainClaim{
+			@include mainClaim((28/16)*1em);
+			color: $mainColor;
+			text-align: left;
+		}
+		.secondaryClaim{
+			@include secondaryClaim((15/16)*1em, $secondaryFont);
+			color: $mainColor;
+			text-align: left;
+			margin-top: 0.1em;
+			margin-bottom: 1.5em;
+		}
+		.button{
+			@include buttom(2px, $secondaryColor);
+			font-size: (30/16)*1em;
+			width: 45%;
+		}
 	}
 	.contenedorProducto{
-		position: relative;
-		overflow: hidden;
-		&:after{
-			content: "";
-    		width: 900px;
-    		height: 1313px;
-    		background: transparent;
-		    -moz-border-radius: 50%;
-		    -webkit-border-radius: 50%;
-		    border-radius: 0 50% 50% 0%;
-		    border-right: 4px solid #cecece;
-		    position: absolute;
-		    left: 9%;
-		    top: -13em;
-		    overflow: hidden;
-		}
+		@include flex;
+		flex-direction: column;
+		width: 50%;
 		.producto{
 			@include flex;
-			flex-flow: row wrap;
-			margin-left: auto;
-			width:28%;
-			padding:1em;
-			&:before{
-				content: "";
-    			background: url(../img/disenamos_gestionamos_web_negocio.jpg) no-repeat;
-    			width: 150px;
+			flex-direction: row;
+			padding-left: 8%;
+			.circle{
+				width: 150px;
     			height: 150px;
     			border-radius: 50%;
-    			border: 4px solid #cecece;
-    			overflow: hidden;
-    			background-size: 146%;
-    			margin-left: -62%;
-    			z-index: 50;
-    			float: left;
+    			background: purple;
+    			display: flex;
+    			flex-direction: row;
+    			justify-content: center;
+    			min-width: 150px;
+    			border:4px solid #cecece;
 			}
-			&:first-child{
-				margin-left: 0;
-			}
-		}
-		.tituloProducto{
-			font-family: $mainFont;
-			color: $mainColor;
-			font-size: (25.5/16)*1em;
-			text-transform: uppercase;
-			line-height: 1.1em;
-			margin-top: -5em;
-		}
-		p{
-			font-family: $secondaryFont;
-			font-size: (18/16)*1em;
-			margin-top: -3.3em;
+			.textoProducto {
+    			display: flex;
+    			flex-direction: column;
+    			width: 58%;
+    			margin-left: 5%;
+    			justify-content: center;
+				.mainClaim{
+				@include mainClaim((22/16)*1em);
+				color: $mainColor;
+				text-align:left;
+				margin-bottom: 0.5em;
+				}
+				p{
+					font-family: $secondaryFont;
+					font-size: 1em;
+					font-weight: 300;
+				}
 
+			}
 		}
 	}
 }
