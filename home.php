@@ -84,14 +84,16 @@
 		</ul>
 	</section>
 	<section class="nuestroEquipo">
-		<h2>¿Quieres formar parte de nuestro equipo?</h2>
-		<p>Envianos tu cv y valoraremos tu candidatura</p>
-		<article>
-			<p>QDQ media forma parte de SoLocal Group, lider europeo en publicidad digital local. Alrededor de 350 personas forman parte del equipo de QDQ media, repartidos por casi todas las ciudades del España, con oficinas en Madrid, Barcelona y Zaragoza.</p>
-			<p>Somos un equipo que se caracteriza por los valores de solidaridad, complementariedad y complicidad, pero sobre todo, un equipo con un gran espiritu innovador y que se adapta rápidamente a los cambios que exige el ser una empresa de Internet.</p>
-			<p>Si quieres formar parte de un Grupo líder que apuesta por la modernidad, la innovación y el desarrollo constante, ésta es tu oportunidad</p>
-		</article>
-		<a href="" class="button">trabaja con nosotros</a>
+		<div class="wrapper">
+			<h2 class="mainClaim">¿Quieres formar parte de nuestro equipo?</h2>
+			<p class="secondaryClaim">Envianos tu cv y valoraremos tu candidatura</p>
+			<article>
+				<p>QDQ media forma parte de SoLocal Group, lider europeo en publicidad digital local. Alrededor de 350 personas forman parte del equipo de QDQ media, repartidos por casi todas las ciudades del España, con oficinas en Madrid, Barcelona y Zaragoza.</p>
+				<p>Somos un equipo que se caracteriza por los valores de solidaridad, complementariedad y complicidad, pero sobre todo, un equipo con un gran espiritu innovador y que se adapta rápidamente a los cambios que exige el ser una empresa de Internet.</p>
+				<p>Si quieres formar parte de un Grupo líder que apuesta por la modernidad, la innovación y el desarrollo constante, ésta es tu oportunidad</p>
+				<a href="" class="button">trabaja con nosotros</a>
+			</article>
+		</div>
 	</section>
 	<?php include("footer.php"); ?>
 </body>

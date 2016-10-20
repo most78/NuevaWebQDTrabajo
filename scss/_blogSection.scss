@@ -6,7 +6,11 @@
     @include homeTitlesAfter($mainColor);
     &:after{
     	bottom:-1em;
-    	z-index: -1;
+        border-left: 22px solid transparent;
+        border-right: 22px solid transparent;
+        border-top: 22px solid $mainColor;
+        right: 48.8%;
+        bottom:-18px;
     }
 	.headerBlogSection{
 		z-index: 5;

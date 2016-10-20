@@ -9,6 +9,7 @@
 @import "animation-element";
 @import "productos";
 @import "blogSection";
+@import "trabajaConNosotros";
 @import "footer";
 
 
@@ -20,6 +21,7 @@ body{
 	@include flex;
 	flex-direction:row;
 	width:$fullWidth;
+	max-width:1366px;
 	padding:(20/$mainFontSize)*1em;
 
 }

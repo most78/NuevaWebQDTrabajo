@@ -1,0 +1,31 @@
+.nuestroEquipo{
+	background:#fff url(../img/trabaja_con_nosotros.png) no-repeat;
+	background-position:right;
+	@include flex;
+	justify-content:center;
+	.wrapper{
+		flex-direction: column;
+		.mainClaim{
+			@include mainClaim((36/16)*1em);
+			color: $mainColor;
+			margin-top: 1em;
+		}
+		.secondaryClaim{
+			@include secondaryClaim((18/16)*1em, $secondaryFont);
+			color: $mainColor;
+			margin-bottom: 3.5em;
+		}
+		article{
+			width:(480/$mainWidth)*100%;
+			font-family: $secondaryFont;
+			p{
+				margin-bottom: 2em;
+			}
+		}
+		.button{
+			@include buttom(2px,$secondaryColor);
+			font-size: (30/16)*1em;
+			margin-bottom: 1em;
+		}
+	}
+}
