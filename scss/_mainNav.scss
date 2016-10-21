@@ -2,12 +2,12 @@ nav{
 	  @include flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
-    width: 100%;
+    width: 87.5%;
     align-items: center;
     overflow: hidden;
     .menu-toggle {
-      width: 40px;
-      height: 40px;
+      width: (32/$mainFontSize)*1em;
+      height: (32/$mainFontSize)*1em;
       background: darken($mainColor, 5%);
       cursor: pointer;
       @include flex;
@@ -17,7 +17,7 @@ nav{
       z-index: 50;
       .ion-close{
         color: white;
-        font-size: 1.2em;
+        font-size: (15/$mainFontSize)*1em;
       }
     }
   .fadeInRight{
@@ -35,7 +35,7 @@ nav{
         transition-timing-function: ease-in;
       }
       li{
-    		margin: 0 (24/$mainFontSize)*1em;
+    		margin: 0 (19/$mainFontSize)*1em;
     		&.menu_item_current{
     			border-width:2px 0 0 2px;
     			a{
@@ -46,7 +46,7 @@ nav{
     			text-decoration: none;
     			color: $white;
     			font-family: 'Oswald', sans-serif;
-    			font-size: (16/$mainFontSize)*1em;
+    			font-size: ($mainFontSize/$mainFontSize)*1em;
     			font-weight: 300;
     			text-transform: uppercase;
     			&:hover{

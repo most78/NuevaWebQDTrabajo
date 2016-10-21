@@ -5,8 +5,8 @@
 	min-height:1064px;
 	.macBackground{
 		@include flex;
-		flex-direction: column;
 		width: 50%;
+		flex-direction: column;
 		justify-content: flex-end;
 		background-image:url(../img/backgroundMac.png);
 		background-position:left top;
@@ -44,6 +44,8 @@
 			padding-left: 8%;
 			position:relative;
 			&:first-child{
+				-webkit-transition-delay: 2s; /* Safari */
+    			transition-delay: 2s;
 				top: -8.5em;
 				left: 1%;
 				.circle{

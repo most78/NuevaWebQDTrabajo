@@ -28,15 +28,16 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 3.375em;
+  height: 3.4375em;
   width: 100%;
   position: fixed;
   z-index: 500; }
   header .wrapper {
     width: 85.375%;
-    align-items: center; }
-    header .wrapper .logotipoQDQmedia {
-      height: 38px; }
+    align-items: center;
+    /*.logotipoQDQmedia{
+    	height: 38px;
+    }*/ }
   header.backgroundDarken {
     background: #404e5b;
     transition: background-color 0.5s ease; }
@@ -49,12 +50,12 @@ nav {
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
-  width: 100%;
+  width: 87.5%;
   align-items: center;
   overflow: hidden; }
   nav .menu-toggle {
-    width: 40px;
-    height: 40px;
+    width: 2em;
+    height: 2em;
     background: #35414c;
     cursor: pointer;
     display: -webkit-flex;
@@ -68,7 +69,7 @@ nav {
     z-index: 50; }
     nav .menu-toggle .ion-close {
       color: white;
-      font-size: 1.2em; }
+      font-size: 0.9375em; }
   nav .fadeInRight {
     display: -webkit-flex;
     display: -moz-flex;
@@ -87,7 +88,7 @@ nav {
       transition-duration: 1s;
       transition-timing-function: ease-in; }
     nav .fadeInRight li {
-      margin: 0 1.5em; }
+      margin: 0 1.1875em; }
       nav .fadeInRight li.menu_item_current {
         border-width: 2px 0 0 2px; }
         nav .fadeInRight li.menu_item_current a {
@@ -305,8 +306,8 @@ nav {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    flex-direction: column;
     width: 50%;
+    flex-direction: column;
     justify-content: flex-end;
     background-image: url(../img/backgroundMac.png);
     background-position: left top;
@@ -372,6 +373,9 @@ nav {
       padding-left: 8%;
       position: relative; }
       .productosBox .contenedorProducto .producto:first-child {
+        -webkit-transition-delay: 2s;
+        /* Safari */
+        transition-delay: 2s;
         top: -8.5em;
         left: 1%; }
         .productosBox .contenedorProducto .producto:first-child .circle {
@@ -706,5 +710,11 @@ body {
   width: 85.375%;
   max-width: 1366px;
   margin: auto; }
+
+.invisible {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

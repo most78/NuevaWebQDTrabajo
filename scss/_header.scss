@@ -5,16 +5,16 @@ header{
 	@include flex;
   	align-items: center;
   	flex-direction:column;
-	height: (54/$mainFontSize)*1em;
+	height: (55/$mainFontSize)*1em;
 	width: 100%;
 	position: fixed;
 	z-index:500;
 	.wrapper{
 		width:$fullWidth;
 		align-items:center;
-		.logotipoQDQmedia{
+		/*.logotipoQDQmedia{
 			height: 38px;
-		}
+		}*/
 	}
 	&.backgroundDarken{
 		background: rgba($mainColor, 1);

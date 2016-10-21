@@ -28,9 +28,9 @@
 	<section class="productosBox">
 		<div class="wrapper">
 			<div class="macBackground">
-				<h1 class="mainClaim">Descubre qué podemos hacer por tu negocio</h1>
-				<p class="secondaryClaim">somos la mayor agencia de marketing online para los negocios</p>
-				<a href="" class="button">nuestros servicios</a>
+					<h1 class="mainClaim">Descubre qué podemos hacer por tu negocio</h1>
+					<p class="secondaryClaim">somos la mayor agencia de marketing online para los negocios</p>
+					<a href="" class="button">nuestros servicios</a>
 			</div>
 			<div class="contenedorProducto">
 				<div class="producto">
@@ -95,7 +95,7 @@
 		<div class="wrapper">
 			<h2 class="mainClaim">¿Quieres formar parte de nuestro equipo?</h2>
 			<p class="secondaryClaim">Envianos tu cv y valoraremos tu candidatura</p>
-			<article>
+			<article class="trabajaConNosotros">
 				<p>QDQ media forma parte de SoLocal Group, lider europeo en publicidad digital local. Alrededor de 350 personas forman parte del equipo de QDQ media, repartidos por casi todas las ciudades del España, con oficinas en Madrid, Barcelona y Zaragoza.</p>
 				<p>Somos un equipo que se caracteriza por los valores de solidaridad, complementariedad y complicidad, pero sobre todo, un equipo con un gran espiritu innovador y que se adapta rápidamente a los cambios que exige el ser una empresa de Internet.</p>
 				<p>Si quieres formar parte de un Grupo líder que apuesta por la modernidad, la innovación y el desarrollo constante, ésta es tu oportunidad</p>
