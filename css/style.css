@@ -89,6 +89,9 @@ nav {
       transition-timing-function: ease-in; }
     nav .fadeInRight li {
       margin: 0 1.1875em; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        nav .fadeInRight li {
+          margin: 0 0.5em; } }
       nav .fadeInRight li.menu_item_current {
         border-width: 2px 0 0 2px; }
         nav .fadeInRight li.menu_item_current a {
@@ -118,6 +121,10 @@ nav {
   .heroShot .wrapper {
     padding-top: 0;
     padding-bottom: 0; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .heroShot .wrapper {
+        width: 100%;
+        max-width: 768px; } }
   .heroShot .heroClaim {
     background: #404e5b;
     width: 100%;
@@ -166,6 +173,10 @@ nav {
   display: -o-flex;
   display: flex;
   align-items: center; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .formBox {
+      width: 80%;
+      margin-right: auto; } }
   .formBox form {
     display: -webkit-flex;
     display: -moz-flex;

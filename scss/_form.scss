@@ -7,6 +7,10 @@
 		max-width: (548/$mainFontSize)*1em;
 		@include flex;
 		align-items:center;
+        @include respond-to(tablet){
+            width: 80%;
+            margin-right:auto;
+        }
 		form{
 			@include flex;
     		flex-direction: column;

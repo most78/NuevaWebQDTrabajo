@@ -73,3 +73,18 @@
   &:focus::-moz-placeholder           {@content}
   &:focus:-ms-input-placeholder       {@content}
 }
+$break-small: 320px;
+$break-medium:768px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == movil {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-medium) { @content; }
+  }
+  @else if $media == monitor {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}

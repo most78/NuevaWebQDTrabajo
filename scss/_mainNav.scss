@@ -36,6 +36,10 @@ nav{
       }
       li{
     		margin: 0 (19/$mainFontSize)*1em;
+          @include respond-to(tablet){
+            margin: 0 (8/$mainFontSize)*1em;
+          }
+
     		&.menu_item_current{
     			border-width:2px 0 0 2px;
     			a{
