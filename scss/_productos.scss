@@ -1,8 +1,15 @@
 .productosBox{
 	background:white;
 	@include flex;
-	//padding:(73/16)*1em;
 	min-height:1064px;
+	@include respond-to(tablet){
+		min-height: initial;
+		padding:(45/$mainFontSize)*1em 0 0;
+		.wrapper{
+			width: 100%;
+			flex-direction: column;
+		}
+	}
 	.macBackground{
 		@include flex;
 		width: 50%;
@@ -13,13 +20,29 @@
 		background-repeat:no-repeat;
 		min-height: 740px;
 		position:relative;
+		@include respond-to(tablet){
+			width: 100%;
+			background-image:none;
+			justify-content: flex-start;
+			align-items:center;
+			min-height: initial;
+			padding-bottom:(16/$mainFontSize)*1em;
+			z-index: 5;
+			@include homeTitlesAfter(white);
+			&:after{
+				bottom:(-24/$mainFontSize)*1em;
+			}
+		}
 		.mainClaim{
-			@include mainClaim((28/16)*1em);
+			@include mainClaim((28/$mainFontSize)*1em);
 			color: $mainColor;
 			text-align: left;
+			@include respond-to(tablet){
+				text-align: center;
+			}
 		}
 		.secondaryClaim{
-			@include secondaryClaim((15/16)*1em, $secondaryFont);
+			@include secondaryClaim((15/$mainFontSize)*1em, $secondaryFont);
 			color: $mainColor;
 			text-align: left;
 			margin-top: 0.1em;
@@ -27,8 +50,11 @@
 		}
 		.button{
 			@include buttom(2px, $secondaryColor);
-			font-size: (30/16)*1em;
+			font-size: (30/$mainFontSize)*1em;
 			width: 45%;
+			@include respond-to(tablet){
+				display: none;
+			}
 		}
 	}
 	.contenedorProducto{
@@ -37,12 +63,33 @@
 		width: 50%;
 		background:url(../img/curva-home.png) no-repeat 24% center;
 		position:relative;
-		top:3em;
+		top:(48/$mainFontSize)*1em;
+		@include respond-to(tablet){
+			width: 100%;
+			background:none;
+			top:0em;
+		}
 		.producto{
 			@include flex;
 			flex-direction: row;
 			padding-left: 8%;
 			position:relative;
+			@include respond-to(tablet){
+				top:0!important;
+				left: 0!important;
+				padding:(30/$mainFontSize)*1em 8%;
+				@include homeTitlesAfter(white);
+				&:after{
+					bottom:(-24/$mainFontSize)*1em;
+				}
+				&:nth-child(even){
+					z-index: 5;
+				}
+				&:nth-child(odd){
+					background:#e2e2e2;
+					@include homeTitlesAfter(#e2e2e2);
+				}
+			}
 			&:first-child{
 				-webkit-transition-delay: 2s; /* Safari */
     			transition-delay: 2s;
@@ -87,6 +134,11 @@
     			justify-content: center;
     			min-width: 150px;
     			border:4px solid #cecece;
+    			@include respond-to(tablet){
+    				width: 106px;
+    				height: 106px;
+    				min-width: 106px;
+    			}
 			}
 			.textoProducto {
     			display: flex;
@@ -94,11 +146,17 @@
     			width: 58%;
     			margin-left: 5%;
     			justify-content: center;
+    			@include respond-to(tablet){
+    				width: 100%;
+    			}
 				.mainClaim{
-				@include mainClaim((22/16)*1em);
+				@include mainClaim((22/$mainFontSize)*1em);
 				color: $mainColor;
 				text-align:left;
 				margin-bottom: 0.5em;
+					@include respond-to(tablet){
+					font-size: (20/$mainFontSize)*1em;
+					}
 				}
 				p{
 					font-family: $secondaryFont;

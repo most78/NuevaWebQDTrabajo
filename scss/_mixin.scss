@@ -39,6 +39,9 @@
         border-right: 50px solid transparent;
         border-top: 50px solid $color;
         right: 47.4%;
+        @include respond-to(tablet){
+          right: 45%;
+        }
     }
 }
 @mixin mainClaim($font-size){

@@ -16,11 +16,20 @@
 	.heroClaim{
 		@include homeTitles($mainColor,(42/16)*1em);
 		@include homeTitlesAfter($mainColor);
+		@include respond-to(tablet){
+			margin-top: 0;
+		}
 		.mainClaim{
-			@include mainClaim((50/16)*1em);
+			@include mainClaim((50/$mainFontSize)*1em);
+			@include respond-to(tablet){
+				font-size: (31/$mainFontSize)*1em;
+			}
 		}
 		.secondaryClaim{
-			@include secondaryClaim((34/16)*1em, $mainFont);
+			@include secondaryClaim((34/$mainFontSize)*1em, $mainFont);
+			@include respond-to(tablet){
+				font-size: (19/$mainFontSize)*1em;
+			}
 			strong{
 				@extend .mainClaim;
 				font-size: (50/34)*1em;

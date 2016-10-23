@@ -140,12 +140,21 @@ nav {
       border-right: 50px solid transparent;
       border-top: 50px solid #404e5b;
       right: 47.4%; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .heroShot .heroClaim:after {
+          right: 45%; } }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .heroShot .heroClaim {
+        margin-top: 0; } }
     .heroShot .heroClaim .mainClaim, .heroShot .heroClaim .secondaryClaim strong {
       font-family: "Oswald", sans-serif;
       font-size: 3.125em;
       color: white;
       text-align: center;
       text-transform: uppercase; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .heroShot .heroClaim .mainClaim, .heroShot .heroClaim .secondaryClaim strong {
+          font-size: 1.9375em; } }
     .heroShot .heroClaim .secondaryClaim {
       font-family: "Oswald", sans-serif;
       font-weight: 300;
@@ -154,6 +163,9 @@ nav {
       text-align: center;
       text-transform: uppercase;
       line-height: 1.1em; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .heroShot .heroClaim .secondaryClaim {
+          font-size: 1.1875em; } }
       .heroShot .heroClaim .secondaryClaim strong {
         font-size: 1.47059em;
         font-weight: 400; }
@@ -176,7 +188,8 @@ nav {
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .formBox {
       width: 80%;
-      margin-right: auto; } }
+      margin-right: auto;
+      margin-top: 3.1875em; } }
   .formBox form {
     display: -webkit-flex;
     display: -moz-flex;
@@ -311,6 +324,13 @@ nav {
   display: -o-flex;
   display: flex;
   min-height: 1064px; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .productosBox {
+      min-height: initial;
+      padding: 2.8125em 0 0; }
+      .productosBox .wrapper {
+        width: 100%;
+        flex-direction: column; } }
   .productosBox .macBackground {
     display: -webkit-flex;
     display: -moz-flex;
@@ -325,6 +345,30 @@ nav {
     background-repeat: no-repeat;
     min-height: 740px;
     position: relative; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .productosBox .macBackground {
+        width: 100%;
+        background-image: none;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: initial;
+        padding-bottom: 1em;
+        z-index: 5; }
+        .productosBox .macBackground:after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-top: 50px solid white;
+          right: 47.4%; } }
+    @media only screen and (min-width: 321px) and (max-width: 768px) and (min-width: 321px) and (max-width: 768px) {
+      .productosBox .macBackground:after {
+        right: 45%; } }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .productosBox .macBackground:after {
+          bottom: -1.5em; } }
     .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
       font-family: "Oswald", sans-serif;
       font-size: 1.75em;
@@ -333,6 +377,9 @@ nav {
       text-transform: uppercase;
       color: #404e5b;
       text-align: left; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
+          text-align: center; } }
     .productosBox .macBackground .secondaryClaim {
       font-family: "Muli", sans-serif;
       font-weight: 300;
@@ -363,6 +410,9 @@ nav {
       text-decoration: none;
       font-size: 1.875em;
       width: 45%; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .productosBox .macBackground .button {
+          display: none; } }
   .productosBox .contenedorProducto {
     display: -webkit-flex;
     display: -moz-flex;
@@ -374,6 +424,11 @@ nav {
     background: url(../img/curva-home.png) no-repeat 24% center;
     position: relative;
     top: 3em; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .productosBox .contenedorProducto {
+        width: 100%;
+        background: none;
+        top: 0em; } }
     .productosBox .contenedorProducto .producto {
       display: -webkit-flex;
       display: -moz-flex;
@@ -383,6 +438,43 @@ nav {
       flex-direction: row;
       padding-left: 8%;
       position: relative; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .productosBox .contenedorProducto .producto {
+          top: 0 !important;
+          left: 0 !important;
+          padding: 1.875em 8%; }
+          .productosBox .contenedorProducto .producto:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid white;
+            right: 47.4%; } }
+    @media only screen and (min-width: 321px) and (max-width: 768px) and (min-width: 321px) and (max-width: 768px) {
+      .productosBox .contenedorProducto .producto:after {
+        right: 45%; } }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+          .productosBox .contenedorProducto .producto:after {
+            bottom: -1.5em; }
+          .productosBox .contenedorProducto .producto:nth-child(even) {
+            z-index: 5; }
+          .productosBox .contenedorProducto .producto:nth-child(odd) {
+            background: #e2e2e2; }
+            .productosBox .contenedorProducto .producto:nth-child(odd):after {
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 0;
+              border-left: 50px solid transparent;
+              border-right: 50px solid transparent;
+              border-top: 50px solid #e2e2e2;
+              right: 47.4%; } }
+      @media only screen and (min-width: 321px) and (max-width: 768px) and (min-width: 321px) and (max-width: 768px) {
+        .productosBox .contenedorProducto .producto:nth-child(odd):after {
+          right: 45%; } }
+
       .productosBox .contenedorProducto .producto:first-child {
         -webkit-transition-delay: 2s;
         /* Safari */
@@ -420,12 +512,20 @@ nav {
         justify-content: center;
         min-width: 150px;
         border: 4px solid #cecece; }
+        @media only screen and (min-width: 321px) and (max-width: 768px) {
+          .productosBox .contenedorProducto .producto .circle {
+            width: 106px;
+            height: 106px;
+            min-width: 106px; } }
       .productosBox .contenedorProducto .producto .textoProducto {
         display: flex;
         flex-direction: column;
         width: 58%;
         margin-left: 5%;
         justify-content: center; }
+        @media only screen and (min-width: 321px) and (max-width: 768px) {
+          .productosBox .contenedorProducto .producto .textoProducto {
+            width: 100%; } }
         .productosBox .contenedorProducto .producto .textoProducto .mainClaim, .productosBox .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .contenedorProducto .producto .textoProducto strong {
           font-family: "Oswald", sans-serif;
           font-size: 1.375em;
@@ -435,6 +535,9 @@ nav {
           color: #404e5b;
           text-align: left;
           margin-bottom: 0.5em; }
+          @media only screen and (min-width: 321px) and (max-width: 768px) {
+            .productosBox .contenedorProducto .producto .textoProducto .mainClaim, .productosBox .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .contenedorProducto .producto .textoProducto strong {
+              font-size: 1.25em; } }
         .productosBox .contenedorProducto .producto .textoProducto p {
           font-family: "Muli", sans-serif;
           font-size: 1em;
@@ -454,6 +557,9 @@ nav {
     border-right: 50px solid transparent;
     border-top: 50px solid #404e5b;
     right: 47.4%; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .blogSection:after {
+        right: 45%; } }
   .blogSection:after {
     bottom: -1em;
     border-left: 22px solid transparent;
@@ -477,6 +583,9 @@ nav {
       border-right: 50px solid transparent;
       border-top: 50px solid #991359;
       right: 47.4%; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .blogSection .headerBlogSection:after {
+          right: 45%; } }
     .blogSection .headerBlogSection .mainClaim, .blogSection .headerBlogSection .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .blogSection .headerBlogSection strong {
       font-family: "Oswald", sans-serif;
       font-size: 2.25em;
