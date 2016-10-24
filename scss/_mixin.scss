@@ -29,19 +29,18 @@
     padding:(31/16)*1em 0;
     margin-top: $margin;
 }
-@mixin homeTitlesAfter($color){
+@mixin homeTitlesAfter($color, $triangleSize){
   &:after{
       position: absolute;
         content: "";
         width: 0;
         height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-top: 50px solid $color;
-        right: 47.4%;
-        @include respond-to(tablet){
-          right: 45%;
-        }
+        border-left: $triangleSize solid transparent;
+        border-right: $triangleSize solid transparent;
+        border-top: $triangleSize solid $color;
+        right: calc(50% - #{$triangleSize});
+        right: -webkit-calc(50% - #{$triangleSize});
+        right: -moz-calc(50% - #{$triangleSize});
     }
 }
 @mixin mainClaim($font-size){

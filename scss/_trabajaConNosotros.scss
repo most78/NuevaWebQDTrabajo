@@ -1,6 +1,11 @@
 .nuestroEquipo{
 	background:#fff url(../img/trabaja_con_nosotros.png) no-repeat;
 	background-position:right;
+	padding:(70/$mainFontSize)*1em 0;
+	@include respond-to(tablet){
+		background-image:none;
+		padding:(48/$mainFontSize)*1em 0;
+	}
 	@include flex;
 	justify-content:center;
 	.wrapper{
@@ -8,7 +13,6 @@
 		.mainClaim{
 			@include mainClaim((36/16)*1em);
 			color: $mainColor;
-			margin-top: 1em;
 		}
 		.secondaryClaim{
 			@include secondaryClaim((18/16)*1em, $secondaryFont);
@@ -25,7 +29,6 @@
 		.button{
 			@include buttom(2px,$secondaryColor);
 			font-size: (30/16)*1em;
-			margin-bottom: 1em;
 		}
 	}
 }

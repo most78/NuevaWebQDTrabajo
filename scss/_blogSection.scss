@@ -1,22 +1,17 @@
 .blogSection{
 	width: 100%;
-    display: flex;
+    @include flex;
     flex-direction: column;
     position:relative;
-    @include homeTitlesAfter($mainColor);
-    &:after{
-    	bottom:-1em;
-        border-left: 22px solid transparent;
-        border-right: 22px solid transparent;
-        border-top: 22px solid $mainColor;
-        right: 48.8%;
-        bottom:-18px;
-    }
+    @include homeTitlesAfter($mainColor, 22px);
+            &:after{
+            bottom:(-20/$mainFontSize)*1em;
+        }
+
 	.headerBlogSection{
 		z-index: 5;
 		@include homeTitles($secondaryColor, 0em);
-		@include homeTitlesAfter($secondaryColor);
-
+		@include homeTitlesAfter($secondaryColor, 50px);
 		.mainClaim{
 			@include mainClaim((36/16)*1em);
 		}
@@ -32,12 +27,19 @@
     	margin: 0;
     	padding: 0;
     	border-bottom: 4px solid $mainColor;
+        @include respond-to(tablet){
+            display:block; 
+        }
     	.lastPost{
     		position: relative;
     		width: 25%;
     		margin: 0;
     		padding: 0;
     		box-sizing: border-box;
+            @include respond-to(tablet){
+                float: left;
+                width: 50%;
+            }
     		&:before{
     			content: "";
     			background:rgba($mainColor, 0.6);

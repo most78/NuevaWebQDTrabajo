@@ -14,8 +14,8 @@
 		}
 	}
 	.heroClaim{
-		@include homeTitles($mainColor,(42/16)*1em);
-		@include homeTitlesAfter($mainColor);
+		@include homeTitles(darken($mainColor,10),(42/16)*1em);
+		@include homeTitlesAfter(darken($mainColor,10), 50px);
 		@include respond-to(tablet){
 			margin-top: 0;
 		}

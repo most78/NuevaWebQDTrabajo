@@ -1,7 +1,7 @@
 
 footer{
 	width: 100%;
-	background-color: darken($mainColor, 10%);
+	background-color: $mainColor;
 	@include flex;
     justify-content: center;
     height: 332px;
