@@ -29,6 +29,11 @@
     padding:(31/16)*1em 0;
     margin-top: $margin;
 }
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
 @mixin homeTitlesAfter($color, $triangleSize){
   &:after{
       position: absolute;
@@ -38,9 +43,7 @@
         border-left: $triangleSize solid transparent;
         border-right: $triangleSize solid transparent;
         border-top: $triangleSize solid $color;
-        right: calc(50% - #{$triangleSize});
-        right: -webkit-calc(50% - #{$triangleSize});
-        right: -moz-calc(50% - #{$triangleSize});
+        @include calc(right, '50%-$triangleSize');
     }
 }
 @mixin mainClaim($font-size){
@@ -81,10 +84,13 @@ $break-large: 1024px;
 
 @mixin respond-to($media) {
   @if $media == movil {
-    @media only screen and (min-width: $break-small) and (max-width: $break-medium - 1) { @content; }
+    @media only screen and (min-width: $break-small - 1) and (max-width: $break-medium - 1) { @content; }
+  }
+  @else if $media == fablet{
+    @media only screen and (min-width: $break-small - 1) and (max-width: $break-large - 1) { @content; }
   }
   @else if $media == tablet {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-medium) { @content; }
+    @media only screen and (min-width: $break-medium) and (max-width: $break-large - 1) { @content; }
   }
   @else if $media == monitor {
     @media only screen and (min-width: $break-large) { @content; }

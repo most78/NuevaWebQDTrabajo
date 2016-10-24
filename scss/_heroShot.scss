@@ -6,7 +6,10 @@
 	align-items:center;
 	flex-direction:column;
 	@include respond-to(movil){
+		background:url(../img/movileBackground.png);
 		flex-direction: column-reverse;
+		background-position: 46% 11%;
+    	background-size: 113%;
 	}
 	.wrapper{
 		padding-top: 0;
@@ -14,6 +17,9 @@
 		@include respond-to(tablet){
 			width: 100%;
 			max-width: $break-medium;
+		}
+		@include respond-to(movil){
+			width: 100%;
 		}
 	}
 	.heroClaim{
@@ -23,6 +29,9 @@
 			margin-top: 0;
 		}
 		@include respond-to(movil){
+			@include calc(width, '100% - 20px');
+			background-color:rgba($mainColor, 0.7);
+			margin-top: (65/$mainFontSize)*1em;
 			&:after{display:none;}
 		}
 		.mainClaim{
@@ -30,17 +39,31 @@
 			@include respond-to(tablet){
 				font-size: (31/$mainFontSize)*1em;
 			}
+			@include respond-to(movil){
+				font-size: (26/$mainFontSize)*1em;
+				font-weight: bold;
+				padding:0 (36/26)*1em;
+			}
 		}
 		.secondaryClaim{
 			@include secondaryClaim((34/$mainFontSize)*1em, $mainFont);
 			@include respond-to(tablet){
 				font-size: (19/$mainFontSize)*1em;
 			}
+			@include respond-to(movil){
+				font-size: (16/$mainFontSize)*1em;
+				padding:9.5em 0 0;
+			}
 			strong{
 				@extend .mainClaim;
 				font-size: (50/34)*1em;
 				font-weight: 400;
-			} 
+				@include respond-to(movil){
+				font-size: (18/16)*1em;
+				padding:0;
+			}
+			}
+
 		}
 	}
 }

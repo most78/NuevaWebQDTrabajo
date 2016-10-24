@@ -83,13 +83,16 @@ nav {
     transform: translate(0em, 0px);
     transition-duration: 1s;
     transition-timing-function: ease-in; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      nav .fadeInRight {
+        display: none; } }
     nav .fadeInRight.translate {
       transform: translate(40em, 0px);
       transition-duration: 1s;
       transition-timing-function: ease-in; }
     nav .fadeInRight li {
       margin: 0 1.1875em; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
         nav .fadeInRight li {
           margin: 0 0.5em; } }
       nav .fadeInRight li.menu_item_current {
@@ -118,16 +121,22 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
     .heroShot {
-      flex-direction: column-reverse; } }
+      background: url(../img/movileBackground.png);
+      flex-direction: column-reverse;
+      background-position: 46% 11%;
+      background-size: 113%; } }
   .heroShot .wrapper {
     padding-top: 0;
     padding-bottom: 0; }
-    @media only screen and (min-width: 321px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .heroShot .wrapper {
         width: 100%;
         max-width: 768px; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .heroShot .wrapper {
+        width: 100%; } }
   .heroShot .heroClaim {
     background: #2b343d;
     width: 100%;
@@ -142,24 +151,35 @@ nav {
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-top: 50px solid #2b343d;
-      right: calc(50% - 50px);
-      right: -webkit-calc(50% - 50px);
-      right: -moz-calc(50% - 50px); }
-    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      right: -moz-calc(50%-$triangleSize);
+      right: -webkit-calc(50%-$triangleSize);
+      right: calc(50%-$triangleSize); }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .heroShot .heroClaim {
         margin-top: 0; } }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-      .heroShot .heroClaim:after {
-        display: none; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .heroShot .heroClaim {
+        width: -moz-calc(100% - 20px);
+        width: -webkit-calc(100% - 20px);
+        width: calc(100% - 20px);
+        background-color: rgba(64, 78, 91, 0.7);
+        margin-top: 4.0625em; }
+        .heroShot .heroClaim:after {
+          display: none; } }
     .heroShot .heroClaim .mainClaim, .heroShot .heroClaim .secondaryClaim strong {
       font-family: "Oswald", sans-serif;
       font-size: 3.125em;
       color: white;
       text-align: center;
       text-transform: uppercase; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .heroShot .heroClaim .mainClaim, .heroShot .heroClaim .secondaryClaim strong {
           font-size: 1.9375em; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .heroShot .heroClaim .mainClaim, .heroShot .heroClaim .secondaryClaim strong {
+          font-size: 1.625em;
+          font-weight: bold;
+          padding: 0 1.38462em; } }
     .heroShot .heroClaim .secondaryClaim {
       font-family: "Oswald", sans-serif;
       font-weight: 300;
@@ -168,12 +188,20 @@ nav {
       text-align: center;
       text-transform: uppercase;
       line-height: 1.1em; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .heroShot .heroClaim .secondaryClaim {
           font-size: 1.1875em; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .heroShot .heroClaim .secondaryClaim {
+          font-size: 1em;
+          padding: 9.5em 0 0; } }
       .heroShot .heroClaim .secondaryClaim strong {
         font-size: 1.47059em;
         font-weight: 400; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .heroShot .heroClaim .secondaryClaim strong {
+            font-size: 1.125em;
+            padding: 0; } }
 
 .formBox {
   background: #991359;
@@ -190,14 +218,15 @@ nav {
   display: -o-flex;
   display: flex;
   align-items: center; }
-  @media only screen and (min-width: 321px) and (max-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .formBox {
       width: 80%;
       margin-right: auto;
       margin-top: 3.1875em; } }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
     .formBox {
-      width: 100%; } }
+      width: 100%;
+      margin-top: 0.625em; } }
   .formBox form {
     display: -webkit-flex;
     display: -moz-flex;
@@ -206,18 +235,27 @@ nav {
     display: flex;
     flex-direction: column;
     width: 78.46715%;
-    margin: auto; }
+    margin: auto;
+    padding: 2.5em 0; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .formBox form {
+        width: -moz-calc(100% - 20px);
+        width: -webkit-calc(100% - 20px);
+        width: calc(100% - 20px);
+        padding: 1.25em 0; } }
     .formBox form label {
       font-weight: 300;
       font-style: italic;
       font-family: "Muli", sans-serif;
       color: #fff; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .formBox form label {
+          font-size: 0.75em; } }
       .formBox form label a {
         color: #fff; }
     .formBox form input {
       width: 100%;
       border-radius: 2px;
-      margin-bottom: 20px;
       padding: 0;
       padding-left: 1em;
       border-width: 0px;
@@ -228,11 +266,20 @@ nav {
       color: #ccc;
       font-size: 1.5em;
       background: #eee;
+      margin: 0.41667em 0;
       box-sizing: border-box; }
+      .formBox form input[name="firstname"] {
+        margin-top: 1.66667em; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .formBox form input[name="firstname"] {
+            margin-top: 1em; } }
       .formBox form input[type="checkbox"] {
         width: 18px;
         height: 18px;
-        margin: 0 9px 0 0; }
+        margin-bottom: 0; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .formBox form input[type="checkbox"] {
+            margin-top: 0; } }
         .formBox form input[type="checkbox"]:checked + label {
           opacity: 0.2;
           transition: opacity 1s ease; }
@@ -270,15 +317,19 @@ nav {
         transition: opacity 0.5s ease-in-out; }
     .formBox form legend {
       color: white;
-      display: inline-block;
       text-align: center;
       font-family: "Muli", sans-serif;
-      font-size: 1.125em;
-      margin: 1.88889em 0; }
+      font-size: 1.125em; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .formBox form legend {
+          font-size: 0.875em; } }
       .formBox form legend span {
         font-family: "Oswald", sans-serif;
         font-size: 2em;
         text-transform: uppercase; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .formBox form legend span {
+            font-size: 1.78571em; } }
         .formBox form legend span strong {
           font-weight: 700; }
     .formBox form .formButton {
@@ -296,8 +347,11 @@ nav {
       line-height: 1em;
       text-transform: uppercase;
       text-align: center;
-      text-decoration: none;
-      margin: 0.6em 0 1em; }
+      text-decoration: none; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .formBox form .formButton {
+          font-size: 1.375em;
+          margin-bottom: 0; } }
 
 .animation-element {
   opacity: 0;
@@ -332,13 +386,16 @@ nav {
   display: -o-flex;
   display: flex;
   min-height: 1064px; }
-  @media only screen and (min-width: 321px) and (max-width: 768px) {
+  @media only screen and (min-width: 319px) and (max-width: 1023px) {
     .productosBox {
       min-height: initial;
       padding: 2.8125em 0 0; }
       .productosBox .wrapper {
         width: 100%;
         flex-direction: column; } }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .productosBox {
+      padding: 0.8em; } }
   .productosBox .macBackground {
     display: -webkit-flex;
     display: -moz-flex;
@@ -353,7 +410,7 @@ nav {
     background-repeat: no-repeat;
     min-height: 740px;
     position: relative; }
-    @media only screen and (min-width: 321px) and (max-width: 768px) {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
       .productosBox .macBackground {
         width: 100%;
         background-image: none;
@@ -370,9 +427,9 @@ nav {
           border-left: 50px solid transparent;
           border-right: 50px solid transparent;
           border-top: 50px solid white;
-          right: calc(50% - 50px);
-          right: -webkit-calc(50% - 50px);
-          right: -moz-calc(50% - 50px); }
+          right: -moz-calc(50%-$triangleSize);
+          right: -webkit-calc(50%-$triangleSize);
+          right: calc(50%-$triangleSize); }
         .productosBox .macBackground:after {
           bottom: -1.5em; } }
     .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
@@ -383,8 +440,14 @@ nav {
       text-transform: uppercase;
       color: #404e5b;
       text-align: left; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
         .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
+          text-align: center; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
+          font-weight: 400;
+          font-size: 1.3125em;
+          line-height: 1.3em;
           text-align: center; } }
     .productosBox .macBackground .secondaryClaim {
       font-family: "Muli", sans-serif;
@@ -398,6 +461,11 @@ nav {
       text-align: left;
       margin-top: 0.1em;
       margin-bottom: 1.5em; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .productosBox .macBackground .secondaryClaim {
+          font-size: 0.75em;
+          text-align: center;
+          margin-top: 1em; } }
     .productosBox .macBackground .button {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
@@ -416,9 +484,10 @@ nav {
       text-decoration: none;
       font-size: 1.875em;
       width: 45%; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
         .productosBox .macBackground .button {
-          display: none; } }
+          width: 77%;
+          font-size: 1.3em; } }
   .productosBox .contenedorProducto {
     display: -webkit-flex;
     display: -moz-flex;
@@ -430,7 +499,7 @@ nav {
     background: url(../img/curva-home.png) no-repeat 24% center;
     position: relative;
     top: 3em; }
-    @media only screen and (min-width: 321px) and (max-width: 768px) {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
       .productosBox .contenedorProducto {
         width: 100%;
         background: none;
@@ -444,7 +513,7 @@ nav {
       flex-direction: row;
       padding-left: 8%;
       position: relative; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
         .productosBox .contenedorProducto .producto {
           top: 0 !important;
           left: 0 !important;
@@ -457,9 +526,9 @@ nav {
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
             border-top: 50px solid white;
-            right: calc(50% - 50px);
-            right: -webkit-calc(50% - 50px);
-            right: -moz-calc(50% - 50px); }
+            right: -moz-calc(50%-$triangleSize);
+            right: -webkit-calc(50%-$triangleSize);
+            right: calc(50%-$triangleSize); }
           .productosBox .contenedorProducto .producto:after {
             bottom: -1.5em; }
           .productosBox .contenedorProducto .producto:nth-child(even) {
@@ -474,9 +543,9 @@ nav {
               border-left: 50px solid transparent;
               border-right: 50px solid transparent;
               border-top: 50px solid #e2e2e2;
-              right: calc(50% - 50px);
-              right: -webkit-calc(50% - 50px);
-              right: -moz-calc(50% - 50px); } }
+              right: -moz-calc(50%-$triangleSize);
+              right: -webkit-calc(50%-$triangleSize);
+              right: calc(50%-$triangleSize); } }
       .productosBox .contenedorProducto .producto:first-child {
         -webkit-transition-delay: 2s;
         /* Safari */
@@ -514,7 +583,7 @@ nav {
         justify-content: center;
         min-width: 150px;
         border: 4px solid #cecece; }
-        @media only screen and (min-width: 321px) and (max-width: 768px) {
+        @media only screen and (min-width: 319px) and (max-width: 1023px) {
           .productosBox .contenedorProducto .producto .circle {
             width: 106px;
             height: 106px;
@@ -525,7 +594,7 @@ nav {
         width: 58%;
         margin-left: 5%;
         justify-content: center; }
-        @media only screen and (min-width: 321px) and (max-width: 768px) {
+        @media only screen and (min-width: 319px) and (max-width: 1023px) {
           .productosBox .contenedorProducto .producto .textoProducto {
             width: 100%; } }
         .productosBox .contenedorProducto .producto .textoProducto .mainClaim, .productosBox .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .contenedorProducto .producto .textoProducto strong {
@@ -537,7 +606,7 @@ nav {
           color: #404e5b;
           text-align: left;
           margin-bottom: 0.5em; }
-          @media only screen and (min-width: 321px) and (max-width: 768px) {
+          @media only screen and (min-width: 319px) and (max-width: 1023px) {
             .productosBox .contenedorProducto .producto .textoProducto .mainClaim, .productosBox .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .contenedorProducto .producto .textoProducto strong {
               font-size: 1.25em; } }
         .productosBox .contenedorProducto .producto .textoProducto p {
@@ -562,9 +631,9 @@ nav {
     border-left: 22px solid transparent;
     border-right: 22px solid transparent;
     border-top: 22px solid #404e5b;
-    right: calc(50% - 22px);
-    right: -webkit-calc(50% - 22px);
-    right: -moz-calc(50% - 22px); }
+    right: -moz-calc(50%-$triangleSize);
+    right: -webkit-calc(50%-$triangleSize);
+    right: calc(50%-$triangleSize); }
   .blogSection:after {
     bottom: -1.25em; }
   .blogSection .headerBlogSection {
@@ -582,9 +651,9 @@ nav {
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-top: 50px solid #991359;
-      right: calc(50% - 50px);
-      right: -webkit-calc(50% - 50px);
-      right: -moz-calc(50% - 50px); }
+      right: -moz-calc(50%-$triangleSize);
+      right: -webkit-calc(50%-$triangleSize);
+      right: calc(50%-$triangleSize); }
     .blogSection .headerBlogSection .mainClaim, .blogSection .headerBlogSection .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .blogSection .headerBlogSection strong {
       font-family: "Oswald", sans-serif;
       font-size: 2.25em;
@@ -611,19 +680,21 @@ nav {
     margin: 0;
     padding: 0;
     border-bottom: 4px solid #404e5b; }
-    @media only screen and (min-width: 321px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .blogSection .lastPostContainer {
-        display: block; } }
+        flex-wrap: wrap; } }
     .blogSection .lastPostContainer .lastPost {
       position: relative;
       width: 25%;
       margin: 0;
       padding: 0;
       box-sizing: border-box; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .blogSection .lastPostContainer .lastPost {
-          float: left;
           width: 50%; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .blogSection .lastPostContainer .lastPost {
+          width: 100%; } }
       .blogSection .lastPostContainer .lastPost:before {
         content: "";
         background: rgba(64, 78, 91, 0.6);
@@ -662,7 +733,7 @@ nav {
   display: -o-flex;
   display: flex;
   justify-content: center; }
-  @media only screen and (min-width: 321px) and (max-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .nuestroEquipo {
       background-image: none;
       padding: 3em 0; } }
@@ -685,13 +756,13 @@ nav {
       line-height: 1.1em;
       color: #404e5b;
       margin-bottom: 3.5em; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .nuestroEquipo .wrapper .secondaryClaim {
           margin-bottom: 2.16667em; } }
     .nuestroEquipo .wrapper article {
       width: 35.13909%;
       font-family: "Muli", sans-serif; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .nuestroEquipo .wrapper article {
           width: 100%;
           display: -webkit-flex;
@@ -744,7 +815,7 @@ footer {
       border-bottom: 1px dotted #556879;
       justify-content: space-around;
       padding: 10px 0 20px; }
-      @media only screen and (min-width: 321px) and (max-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
         footer .wrapper .footer_logo_section .footer_logo_section li:nth-child(2), footer .wrapper .footer_redes .legal .footer_logo_section li:nth-child(2), footer .wrapper .footer_logo_section .footer_redes .legal li:nth-child(2), footer .wrapper .footer_redes .footer_logo_section .legal li:nth-child(2), footer .wrapper .footer_redes .legal .legal li:nth-child(2) {
           margin-left: 1%; } }
       footer .wrapper .footer_logo_section .logoSolocal, footer .wrapper .footer_redes .legal .logoSolocal {
@@ -752,7 +823,7 @@ footer {
       footer .wrapper .footer_logo_section img, footer .wrapper .footer_redes .legal img {
         opacity: 0.2;
         transition: opacity 0.5s linear; }
-        @media only screen and (min-width: 321px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
           footer .wrapper .footer_logo_section img, footer .wrapper .footer_redes .legal img {
             width: 95%; } }
         footer .wrapper .footer_logo_section img:hover, footer .wrapper .footer_redes .legal img:hover {
@@ -861,6 +932,9 @@ body {
 
 .invisible {
   opacity: 0; }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .invisible {
+      opacity: 1; } }
 
 .visible {
   opacity: 1; }

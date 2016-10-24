@@ -14,17 +14,26 @@
         }
         @include respond-to(movil){
             width: 100%;
+            margin-top: (10/$mainFontSize)*1em;
         }
 		form{
 			@include flex;
     		flex-direction: column;
     		width: (430/548)*100%;
     		margin: auto;
+            padding:(40/$mainFontSize)*1em 0;
+            @include respond-to(movil){
+                @include calc(width, '100% - 20px');
+                padding:(20/$mainFontSize)*1em 0;
+            }
     		label{
     			font-weight: 300;
     			font-style: italic;
     			font-family: $secondaryFont;
                 color: #fff;
+                @include respond-to(movil){
+                    font-size: (12/$mainFontSize)*1em;
+                }
                 a{
                     color: #fff;
                 }
@@ -32,7 +41,6 @@
     		input{
     			width: 100%;
     			border-radius: 2px;
-    			margin-bottom: 20px;
     			padding: 0;
     			padding-left: 1em;
     			border-width: 0px;
@@ -43,11 +51,21 @@
     			color: #ccc;
     			font-size: (24/$mainFontSize)*1em;
     			background:#eee;
+                margin: (10/24)*1em 0;
     			box-sizing:border-box;
+                &[name="firstname"]{
+                    margin-top: (40/24)*1em;
+                    @include respond-to(movil){
+                        margin-top: 1em;
+                    }
+                }
     			&[type="checkbox"]{
     				width: 18px;
     				height: 18px;
-    				margin: 0 9px 0 0;
+    				margin-bottom: 0;
+                    @include respond-to(movil){
+                        margin-top: 0;
+                    }
                     &:checked+label{
                         opacity: 0.2;
                         transition: opacity 1s ease;
@@ -71,15 +89,19 @@
     		}
     		legend{
     			color: white;
-    			display: inline-block;
     			text-align: center;
     			font-family: $secondaryFont;
     			font-size: (18/$mainFontSize)*1em;
-    			margin: (34/18)*1em 0;
+                @include respond-to(movil){
+                    font-size: (14/$mainFontSize)*1em;
+                }
     			span {
     				font-family: $mainFont;
     				font-size: (36/18)*1em;
     				text-transform: uppercase;
+                    @include respond-to(movil){
+                        font-size: (25/14)*1em;
+                        }
     				strong{
     					font-weight: 700;
     				}
@@ -87,7 +109,10 @@
     		}
     		.formButton{
     			@include buttom(2px, $black);
-    			margin: 0.6em 0 1em;
+                @include respond-to(movil){
+                    font-size: (22/$mainFontSize)*1em;
+                    margin-bottom: 0;
+                }
     		}
 		}
 	}

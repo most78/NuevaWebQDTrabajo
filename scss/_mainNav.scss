@@ -21,6 +21,9 @@ nav{
       }
     }
   .fadeInRight{
+    @include respond-to(movil){
+      display: none;
+    }
    		@include flex;
     	flex-wrap: wrap;
     	justify-content: flex-end;

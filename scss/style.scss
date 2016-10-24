@@ -26,6 +26,9 @@ body{
 }
 .invisible{
      opacity:0;
+     @include respond-to(movil){
+     	opacity: 1;
+    }
 }
 .visible{
      opacity:1;
