@@ -14,12 +14,20 @@ footer{
 			border-bottom: 1px dotted lighten($mainColor, 10%);
 			justify-content: space-around;
 			padding:10px 0 20px;
+			@include respond-to(tablet){
+				.footer_logo_section li:nth-child(2){
+						margin-left: 1%;
+				}
+			}
 			.logoSolocal{
 				border-right: 1px solid rgba(255, 255, 255, 0.21);
 			}
 			img{
 				opacity: 0.2;
 				transition:opacity 0.5s linear;
+				@include respond-to(tablet){
+					width: 95%;
+				}
 				&:hover{
 
 					opacity: 1;

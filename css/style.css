@@ -118,6 +118,9 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .heroShot {
+      flex-direction: column-reverse; } }
   .heroShot .wrapper {
     padding-top: 0;
     padding-bottom: 0; }
@@ -145,6 +148,9 @@ nav {
     @media only screen and (min-width: 321px) and (max-width: 768px) {
       .heroShot .heroClaim {
         margin-top: 0; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .heroShot .heroClaim:after {
+        display: none; } }
     .heroShot .heroClaim .mainClaim, .heroShot .heroClaim .secondaryClaim strong {
       font-family: "Oswald", sans-serif;
       font-size: 3.125em;
@@ -189,6 +195,9 @@ nav {
       width: 80%;
       margin-right: auto;
       margin-top: 3.1875em; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .formBox {
+      width: 100%; } }
   .formBox form {
     display: -webkit-flex;
     display: -moz-flex;
@@ -676,9 +685,22 @@ nav {
       line-height: 1.1em;
       color: #404e5b;
       margin-bottom: 3.5em; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .nuestroEquipo .wrapper .secondaryClaim {
+          margin-bottom: 2.16667em; } }
     .nuestroEquipo .wrapper article {
       width: 35.13909%;
       font-family: "Muli", sans-serif; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .nuestroEquipo .wrapper article {
+          width: 100%;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
       .nuestroEquipo .wrapper article p {
         margin-bottom: 2em; }
     .nuestroEquipo .wrapper .button {
@@ -722,11 +744,17 @@ footer {
       border-bottom: 1px dotted #556879;
       justify-content: space-around;
       padding: 10px 0 20px; }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        footer .wrapper .footer_logo_section .footer_logo_section li:nth-child(2), footer .wrapper .footer_redes .legal .footer_logo_section li:nth-child(2), footer .wrapper .footer_logo_section .footer_redes .legal li:nth-child(2), footer .wrapper .footer_redes .footer_logo_section .legal li:nth-child(2), footer .wrapper .footer_redes .legal .legal li:nth-child(2) {
+          margin-left: 1%; } }
       footer .wrapper .footer_logo_section .logoSolocal, footer .wrapper .footer_redes .legal .logoSolocal {
         border-right: 1px solid rgba(255, 255, 255, 0.21); }
       footer .wrapper .footer_logo_section img, footer .wrapper .footer_redes .legal img {
         opacity: 0.2;
         transition: opacity 0.5s linear; }
+        @media only screen and (min-width: 321px) and (max-width: 768px) {
+          footer .wrapper .footer_logo_section img, footer .wrapper .footer_redes .legal img {
+            width: 95%; } }
         footer .wrapper .footer_logo_section img:hover, footer .wrapper .footer_redes .legal img:hover {
           opacity: 1; }
     footer .wrapper .footer_redes {

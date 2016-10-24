@@ -12,6 +12,9 @@
             margin-right:auto;
             margin-top: (51/$mainFontSize)*1em;
         }
+        @include respond-to(movil){
+            width: 100%;
+        }
 		form{
 			@include flex;
     		flex-direction: column;

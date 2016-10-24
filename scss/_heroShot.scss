@@ -5,6 +5,9 @@
 	@include flex;
 	align-items:center;
 	flex-direction:column;
+	@include respond-to(movil){
+		flex-direction: column-reverse;
+	}
 	.wrapper{
 		padding-top: 0;
 		padding-bottom: 0;
@@ -18,6 +21,9 @@
 		@include homeTitlesAfter(darken($mainColor,10), 50px);
 		@include respond-to(tablet){
 			margin-top: 0;
+		}
+		@include respond-to(movil){
+			&:after{display:none;}
 		}
 		.mainClaim{
 			@include mainClaim((50/$mainFontSize)*1em);
