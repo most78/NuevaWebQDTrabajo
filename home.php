@@ -6,7 +6,7 @@
 				<form action="">
 				<fieldset>
 				<legend>
-					Si quieres mas información o asesoriamiento<span> Llama gratis al <strong>900 100 314</strong></span> o rellena nuestro formulario y nosotros nos pondremos en contacto contigo
+					Si quieres mas información o asesoriamiento</br><span> Llama gratis al <strong>900 100 314</strong></span></br> o rellena nuestro formulario y nosotros nos pondremos en contacto contigo
 				</legend>
 					<input type="text" name="firstname" placeholder="Nombre">
 					<input type="tel" name="telephone" placeholder="Teléfono">
@@ -78,15 +78,22 @@
   			$entradas = $raiz->getElementsByTagName('item');
   			for($i=0;$i<4;$i++){
     		$titulo = $entradas->item($i)->getElementsByTagName('title')->item(0)->nodeValue;
-    		$vinculo = $entradas->item($i)->getElementsByTagName('link')->item(0)->nodeValue;
+    		// $vinculo = $entradas->item($i)->getElementsByTagName('link')->item(0)->nodeValue;
     		$fecha = $entradas->item($i)->getElementsByTagName('pubDate')->item(0)->nodeValue;
     		$fecha_unix = strtotime($fecha);
     		$fecha = strftime("%d/%m/%Y",$fecha_unix);
     		$post_content = $entradas->item($i)->getElementsByTagName('encoded')->item(0)->nodeValue;
+
+    		// Get the img url
     		$matches = [];
     		preg_match_all("/<img [^>]+>/", $post_content, $matches);
     		$img = $matches[0][0];
-    		echo '<li class="lastPost"><a href="'.$vinculo.'"title="'.$titulo.'"><h3 class="lastPostTitle">'.$titulo.'</h3><figure>'.$img.'</figure></a></li>';
+
+    		// Get the QDQ blog entry URL
+    		preg_match_all("/<a [^>]*href=\"(https?:\/\/www.qdqmedia.com\/blog\/[^\"]+)\"[^>]*>[^><]+<\/a>/", $post_content, $matches);
+    		$vinculo = $matches[1][0];
+
+    		echo '<li class="lastPost"><a href="'.$vinculo.'"title="'.$titulo.'"><figcaption class="overlay"><h3 class="lastPostTitle">'.$titulo.'</h3></figcaption><figure>'.$img.'</figure></a></li>';
     	  }
 		?>
 		</ul>

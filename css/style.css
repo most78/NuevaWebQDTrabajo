@@ -21,10 +21,8 @@ time, mark, audio, video {
 /*Main Header*/
 header {
   background: rgba(64, 78, 91, 0.9);
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -43,10 +41,8 @@ header {
     transition: background-color 0.5s ease; }
 
 nav {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
@@ -58,10 +54,8 @@ nav {
     height: 2em;
     background: #35414c;
     cursor: pointer;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,10 +65,8 @@ nav {
       color: white;
       font-size: 0.9375em; }
   nav .fadeInRight {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -114,10 +106,8 @@ nav {
 .heroShot {
   background: url(../img/chromeBackground.jpg);
   background-size: cover;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -151,9 +141,9 @@ nav {
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-top: 50px solid #2b343d;
-      right: -moz-calc(50%-$triangleSize);
-      right: -webkit-calc(50%-$triangleSize);
-      right: calc(50%-$triangleSize); }
+      right: -moz-calc(50% - 50px);
+      right: -webkit-calc(50% - 50px);
+      right: calc(50% - 50px); }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .heroShot .heroClaim {
         margin-top: 0; } }
@@ -193,8 +183,8 @@ nav {
           font-size: 1.1875em; } }
       @media only screen and (min-width: 319px) and (max-width: 767px) {
         .heroShot .heroClaim .secondaryClaim {
-          font-size: 1em;
-          padding: 9.5em 0 0; } }
+          font-size: 2.3vh;
+          padding: 7em 1em 0; } }
       .heroShot .heroClaim .secondaryClaim strong {
         font-size: 1.47059em;
         font-weight: 400; }
@@ -212,10 +202,8 @@ nav {
   margin-top: 5.9375em;
   box-sizing: border-box;
   max-width: 34.25em;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -225,13 +213,13 @@ nav {
       margin-top: 3.1875em; } }
   @media only screen and (min-width: 319px) and (max-width: 767px) {
     .formBox {
-      width: 100%;
-      margin-top: 0.625em; } }
+      width: -moz-calc(100% - 20px);
+      width: -webkit-calc(100% - 20px);
+      width: calc(100% - 20px);
+      margin: 0.625em auto; } }
   .formBox form {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     width: 78.46715%;
@@ -239,10 +227,8 @@ nav {
     padding: 2.5em 0; }
     @media only screen and (min-width: 319px) and (max-width: 767px) {
       .formBox form {
-        width: -moz-calc(100% - 20px);
-        width: -webkit-calc(100% - 20px);
-        width: calc(100% - 20px);
-        padding: 1.25em 0; } }
+        width: 100%;
+        padding: 1.25em 1em; } }
     .formBox form label {
       font-weight: 300;
       font-style: italic;
@@ -250,7 +236,7 @@ nav {
       color: #fff; }
       @media only screen and (min-width: 319px) and (max-width: 767px) {
         .formBox form label {
-          font-size: 0.75em; } }
+          font-size: 0.6875em; } }
       .formBox form label a {
         color: #fff; }
     .formBox form input {
@@ -259,15 +245,19 @@ nav {
       padding: 0;
       padding-left: 1em;
       border-width: 0px;
-      border-style: outset;
-      line-height: 2.5em;
+      line-height: 2em;
+      height: 2em;
+      vertical-align: middle;
+      font-size: 2em;
       vertical-align: middle;
       font-family: "Oswald", sans-serif;
       color: #ccc;
-      font-size: 1.5em;
       background: #eee;
       margin: 0.41667em 0;
       box-sizing: border-box; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .formBox form input {
+          font-size: 1em; } }
       .formBox form input[name="firstname"] {
         margin-top: 1.66667em; }
         @media only screen and (min-width: 319px) and (max-width: 767px) {
@@ -288,21 +278,37 @@ nav {
         transition: background .3s ease-in-out;
         outline: 0; }
       .formBox form input::-webkit-input-placeholder {
+        font-size: 1em;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         transition: opacity 0.35s ease-in-out; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .formBox form input::-webkit-input-placeholder {
+            font-size: 1em; } }
       .formBox form input:-moz-placeholder {
+        font-size: 1em;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         transition: opacity 0.35s ease-in-out; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .formBox form input:-moz-placeholder {
+            font-size: 1em; } }
       .formBox form input::-moz-placeholder {
+        font-size: 1em;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         transition: opacity 0.35s ease-in-out; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .formBox form input::-moz-placeholder {
+            font-size: 1em; } }
       .formBox form input:-ms-input-placeholder {
+        font-size: 1em;
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         transition: opacity 0.35s ease-in-out; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .formBox form input:-ms-input-placeholder {
+            font-size: 1em; } }
       .formBox form input:focus::-webkit-input-placeholder {
         opacity: 0.2;
         transition: opacity 0.5s ease-in-out; }
@@ -319,17 +325,18 @@ nav {
       color: white;
       text-align: center;
       font-family: "Muli", sans-serif;
-      font-size: 1.125em; }
+      font-size: 1.125em;
+      width: 100%; }
       @media only screen and (min-width: 319px) and (max-width: 767px) {
         .formBox form legend {
-          font-size: 0.875em; } }
+          font-size: 0.75em; } }
       .formBox form legend span {
         font-family: "Oswald", sans-serif;
         font-size: 2em;
         text-transform: uppercase; }
         @media only screen and (min-width: 319px) and (max-width: 767px) {
           .formBox form legend span {
-            font-size: 1.78571em; } }
+            font-size: 1.83333em; } }
         .formBox form legend span strong {
           font-weight: 700; }
     .formBox form .formButton {
@@ -347,7 +354,8 @@ nav {
       line-height: 1em;
       text-transform: uppercase;
       text-align: center;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-appearance: none; }
       @media only screen and (min-width: 319px) and (max-width: 767px) {
         .formBox form .formButton {
           font-size: 1.375em;
@@ -380,10 +388,8 @@ nav {
 
 .productosBox {
   background: white;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 1064px; }
   @media only screen and (min-width: 319px) and (max-width: 1023px) {
@@ -395,31 +401,144 @@ nav {
         flex-direction: column; } }
   @media only screen and (min-width: 319px) and (max-width: 767px) {
     .productosBox {
-      padding: 0.8em; } }
-  .productosBox .macBackground {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-image: url(../img/backgroundMac.png);
-    background-position: left top;
-    background-repeat: no-repeat;
-    min-height: 740px;
-    position: relative; }
+      padding: 0em; } }
+
+.macBackground {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(../img/backgroundMac.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  min-height: 740px;
+  position: relative; }
+  @media only screen and (min-width: 319px) and (max-width: 1023px) {
+    .macBackground {
+      width: 100%;
+      background-image: none;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: initial;
+      padding-bottom: 1em;
+      z-index: 5; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .macBackground:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 50px solid white;
+      right: -moz-calc(50% - 50px);
+      right: -webkit-calc(50% - 50px);
+      right: calc(50% - 50px); }
+    .macBackground:after {
+      bottom: -1.5em; } }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .macBackground {
+      padding: 1em;
+      box-sizing: border-box; }
+      .macBackground:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 25px solid white;
+        right: -moz-calc(50% - 25px);
+        right: -webkit-calc(50% - 25px);
+        right: calc(50% - 25px); }
+      .macBackground:after {
+        bottom: -1em; } }
+  .macBackground .mainClaim, .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .macBackground strong {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.75em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    color: #404e5b;
+    text-align: left; }
     @media only screen and (min-width: 319px) and (max-width: 1023px) {
-      .productosBox .macBackground {
-        width: 100%;
-        background-image: none;
-        justify-content: flex-start;
-        align-items: center;
-        min-height: initial;
-        padding-bottom: 1em;
-        z-index: 5; }
-        .productosBox .macBackground:after {
+      .macBackground .mainClaim, .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .macBackground strong {
+        text-align: center; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .macBackground .mainClaim, .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .macBackground strong {
+        font-weight: 400;
+        font-size: 1.3125em;
+        line-height: 1.3em;
+        text-align: center; } }
+  .macBackground .secondaryClaim {
+    font-family: "Muli", sans-serif;
+    font-weight: 300;
+    font-size: 0.9375em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    color: #404e5b;
+    text-align: left;
+    margin-top: 0.1em;
+    margin-bottom: 1.5em; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .macBackground .secondaryClaim {
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 1em; } }
+  .macBackground .button {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #991359;
+    border: #991359;
+    color: white;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.25em;
+    padding: 0.5em 1.5em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.875em;
+    width: 45%; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .macBackground .button {
+        width: 77%;
+        font-size: 1.3em; } }
+
+.contenedorProducto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: url(../img/curva-home.png) no-repeat 24% center;
+  position: relative;
+  top: 3em; }
+  @media only screen and (min-width: 319px) and (max-width: 1023px) {
+    .contenedorProducto {
+      width: 100%;
+      background: none;
+      top: 0em; } }
+  .contenedorProducto .producto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    padding-left: 8%;
+    position: relative; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .contenedorProducto .producto {
+        top: 0 !important;
+        left: 0 !important;
+        padding: 1.875em 8%; }
+        .contenedorProducto .producto:after {
           position: absolute;
           content: "";
           width: 0;
@@ -427,199 +546,139 @@ nav {
           border-left: 50px solid transparent;
           border-right: 50px solid transparent;
           border-top: 50px solid white;
-          right: -moz-calc(50%-$triangleSize);
-          right: -webkit-calc(50%-$triangleSize);
-          right: calc(50%-$triangleSize); }
-        .productosBox .macBackground:after {
-          bottom: -1.5em; } }
-    .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
-      font-family: "Oswald", sans-serif;
-      font-size: 1.75em;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      color: #404e5b;
-      text-align: left; }
-      @media only screen and (min-width: 319px) and (max-width: 1023px) {
-        .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
-          text-align: center; } }
-      @media only screen and (min-width: 319px) and (max-width: 767px) {
-        .productosBox .macBackground .mainClaim, .productosBox .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .macBackground strong {
-          font-weight: 400;
-          font-size: 1.3125em;
-          line-height: 1.3em;
-          text-align: center; } }
-    .productosBox .macBackground .secondaryClaim {
-      font-family: "Muli", sans-serif;
-      font-weight: 300;
-      font-size: 0.9375em;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 1.1em;
-      color: #404e5b;
-      text-align: left;
-      margin-top: 0.1em;
-      margin-bottom: 1.5em; }
-      @media only screen and (min-width: 319px) and (max-width: 767px) {
-        .productosBox .macBackground .secondaryClaim {
-          font-size: 0.75em;
-          text-align: center;
-          margin-top: 1em; } }
-    .productosBox .macBackground .button {
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
-      background-color: #991359;
-      border: #991359;
-      color: white;
-      display: inline-block;
-      font-family: 'Oswald', sans-serif;
-      font-size: 2.25em;
-      padding: 0.5em 1.5em;
-      line-height: 1em;
-      text-transform: uppercase;
-      text-align: center;
-      text-decoration: none;
-      font-size: 1.875em;
-      width: 45%; }
-      @media only screen and (min-width: 319px) and (max-width: 1023px) {
-        .productosBox .macBackground .button {
-          width: 77%;
-          font-size: 1.3em; } }
-  .productosBox .contenedorProducto {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    background: url(../img/curva-home.png) no-repeat 24% center;
-    position: relative;
-    top: 3em; }
-    @media only screen and (min-width: 319px) and (max-width: 1023px) {
-      .productosBox .contenedorProducto {
-        width: 100%;
-        background: none;
-        top: 0em; } }
-    .productosBox .contenedorProducto .producto {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      flex-direction: row;
-      padding-left: 8%;
-      position: relative; }
-      @media only screen and (min-width: 319px) and (max-width: 1023px) {
-        .productosBox .contenedorProducto .producto {
-          top: 0 !important;
-          left: 0 !important;
-          padding: 1.875em 8%; }
-          .productosBox .contenedorProducto .producto:after {
+          right: -moz-calc(50% - 50px);
+          right: -webkit-calc(50% - 50px);
+          right: calc(50% - 50px); }
+        .contenedorProducto .producto:after {
+          bottom: -1.5em; }
+        .contenedorProducto .producto:nth-child(even) {
+          z-index: 5; }
+        .contenedorProducto .producto:nth-child(odd) {
+          background: #e2e2e2; }
+          .contenedorProducto .producto:nth-child(odd):after {
             position: absolute;
             content: "";
             width: 0;
             height: 0;
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
-            border-top: 50px solid white;
-            right: -moz-calc(50%-$triangleSize);
-            right: -webkit-calc(50%-$triangleSize);
-            right: calc(50%-$triangleSize); }
-          .productosBox .contenedorProducto .producto:after {
-            bottom: -1.5em; }
-          .productosBox .contenedorProducto .producto:nth-child(even) {
-            z-index: 5; }
-          .productosBox .contenedorProducto .producto:nth-child(odd) {
-            background: #e2e2e2; }
-            .productosBox .contenedorProducto .producto:nth-child(odd):after {
-              position: absolute;
-              content: "";
-              width: 0;
-              height: 0;
-              border-left: 50px solid transparent;
-              border-right: 50px solid transparent;
-              border-top: 50px solid #e2e2e2;
-              right: -moz-calc(50%-$triangleSize);
-              right: -webkit-calc(50%-$triangleSize);
-              right: calc(50%-$triangleSize); } }
-      .productosBox .contenedorProducto .producto:first-child {
-        -webkit-transition-delay: 2s;
-        /* Safari */
-        transition-delay: 2s;
-        top: -8.5em;
-        left: 1%; }
-        .productosBox .contenedorProducto .producto:first-child .circle {
-          background: url(../img/disenamos_gestionamos_web_negocio.jpg) no-repeat 119% -7px;
-          background-size: 130%; }
-      .productosBox .contenedorProducto .producto:nth-child(2) {
-        left: 12.6%;
-        top: -1.9em; }
-        .productosBox .contenedorProducto .producto:nth-child(2) .circle {
-          background: white url(../img/garantizamos.png) no-repeat center;
-          background-size: 100%; }
-      .productosBox .contenedorProducto .producto:nth-child(3) {
-        left: 12.8%;
-        top: 5.2em; }
-        .productosBox .contenedorProducto .producto:nth-child(3) .circle {
-          background: white url(../img/garantizamos-trafico.png) no-repeat 18%;
-          background-size: 154%; }
-      .productosBox .contenedorProducto .producto:last-child {
-        left: 1%;
-        top: 10.4em; }
-        .productosBox .contenedorProducto .producto:last-child .circle {
-          background: white url(../img/gestion.png) no-repeat 18%;
-          background-size: 150%; }
-      .productosBox .contenedorProducto .producto .circle {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: purple;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        min-width: 150px;
-        border: 4px solid #cecece; }
+            border-top: 50px solid #e2e2e2;
+            right: -moz-calc(50% - 50px);
+            right: -webkit-calc(50% - 50px);
+            right: calc(50% - 50px); } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .contenedorProducto .producto {
+        top: 0 !important;
+        left: 0 !important;
+        padding: 1.5em 1em !important;
+        font-size: 0.875em; }
+        .contenedorProducto .producto:after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 25px solid transparent;
+          border-right: 25px solid transparent;
+          border-top: 25px solid white;
+          right: -moz-calc(50% - 25px);
+          right: -webkit-calc(50% - 25px);
+          right: calc(50% - 25px); }
+        .contenedorProducto .producto:nth-child(odd) {
+          background: #e2e2e2; }
+          .contenedorProducto .producto:nth-child(odd):after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 25px solid #e2e2e2;
+            right: -moz-calc(50% - 25px);
+            right: -webkit-calc(50% - 25px);
+            right: calc(50% - 25px); }
+        .contenedorProducto .producto:nth-child(even) {
+          z-index: 5; }
+        .contenedorProducto .producto:after {
+          bottom: -1em; } }
+    .contenedorProducto .producto:first-child {
+      -webkit-transition-delay: 2s;
+      /* Safari */
+      transition-delay: 2s;
+      top: -8.5em;
+      left: 1%; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .contenedorProducto .producto:first-child {
+          top: 0;
+          left: 0; } }
+      .contenedorProducto .producto:first-child .circle {
+        background: url(../img/disenamos_gestionamos_web_negocio.jpg) no-repeat 119% -7px;
+        background-size: 130%; }
+    .contenedorProducto .producto:nth-child(2) {
+      left: 12.6%;
+      top: -1.9em; }
+      .contenedorProducto .producto:nth-child(2) .circle {
+        background: white url(../img/garantizamos.png) no-repeat center;
+        background-size: 100%; }
+    .contenedorProducto .producto:nth-child(3) {
+      left: 12.8%;
+      top: 5.2em; }
+      .contenedorProducto .producto:nth-child(3) .circle {
+        background: white url(../img/garantizamos-trafico.png) no-repeat 18%;
+        background-size: 154%; }
+    .contenedorProducto .producto:last-child {
+      left: 1%;
+      top: 10.4em; }
+      .contenedorProducto .producto:last-child .circle {
+        background: white url(../img/gestion.png) no-repeat 18%;
+        background-size: 150%; }
+    .contenedorProducto .producto .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: purple;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      min-width: 150px;
+      border: 4px solid #cecece; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .contenedorProducto .producto .circle {
+          width: 106px;
+          height: 106px;
+          min-width: 106px; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .contenedorProducto .producto .circle {
+          display: none; } }
+    .contenedorProducto .producto .textoProducto {
+      display: flex;
+      flex-direction: column;
+      width: 58%;
+      margin-left: 5%;
+      justify-content: center; }
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
+        .contenedorProducto .producto .textoProducto {
+          width: 100%; } }
+      .contenedorProducto .producto .textoProducto .mainClaim, .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .contenedorProducto .producto .textoProducto strong {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.375em;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        color: #404e5b;
+        text-align: left;
+        margin-bottom: 0.5em; }
         @media only screen and (min-width: 319px) and (max-width: 1023px) {
-          .productosBox .contenedorProducto .producto .circle {
-            width: 106px;
-            height: 106px;
-            min-width: 106px; } }
-      .productosBox .contenedorProducto .producto .textoProducto {
-        display: flex;
-        flex-direction: column;
-        width: 58%;
-        margin-left: 5%;
-        justify-content: center; }
-        @media only screen and (min-width: 319px) and (max-width: 1023px) {
-          .productosBox .contenedorProducto .producto .textoProducto {
-            width: 100%; } }
-        .productosBox .contenedorProducto .producto .textoProducto .mainClaim, .productosBox .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .contenedorProducto .producto .textoProducto strong {
-          font-family: "Oswald", sans-serif;
-          font-size: 1.375em;
-          color: white;
-          text-align: center;
-          text-transform: uppercase;
-          color: #404e5b;
-          text-align: left;
-          margin-bottom: 0.5em; }
-          @media only screen and (min-width: 319px) and (max-width: 1023px) {
-            .productosBox .contenedorProducto .producto .textoProducto .mainClaim, .productosBox .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .productosBox .contenedorProducto .producto .textoProducto strong {
-              font-size: 1.25em; } }
-        .productosBox .contenedorProducto .producto .textoProducto p {
-          font-family: "Muli", sans-serif;
-          font-size: 1em;
-          font-weight: 300; }
+          .contenedorProducto .producto .textoProducto .mainClaim, .contenedorProducto .producto .textoProducto .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .contenedorProducto .producto .textoProducto strong {
+            font-size: 1.25em; } }
+      .contenedorProducto .producto .textoProducto p {
+        font-family: "Muli", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
 
 .blogSection {
   width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   position: relative; }
@@ -631,9 +690,9 @@ nav {
     border-left: 22px solid transparent;
     border-right: 22px solid transparent;
     border-top: 22px solid #404e5b;
-    right: -moz-calc(50%-$triangleSize);
-    right: -webkit-calc(50%-$triangleSize);
-    right: calc(50%-$triangleSize); }
+    right: -moz-calc(50% - 22px);
+    right: -webkit-calc(50% - 22px);
+    right: calc(50% - 22px); }
   .blogSection:after {
     bottom: -1.25em; }
   .blogSection .headerBlogSection {
@@ -651,15 +710,18 @@ nav {
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-top: 50px solid #991359;
-      right: -moz-calc(50%-$triangleSize);
-      right: -webkit-calc(50%-$triangleSize);
-      right: calc(50%-$triangleSize); }
+      right: -moz-calc(50% - 50px);
+      right: -webkit-calc(50% - 50px);
+      right: calc(50% - 50px); }
     .blogSection .headerBlogSection .mainClaim, .blogSection .headerBlogSection .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .blogSection .headerBlogSection strong {
       font-family: "Oswald", sans-serif;
       font-size: 2.25em;
       color: white;
       text-align: center;
       text-transform: uppercase; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .blogSection .headerBlogSection .mainClaim, .blogSection .headerBlogSection .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .blogSection .headerBlogSection strong {
+          font-size: 1.3em; } }
     .blogSection .headerBlogSection .secondaryClaim {
       font-family: "Muli", sans-serif;
       font-weight: 300;
@@ -668,11 +730,12 @@ nav {
       text-align: center;
       text-transform: uppercase;
       line-height: 1.1em; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .blogSection .headerBlogSection .secondaryClaim {
+          font-size: 0.8em; } }
   .blogSection .lastPostContainer {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -680,7 +743,7 @@ nav {
     margin: 0;
     padding: 0;
     border-bottom: 4px solid #404e5b; }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
       .blogSection .lastPostContainer {
         flex-wrap: wrap; } }
     .blogSection .lastPostContainer .lastPost {
@@ -688,55 +751,81 @@ nav {
       width: 25%;
       margin: 0;
       padding: 0;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .blogSection .lastPostContainer .lastPost figure {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .blogSection .lastPostContainer .lastPost {
           width: 50%; } }
       @media only screen and (min-width: 319px) and (max-width: 767px) {
         .blogSection .lastPostContainer .lastPost {
           width: 100%; } }
-      .blogSection .lastPostContainer .lastPost:before {
-        content: "";
-        background: rgba(64, 78, 91, 0.6);
-        position: absolute;
-        width: 100%;
-        height: 250px; }
       .blogSection .lastPostContainer .lastPost a {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center; }
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        height: 250px; }
+        .blogSection .lastPostContainer .lastPost a figcaption {
+          opacity: 0; }
+        .blogSection .lastPostContainer .lastPost a:hover figcaption {
+          opacity: 1;
+          background: red; }
         .blogSection .lastPostContainer .lastPost a .lastPostTitle {
           font-family: "Oswald", sans-serif;
           font-size: 1.375em;
           color: white;
           text-align: center;
           text-transform: uppercase;
-          position: absolute;
           text-align: center;
+          position: absolute;
           width: 90%;
-          top: 50%;
-          margin-top: -1.5em; }
+          z-index: 5; }
         .blogSection .lastPostContainer .lastPost a figure {
           width: 100%;
           max-height: 250px; }
           .blogSection .lastPostContainer .lastPost a figure img {
             width: 100%;
-            max-height: 250px; }
+            max-height: 250px;
+            position: absolute;
+            top: 0;
+            z-index: 1; }
 
 .nuestroEquipo {
   background: #fff url(../img/trabaja_con_nosotros.png) no-repeat;
   background-position: right;
   padding: 4.375em 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .nuestroEquipo {
       background-image: none;
       padding: 3em 0; } }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .nuestroEquipo {
+      padding: 1.7em 0;
+      background-image: none; } }
   .nuestroEquipo .wrapper {
     flex-direction: column; }
     .nuestroEquipo .wrapper .mainClaim, .nuestroEquipo .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .nuestroEquipo .wrapper strong {
@@ -746,6 +835,9 @@ nav {
       text-align: center;
       text-transform: uppercase;
       color: #404e5b; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .nuestroEquipo .wrapper .mainClaim, .nuestroEquipo .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .nuestroEquipo .wrapper strong {
+          font-size: 1.3em; } }
     .nuestroEquipo .wrapper .secondaryClaim {
       font-family: "Muli", sans-serif;
       font-weight: 300;
@@ -759,21 +851,28 @@ nav {
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .nuestroEquipo .wrapper .secondaryClaim {
           margin-bottom: 2.16667em; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .nuestroEquipo .wrapper .secondaryClaim {
+          margin: 0.6em 0 1.2em;
+          font-size: 0.9em; } }
     .nuestroEquipo .wrapper article {
       width: 35.13909%;
       font-family: "Muli", sans-serif; }
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
+        .nuestroEquipo .wrapper article {
+          width: 100%; } }
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .nuestroEquipo .wrapper article {
-          width: 100%;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           flex-direction: column;
           align-items: center; } }
       .nuestroEquipo .wrapper article p {
         margin-bottom: 2em; }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .nuestroEquipo .wrapper article p {
+            margin-bottom: 1em; } }
     .nuestroEquipo .wrapper .button {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
@@ -791,35 +890,45 @@ nav {
       text-align: center;
       text-decoration: none;
       font-size: 1.875em; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .nuestroEquipo .wrapper .button {
+          font-size: 1.3em; } }
 
 footer {
   width: 100%;
   background-color: #404e5b;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   height: 332px;
   font-family: "Muli", sans-serif; }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    footer {
+      height: auto; } }
   footer .wrapper {
     flex-direction: column; }
     footer .wrapper .footer_logo_section, footer .wrapper .footer_redes .legal {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       list-style: none;
       border-bottom: 1px dotted #556879;
       justify-content: space-around;
       padding: 10px 0 20px; }
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        footer .wrapper .footer_logo_section .footer_logo_section li:nth-child(2), footer .wrapper .footer_redes .legal .footer_logo_section li:nth-child(2), footer .wrapper .footer_logo_section .footer_redes .legal li:nth-child(2), footer .wrapper .footer_redes .footer_logo_section .legal li:nth-child(2), footer .wrapper .footer_redes .legal .legal li:nth-child(2) {
+        footer .wrapper .footer_logo_section li:nth-child(2), footer .wrapper .footer_redes .legal li:nth-child(2) {
           margin-left: 1%; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        footer .wrapper .footer_logo_section, footer .wrapper .footer_redes .legal {
+          padding: 1em 0; }
+          footer .wrapper .footer_logo_section li:not(.logoSolocal), footer .wrapper .footer_redes .legal li:not(.logoSolocal) {
+            display: none; } }
       footer .wrapper .footer_logo_section .logoSolocal, footer .wrapper .footer_redes .legal .logoSolocal {
         border-right: 1px solid rgba(255, 255, 255, 0.21); }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          footer .wrapper .footer_logo_section .logoSolocal, footer .wrapper .footer_redes .legal .logoSolocal {
+            border: 0; } }
       footer .wrapper .footer_logo_section img, footer .wrapper .footer_redes .legal img {
         opacity: 0.2;
         transition: opacity 0.5s linear; }
@@ -830,10 +939,8 @@ footer {
           opacity: 1; }
     footer .wrapper .footer_redes {
       align-items: center;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       flex-direction: column;
       font-size: 0.875em;
@@ -858,10 +965,8 @@ footer {
           footer .wrapper .footer_redes .legal li:last-child:after {
             content: ""; }
       footer .wrapper .footer_redes .redes {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         flex-direction: row;
         margin-bottom: 20px; }
@@ -875,10 +980,8 @@ footer {
             height: 30px;
             background: #556879;
             border-radius: 2px;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             align-items: center;
             justify-content: center; }
@@ -904,10 +1007,8 @@ footer {
             color: #cb2027;
             transition: color 0.5s ease-in; }
   footer .footer_copyright {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     padding: 20px; }
@@ -920,10 +1021,8 @@ body {
   font-size: 1em; }
 
 .wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   width: 85.375%;

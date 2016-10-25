@@ -6,6 +6,9 @@ footer{
     justify-content: center;
     height: 332px;
     font-family: $secondaryFont;
+    @include respond-to(movil){
+    	height: auto;
+    }
 	.wrapper{
 		flex-direction: column;
 		.footer_logo_section{
@@ -15,12 +18,21 @@ footer{
 			justify-content: space-around;
 			padding:10px 0 20px;
 			@include respond-to(tablet){
-				.footer_logo_section li:nth-child(2){
+				li:nth-child(2){
 						margin-left: 1%;
+				}
+			}
+			@include respond-to(movil){
+				padding:1em 0;
+				li:not(.logoSolocal){
+					display: none;
 				}
 			}
 			.logoSolocal{
 				border-right: 1px solid rgba(255, 255, 255, 0.21);
+				@include respond-to(movil){
+					border:0;
+				}
 			}
 			img{
 				opacity: 0.2;

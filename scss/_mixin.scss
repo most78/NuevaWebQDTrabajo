@@ -16,11 +16,31 @@
       text-decoration: none;
 }
 @mixin flex{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+}
+@mixin justify-content($justify){
+  -ms-flex-pack:$justify;
+  -webkit-justify-content:$justify;
+  justify-content:$justify;
+}
+@mixin flex-direction-column{
+  -webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+    -ms-flex-direction:column;
+        flex-direction:column;
+}
+@mixin flex-direction-row{
+  -webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+    -ms-flex-direction:row;
+        flex-direction:row;
+}
+@mixin align-items($align){
+  -webkit-box-align:$align;
+    -ms-flex-align:$align;
+        align-items:$align;
 }
 @mixin homeTitles($background, $margin){
     background:$background;
@@ -43,7 +63,7 @@
         border-left: $triangleSize solid transparent;
         border-right: $triangleSize solid transparent;
         border-top: $triangleSize solid $color;
-        @include calc(right, '50%-$triangleSize');
+        @include calc(right,'50% - #{$triangleSize}');
     }
 }
 @mixin mainClaim($font-size){

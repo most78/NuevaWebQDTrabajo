@@ -13,8 +13,8 @@
             margin-top: (51/$mainFontSize)*1em;
         }
         @include respond-to(movil){
-            width: 100%;
-            margin-top: (10/$mainFontSize)*1em;
+            @include calc(width, '100% - 20px');
+            margin: (10/$mainFontSize)*1em auto;
         }
 		form{
 			@include flex;
@@ -23,8 +23,8 @@
     		margin: auto;
             padding:(40/$mainFontSize)*1em 0;
             @include respond-to(movil){
-                @include calc(width, '100% - 20px');
-                padding:(20/$mainFontSize)*1em 0;
+                width: 100%;
+                padding:(20/$mainFontSize)*1em 1em;
             }
     		label{
     			font-weight: 300;
@@ -32,7 +32,7 @@
     			font-family: $secondaryFont;
                 color: #fff;
                 @include respond-to(movil){
-                    font-size: (12/$mainFontSize)*1em;
+                    font-size: (11/$mainFontSize)*1em;
                 }
                 a{
                     color: #fff;
@@ -44,15 +44,19 @@
     			padding: 0;
     			padding-left: 1em;
     			border-width: 0px;
-    			border-style: outset;
-    			line-height: (60/24)*1em;
+                line-height: 2em;
+                height: 2em;
+                vertical-align: middle;
+                font-size: 2em;
     			vertical-align: middle;
     			font-family:$mainFont;
     			color: #ccc;
-    			font-size: (24/$mainFontSize)*1em;
     			background:#eee;
-                margin: (10/24)*1em 0;
+                margin:(10/24)*1em 0;
     			box-sizing:border-box;
+                @include respond-to(movil){
+                    font-size: 1em;
+                }
                 &[name="firstname"]{
                     margin-top: (40/24)*1em;
                     @include respond-to(movil){
@@ -69,6 +73,7 @@
                     &:checked+label{
                         opacity: 0.2;
                         transition: opacity 1s ease;
+
                     }
     			}
     			&:focus{
@@ -77,9 +82,13 @@
 					outline: 0;
     			}
     			@include placeholder {
+                    font-size: 1em;
     				font-family:$mainFont;
     				text-transform: uppercase;
 	    			transition: opacity 0.35s ease-in-out;
+                    @include respond-to(movil){
+                        font-size:1em;
+                    }
 				}
     			@include placeholder_focus{
    				opacity: 0.2;
@@ -92,15 +101,16 @@
     			text-align: center;
     			font-family: $secondaryFont;
     			font-size: (18/$mainFontSize)*1em;
+                width: 100%;
                 @include respond-to(movil){
-                    font-size: (14/$mainFontSize)*1em;
+                    font-size: (12/$mainFontSize)*1em;
                 }
     			span {
     				font-family: $mainFont;
     				font-size: (36/18)*1em;
     				text-transform: uppercase;
                     @include respond-to(movil){
-                        font-size: (25/14)*1em;
+                        font-size: (22/12)*1em;
                         }
     				strong{
     					font-weight: 700;
@@ -109,6 +119,7 @@
     		}
     		.formButton{
     			@include buttom(2px, $black);
+                -webkit-appearance: none;
                 @include respond-to(movil){
                     font-size: (22/$mainFontSize)*1em;
                     margin-bottom: 0;

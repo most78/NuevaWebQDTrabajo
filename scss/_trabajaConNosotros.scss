@@ -6,6 +6,10 @@
 		background-image:none;
 		padding:(48/$mainFontSize)*1em 0;
 	}
+	@include respond-to(movil){
+		padding:1.7em 0;
+		background-image:none;
+	}
 	@include flex;
 	justify-content:center;
 	.wrapper{
@@ -13,6 +17,9 @@
 		.mainClaim{
 			@include mainClaim((36/16)*1em);
 			color: $mainColor;
+			@include respond-to(movil){
+				font-size: 1.3em;
+			}
 		}
 		.secondaryClaim{
 			@include secondaryClaim((18/16)*1em, $secondaryFont);
@@ -21,23 +28,35 @@
 			@include respond-to(tablet){
 				margin-bottom: (39/18)*1em;
 			}
+			@include respond-to(movil){
+				margin:0.6em 0 1.2em;
+				font-size: 0.9em;
+			}
 		}
 		article{
 			width:(480/$mainWidth)*100%;
 			font-family: $secondaryFont;
-			@include respond-to(tablet){
+			@include respond-to(fablet){
 				width: 100%;
+			}
+			@include respond-to(tablet){
 				@include flex;
 				flex-direction: column;
 				align-items: center;
 			}
 			p{
 				margin-bottom: 2em;
+				@include respond-to(movil){
+					margin-bottom: 1em;
+				}
 			}
 		}
 		.button{
 			@include buttom(2px,$secondaryColor);
 			font-size: (30/16)*1em;
+			@include respond-to(movil){
+				font-size: 1.3em;
+			}
 		}
 	}
 }
