@@ -37,14 +37,12 @@
             flex-wrap: wrap; 
         }
     	.lastPost{
-    		position: relative;
     		width: 25%;
     		margin: 0;
     		padding: 0;
     		box-sizing: border-box;
             @include flex;
             figure{
-                @include flex;
                 @include justify-content(center);
                 @include align-items(center);
             }
@@ -54,36 +52,27 @@
             @include respond-to(movil){
                 width: 100%;
             }
-    		// &:before{
-    		// 	content: "";
-    		// 	background:rgba($mainColor, 0.6);
-    		// 	position:absolute;
-    		// 	width: 100%;
-    		// 	height: 250px;
-      //           z-index: 5;
-    		// }
     		a{
     			width: 100%;
-    			@include flex;
-                @include justify-content(center);
+                position: relative;
+    			@include justify-content(center);
                 @include align-items(center);
-                flex-direction: column;
-                align-items: center;
+                flex-flow:column wrap;
                 height: 250px;
-                figcaption {
-                        opacity: 0;
-                }
-                &:hover figcaption {
-                        opacity: 1;
-                        background:red;
-                        }
-    			.lastPostTitle{
+                display: inline-flex;
+                .lastPostTitle{
     				@include mainClaim((22/16)*1em);
+                    opacity: 0;
     				text-align: center;
                     position:absolute;
-    				width: 90%;
-                    z-index: 5;
-    			}
+    				z-index: 5;
+                    padding: 4em 1em 0;
+                    box-sizing:border-box;
+                    height: 250px;
+                    width: 100%;
+                    top:0;
+                    left:0;
+                }
     			figure{
     				width: 100%;
     				max-height: 250px;
@@ -95,6 +84,10 @@
                         z-index: 1;
     				}
     			}
+                 &:hover .lastPostTitle{
+                        opacity: 0.875;
+                        background:$mainColor;
+                        }
     		}
     	}
 	}

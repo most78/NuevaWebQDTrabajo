@@ -1,0 +1,166 @@
+.backgroundImg{
+	background:url(../img/headerBackgroundContacto.png) no-repeat center;
+}
+.innerHeader{
+	&:before{
+		content: "";
+		position: absolute;
+	    z-index: -2;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-image: inherit;
+    }
+    position:relative;
+	height: (314/$mainFontSize)*1em;
+	@include flex;
+	-ms-flex-flow:row wrap;
+        flex-flow:row wrap;
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
+        justify-content:flex-end;
+  	-webkit-box-align:strech;
+    -ms-flex-align:strech;
+        align-items:strech;
+  	-ms-flex-line-pack:end;
+    	align-content:flex-end;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,0.4);
+    &:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: rgba(16,45,72, 0.4);
+	}
+    .wrapper{
+    	-webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    	.mainClaim{
+    		@include mainClaim((74/$mainFontSize)*1em);
+    		color: rgba(255,255,255, 0.45);
+    		font-weight: bold;
+    		margin-top: 56px;
+    	}
+    }
+}
+.sectionWrapper{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: flex-start;
+            max-width: ($mainWidth/$mainFontSize)*1em;
+            margin:0 auto;
+            padding:(40/$mainFontSize)*1em 0;
+    .formSection{
+    	flex: 1;
+    	display: flex;
+		.Boxform{
+			background-color:#f1f1f1;
+			padding:(50/$mainFontSize)*1em;
+			form{
+				fieldset{
+					legend{
+						p{
+							font:(15/$mainFontSize)*1em $secondaryFont;
+							text-align: center;
+							color: $mainColor;
+							width: 75%;
+							margin: 0 auto;
+							text-transform: uppercase;
+							span{
+								font:(46/15)*1em $mainFont;
+								text-transform: uppercase;
+								line-height: 1.2em;
+								margin:0.3em 0;
+								strong{
+									font:bold (63/46)*1em $mainFont;
+									line-height: 1em;
+								}	
+							}
+						}
+					}
+					input{
+						display: flex;
+    					flex-wrap: wrap;
+    					align-items: center;
+    					width: 100%;
+    					&:not(:last-child){
+    						margin-bottom: 2em;
+    					}
+    					&:first-child{
+    						margin-top: 2em;
+    					}
+    					&:not([type='checkbox']){
+    						padding:1.3em;
+    					}
+    					&[type="checkbox"]{
+    						width: 18px;
+    						display: inline-flex;
+    						margin-left: -6em;
+    					}
+    					&[type="submit"]{
+    						@include buttom(2px, $secondaryColor);
+    						font-size: 22px;
+    					}
+					}
+					label{
+						text-transform: initial;
+						a{
+							color: $secondaryColor;
+							text-decoration:none;
+
+						} 
+					}
+				}
+			}
+		}
+	}
+	.Boxcontactanos{
+		@extend .formSection;
+		background:#f8f8f8;
+		padding:(14/$mainFontSize)*1em;
+		padding-top:(50/$mainFontSize)*1em;
+		align-items: center;
+		display: flex;
+    	flex-direction: column;
+		p{
+			font:1em $secondaryFont;
+			color: $mainColor;
+			text-align: center;
+			width: 87%;
+			strong{
+				display: inline-block;
+				font:(30/$mainFontSize)*1em $mainFont;
+				color: $mainColor;
+				margin-bottom: 0.7em;
+				a{
+					color: $secondaryColor;
+					text-decoration: none;
+				}
+			}			
+		}
+		.mapaContenedor{
+			display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		justify-content: center;
+			img{
+				width: 100%;
+			}
+			p{
+				position:absolute;
+				@include mainClaim(30);
+			}
+		}
+	}
+}

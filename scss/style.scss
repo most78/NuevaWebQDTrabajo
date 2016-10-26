@@ -10,11 +10,11 @@
 @import "productos";
 @import "blogSection";
 @import "trabajaConNosotros";
+@import "contacto";
 @import "footer";
 
 
 body{
-	background: grey;
 	font-size:($mainFontSize/16)*1em;
 }
 .wrapper{

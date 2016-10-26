@@ -93,7 +93,7 @@
     		preg_match_all("/<a [^>]*href=\"(https?:\/\/www.qdqmedia.com\/blog\/[^\"]+)\"[^>]*>[^><]+<\/a>/", $post_content, $matches);
     		$vinculo = $matches[1][0];
 
-    		echo '<li class="lastPost"><a href="'.$vinculo.'"title="'.$titulo.'"><figcaption class="overlay"><h3 class="lastPostTitle">'.$titulo.'</h3></figcaption><figure>'.$img.'</figure></a></li>';
+    		echo '<li class="lastPost"><a href="'.$vinculo.'"title="'.$titulo.'"><figure>'.$img.'</figure><h3 class="lastPostTitle">'.$titulo.'</h3></a></li>';
     	  }
 		?>
 		</ul>

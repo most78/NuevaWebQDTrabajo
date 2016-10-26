@@ -33,9 +33,12 @@
 				font-size: 0.9em;
 			}
 		}
-		article{
+		.trabajaConNosotros{
 			width:(480/$mainWidth)*100%;
 			font-family: $secondaryFont;
+			@include respond-to(monitor){
+				width: 50%;
+			}
 			@include respond-to(fablet){
 				width: 100%;
 			}

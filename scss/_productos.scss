@@ -31,9 +31,13 @@
 		padding-bottom:(16/$mainFontSize)*1em;
 		z-index: 5;
 	}
+	@include respond-to(monitor){
+		background-size:99%;
+		background-position:center 16%;
+	}
 	@include respond-to(tablet){
-		@include homeTitlesAfter(white, 50px);
-		&:after{bottom:(-24/$mainFontSize)*1em;}
+		@include homeTitlesAfter(white, 25px);
+		&:after{bottom:-1.5em;}
 	}
 	@include respond-to(movil){
 		@include homeTitlesAfter(white, 25px);
@@ -45,6 +49,9 @@
 		@include mainClaim((28/$mainFontSize)*1em);
 		color: $mainColor;
 		text-align: left;
+		@include respond-to(monitor){
+			margin-top: 15em;
+		}
 		@include respond-to(fablet){text-align: center;}
 		@include respond-to(movil){
 				font-weight: 400;
@@ -69,6 +76,9 @@
 		@include buttom(2px, $secondaryColor);
 		font-size: (30/$mainFontSize)*1em;
 		width: 45%;
+		@include respond-to(monitor){
+			width: 73%;
+		}
 		@include respond-to(fablet){
 			width: 77%;
     		font-size: 1.3em;
@@ -188,6 +198,9 @@
 				color: $mainColor;
 				text-align:left;
 				margin-bottom: 0.5em;
+					@include respond-to(monitor){
+					font-size: 1.1em;
+					}
 					@include respond-to(fablet){
 					font-size: (20/$mainFontSize)*1em;
 					}
