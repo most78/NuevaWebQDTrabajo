@@ -1,0 +1,51 @@
+.backgroundImg{
+	background:url(../img/headerBackgroundContacto.png) no-repeat center;
+}
+.innerHeader{
+	&:before{
+		content: "";
+		position: absolute;
+	    z-index: -2;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-image: inherit;
+    }
+    position:relative;
+	height: (314/$mainFontSize)*1em;
+	@include flex;
+	-ms-flex-flow:row wrap;
+        flex-flow:row wrap;
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
+        justify-content:flex-end;
+  	-webkit-box-align:strech;
+    -ms-flex-align:strech;
+        align-items:strech;
+  	-ms-flex-line-pack:end;
+    	align-content:flex-end;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,0.4);
+    &:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: rgba(16,45,72, 0.4);
+	}
+    .wrapper{
+    	-webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    	.mainClaim{
+    		@include mainClaim((74/$mainFontSize)*1em);
+    		color: rgba(255,255,255, 0.45);
+    		font-weight: bold;
+    		margin-top: 56px;
+    	}
+    }
+}

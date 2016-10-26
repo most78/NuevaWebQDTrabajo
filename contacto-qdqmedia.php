@@ -1,10 +1,6 @@
 <?php include ("head.php"); ?>
 <?php include("header.php"); ?>
-<div class="innerHeader backgroundImg">
-	<div class="wrapper">
-		<h1 class="mainClaim">Contáctanos</h1>
-	</div>
-</div>
+<?php include("innerHeaderBackground.php"); ?>
 <article class="sectionWrapper">
 <section class="formSection">
 	<div class="Boxform">
