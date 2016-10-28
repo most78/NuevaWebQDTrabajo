@@ -50,7 +50,7 @@
 		color: $mainColor;
 		text-align: left;
 		@include respond-to(monitor){
-			margin-top: 15em;
+			margin-top: 26em;
 		}
 		@include respond-to(fablet){text-align: center;}
 		@include respond-to(movil){
@@ -159,7 +159,7 @@
 		}
 		&:last-child{
 			left: 1%;
-			top: 10.4em;
+			top: 15.4em;
 			.circle{
 				background:white url(../img/gestion.png) no-repeat 18%;
 				background-size:150%;

@@ -15,6 +15,9 @@
             max-width: ($mainWidth/$mainFontSize)*1em;
             margin:0 auto;
             padding:(40/$mainFontSize)*1em 0;
+            @include respond-to(tablet){
+            	padding:0;
+            }
     .formSection{
     	flex: 1;
     	display: flex;

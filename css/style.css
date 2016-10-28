@@ -476,7 +476,7 @@ nav {
     text-align: left; }
     @media only screen and (min-width: 1024px) {
       .macBackground .mainClaim, .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .macBackground strong {
-        margin-top: 15em; } }
+        margin-top: 26em; } }
     @media only screen and (min-width: 319px) and (max-width: 1023px) {
       .macBackground .mainClaim, .macBackground .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .macBackground strong {
         text-align: center; } }
@@ -644,7 +644,7 @@ nav {
         background-size: 154%; }
     .contenedorProducto .producto:last-child {
       left: 1%;
-      top: 10.4em; }
+      top: 15.4em; }
       .contenedorProducto .producto:last-child .circle {
         background: white url(../img/gestion.png) no-repeat 18%;
         background-size: 150%; }
@@ -966,7 +966,7 @@ nav {
       margin-top: 56px; }
 
 .contactanos .backgroundImg {
-  background: url("../img/headerBackgroundContacto.png"); }
+  background: url("../img/headerBackgroundContacto.png") center; }
 
 .sectionWrapper {
   display: -webkit-box;
@@ -980,6 +980,9 @@ nav {
   max-width: 84.25em;
   margin: 0 auto;
   padding: 2.5em 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .sectionWrapper {
+      padding: 0; } }
   .sectionWrapper .formSection, .sectionWrapper .Boxcontactanos {
     flex: 1;
     display: flex; }
@@ -1074,7 +1077,7 @@ nav {
         text-transform: uppercase; }
 
 .opinionesWrapper .backgroundImg, .sobreWrapper .backgroundImg {
-  background: url("../img/headerBackgroundQuienesSomos.png"); }
+  background: url("../img/headerBackgroundQuienesSomos.png") center; }
 .opinionesWrapper .wrapper, .sobreWrapper .wrapper {
   flex-direction: column; }
 .opinionesWrapper .mainClaim, .sobreWrapper .mainClaim, .opinionesWrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .opinionesWrapper strong, .sobreWrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .sobreWrapper strong {
@@ -1189,7 +1192,7 @@ nav {
         line-height: 22px; }
 
 .sobreWrapper .backgroundImg {
-  background: url("../img/headerBackgroundSobreQdqmedia.png"); }
+  background: url("../img/headerBackgroundSobreQdqmedia.png") center; }
   .sobreWrapper .backgroundImg .mainClaim, .sobreWrapper .backgroundImg .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .sobreWrapper .backgroundImg strong {
     margin-top: 56px;
     margin-bottom: 0; }
@@ -1208,6 +1211,9 @@ nav {
     flex-basis: calc(50% - 12px);
     flex-flow: column wrap;
     overflow: hidden; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .sobreWrapper .empresasGrupo .empresa {
+        flex-basis: 100%; } }
     .sobreWrapper .empresasGrupo .empresa img {
       margin-bottom: 2.5em; }
     .sobreWrapper .empresasGrupo .empresa .mainClaim, .sobreWrapper .empresasGrupo .empresa .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .sobreWrapper .empresasGrupo .empresa strong {
@@ -1311,6 +1317,9 @@ footer {
             opacity: 0.2; }
           footer .wrapper .footer_redes .legal li:last-child:after {
             content: ""; }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          footer .wrapper .footer_redes .legal {
+            width: 100%; } }
       footer .wrapper .footer_redes .redes {
         display: -webkit-box;
         display: -ms-flexbox;

@@ -117,7 +117,7 @@ $break-large: 1024px;
   }
 }
 @mixin background($imgpath) {
-    background: url($imgpath);
+    background: url($imgpath) center;
 }
 @mixin enlaces{
   a{

@@ -18,6 +18,9 @@
 	   	flex-basis: calc(50% - 12px);
 	   	flex-flow: column wrap;
 	   	overflow: hidden;
+	   	@include respond-to(fablet){
+	   		flex-basis: 100%;
+	   	}
 	   		img{margin-bottom:(40/$mainFontSize)*1em;}
 		   	.mainClaim{
 		   		font-size: (24/$mainFontSize)*1em;

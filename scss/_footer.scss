@@ -80,6 +80,9 @@ footer{
 						}
 					}
 				}
+				@include respond-to(tablet){
+					width: 100%;
+				}
 			}
 			.redes{
 				@include flex;
