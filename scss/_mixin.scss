@@ -119,3 +119,9 @@ $break-large: 1024px;
 @mixin background($imgpath) {
     background: url($imgpath);
 }
+@mixin enlaces{
+  a{
+    color:$secondaryColor;
+    text-decoration: none;
+  }
+}

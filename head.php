@@ -41,12 +41,13 @@ switch($page) {
 <link href="https://fonts.googleapis.com/css?family=Muli:300,400|Oswald:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="css/ionicons.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css" />
+<link rel="stylesheet" href="css/animsition.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/fixed-header.js"></script>
 <script type="text/javascript" src="js/hide_show_mainMenu.js"></script>
 <script type="text/javascript" src="js/animation_elements.js"></script>
 <script type="text/javascript" src="js/animateVisible.js"></script>
 <script type="text/javascript" src="js/viewportchecker.js"></script>
-
-
+<script type="text/javascript" src="js/animsition.min.js"></script>
+<script type="text/javascript" src="js/pageTransition.js"></script>
 </head>

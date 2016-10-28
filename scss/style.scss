@@ -13,12 +13,14 @@
 @import "innerHeaderBackground";
 @import "contacto";
 @import "opiniones";
+@import "sobreQDQmedia";
 @import "footer";
 
 
 body{
 	font-size:($mainFontSize/16)*1em;
 }
+.animsition-loading{display:none!important;}
 .wrapper{
 	@include flex;
 	flex-direction:row;
