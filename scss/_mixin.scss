@@ -116,3 +116,6 @@ $break-large: 1024px;
     @media only screen and (min-width: $break-large) { @content; }
   }
 }
+@mixin background($imgpath) {
+    background: url($imgpath);
+}

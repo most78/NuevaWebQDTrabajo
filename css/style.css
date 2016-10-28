@@ -915,9 +915,6 @@ nav {
         .nuestroEquipo .wrapper .button {
           font-size: 1.3em; } }
 
-.backgroundImg {
-  background: url(../img/headerBackgroundContacto.png) no-repeat center; }
-
 .innerHeader {
   position: relative;
   height: 19.625em;
@@ -967,6 +964,9 @@ nav {
       color: rgba(255, 255, 255, 0.45);
       font-weight: bold;
       margin-top: 56px; }
+
+.contactanos .backgroundImg {
+  background: url("../img/headerBackgroundContacto.png"); }
 
 .sectionWrapper {
   display: -webkit-box;
@@ -1072,6 +1072,121 @@ nav {
         color: white;
         text-align: center;
         text-transform: uppercase; }
+
+.opinionesWrapper .backgroundImg {
+  background: url("../img/headerBackgroundQuienesSomos.png"); }
+.opinionesWrapper .wrapper {
+  flex-direction: column; }
+.opinionesWrapper .mainClaim, .opinionesWrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .opinionesWrapper strong {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404e5b;
+  text-align: left;
+  margin: 1em 0; }
+.opinionesWrapper p {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  color: #666;
+  text-align: left;
+  text-transform: none;
+  margin-bottom: 1em;
+  padding-right: 1em;
+  line-height: 1.5em; }
+.opinionesWrapper article .secondaryClaim {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404e5b;
+  text-align: left; }
+.opinionesWrapper article .opinionesQDQ {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .opinionesWrapper article .opinionesQDQ .leftColumn {
+    padding-right: 12px;
+    flex-basis: 50%; }
+    .opinionesWrapper article .opinionesQDQ .leftColumn ul {
+      list-style: none; }
+  .opinionesWrapper article .opinionesQDQ .rightColumn {
+    padding-left: 12px;
+    flex-basis: 50%; }
+    .opinionesWrapper article .opinionesQDQ .rightColumn ul {
+      list-style: none; }
+      .opinionesWrapper article .opinionesQDQ .rightColumn ul .opinion:before {
+        background: url(../img/clienteRoberto.png); }
+      .opinionesWrapper article .opinionesQDQ .rightColumn ul .opinion:nth-child(2):before {
+        background: url(../img/clienteSocyr.png); }
+      .opinionesWrapper article .opinionesQDQ .rightColumn ul .opinion:last-child:before {
+        background: url(../img/clienteCaredent.png); }
+  .opinionesWrapper article .opinionesQDQ .opinion {
+    background: #f1f1f1;
+    display: inline-flex;
+    padding: 1.5em;
+    padding-right: 3.0625em;
+    margin: 12px 0;
+    height: 205px; }
+    .opinionesWrapper article .opinionesQDQ .opinion:before {
+      content: "";
+      background: url(../img/clientePlanas.png);
+      position: absolute;
+      border: 4px solid white;
+      width: 142px;
+      height: 142px;
+      align-self: center; }
+    .opinionesWrapper article .opinionesQDQ .opinion:nth-child(2):before {
+      background: url(../img/clienteMesonry.png); }
+    .opinionesWrapper article .opinionesQDQ .opinion:last-child:before {
+      background: url(../img/clienteKelington.png); }
+    .opinionesWrapper article .opinionesQDQ .opinion a {
+      text-decoration: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 180px; }
+      .opinionesWrapper article .opinionesQDQ .opinion a .opinionCliente {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.125em;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        color: #991359; }
+      .opinionesWrapper article .opinionesQDQ .opinion a .fechaPublicacion {
+        font-family: "Muli", sans-serif;
+        font-weight: 300;
+        font-size: 0.875em;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        color: #666;
+        font-style: italic;
+        margin: 1em 0; }
+      .opinionesWrapper article .opinionesQDQ .opinion a quotation {
+        font-family: "Muli", sans-serif;
+        font-weight: 300;
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        color: #666;
+        text-align: left;
+        text-transform: none;
+        line-height: 22px; }
 
 footer {
   width: 100%;

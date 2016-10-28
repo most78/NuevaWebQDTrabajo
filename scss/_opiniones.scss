@@ -1,0 +1,113 @@
+.opinionesWrapper{
+	.backgroundImg{
+	    @include background('../img/headerBackgroundQuienesSomos.png'); 
+	}
+	.wrapper{
+		flex-direction: column;
+	}
+	.mainClaim{
+		@include mainClaim(30px);
+		color: $mainColor;
+		text-align: left;
+		margin:1em 0;
+	}
+	p{
+		@include secondaryClaim(1em, $secondaryFont);
+		color:#666;
+		text-align: left;
+		text-transform: none;
+		margin-bottom: 1em;
+		padding-right: 1em;
+		line-height: (24/$mainFontSize)*1em;
+	}
+	article{
+		.secondaryClaim{
+			@include mainClaim(20px);
+			color: $mainColor;
+			text-align: left;
+		}
+		.opinionesQDQ{
+			list-style: none;
+			@include flex;
+			.leftColumn{
+				padding-right:12px;
+				flex-basis: 50%;
+				ul{list-style:none;}
+			}
+			.rightColumn{
+				padding-left:12px;
+				flex-basis: 50%;
+				ul{
+					list-style:none;
+					.opinion{
+						&:before{
+						background:url(../img/clienteRoberto.png);	
+						}
+						&:nth-child(2){
+							&:before{
+							background:url(../img/clienteSocyr.png);
+							}	
+						}
+						&:last-child{
+							&:before{
+							background:url(../img/clienteCaredent.png);
+							}
+						}
+					}
+				}
+			}
+			.opinion{
+				background:#f1f1f1;
+				display: inline-flex;
+				padding: 1.5em;
+				padding-right: (49/$mainFontSize)*1em;
+				margin: 12px 0;
+				height: 205px;
+				&:before{
+					content: "";
+					background:url(../img/clientePlanas.png);
+					position: absolute;
+					border: 4px solid white;
+					width: 142px;
+					height: 142px;
+					align-self:center;
+				}
+				&:nth-child(2){
+					&:before{
+					background:url(../img/clienteMesonry.png);
+					}	
+				}
+				&:last-child{
+					&:before{
+					background:url(../img/clienteKelington.png);
+					}	
+				}
+				a{
+					text-decoration: none;
+					@include flex;
+					flex-flow: column wrap;
+					align-items:flex-start;
+					width: 100%;
+					padding-left: 180px;
+					.opinionCliente{
+						@include mainClaim((18/$mainFontSize)*1em);
+						color:$secondaryColor;
+					}
+					.fechaPublicacion{
+						@include secondaryClaim((14/$mainFontSize)*1em, $secondaryFont);
+						color:#666;
+						font-style: italic;
+						margin:1em 0;
+					}
+					quotation{
+						@include secondaryClaim(1em, $secondaryFont);
+						color: #666;
+						text-align: left;
+						text-transform: none;
+						line-height: 22px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,3 +1,8 @@
+.contactanos{
+	.backgroundImg{
+    	@include background('../img/headerBackgroundContacto.png'); 
+	}
+}
 .sectionWrapper{
 	display: -webkit-box;
     display: -ms-flexbox;

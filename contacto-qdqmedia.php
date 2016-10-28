@@ -1,6 +1,10 @@
 <?php include ("head.php"); ?>
 <?php include("header.php"); ?>
+<?php global $HeaderTitle;  ?> 
+<?php $HeaderTitle = "Contáctanos";  ?>
+<div class="contactanos">
 <?php include("innerHeaderBackground.php"); ?>
+</div>
 <article class="sectionWrapper">
 <section class="formSection">
 	<div class="Boxform">

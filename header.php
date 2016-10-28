@@ -18,7 +18,7 @@
   				</div>
 				<ul class="fadeInRight">
 					<li><a itemprop='url' class="<?php echo ($page_name=='home.php')?'active':'';?>" href="home.php"><span itemprop='name'>inicio</span></a></li>
-					<li><a itemprop='url'  class="<?php echo ($page_name=='quienes_somos.php')?'active':'';?>" href="quienes_somos.php"><span itemprop='name'>quíenes somos</span></a></li>
+					<li><a itemprop='url'  class="<?php echo ($page_name=='quienes-somos.php'||'opiniones-QDQmedia.php')?'active':'';?>" href="quienes-somos.php"><span itemprop='name'>quíenes somos</span></a></li>
 					<li><a itemprop='url'  class="<?php echo ($page_name=='ofertas.php')?'active':'';?>" href="ofertas.php"><span itemprop='name'>ofertas</span></a></li>
 					<li><a itemprop='url'  class="<?php echo ($page_name=='blog.php')?'active':'';?>" href="blog.php"><span itemprop='name'>blog</span></a></li>
 					<li><a itemprop='url'  class="<?php echo ($page_name=='opiniones.php')?'active':'';?>" href="opiniones.php"><span itemprop='name'>opiniones</span></a></li>
