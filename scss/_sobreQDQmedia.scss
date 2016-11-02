@@ -1,5 +1,11 @@
 .sobreWrapper{
 	@extend .opinionesWrapper;
+	p{
+		@include respond-to(movil){
+			padding:0 0.7em;
+			text-align: justify;
+		}
+	}
 	.backgroundImg{
 	    @include background('../img/headerBackgroundSobreQdqmedia.png');
 	    .mainClaim{
@@ -21,7 +27,12 @@
 	   	@include respond-to(fablet){
 	   		flex-basis: 100%;
 	   	}
-	   		img{margin-bottom:(40/$mainFontSize)*1em;}
+	   		img{
+	   			margin-bottom:(40/$mainFontSize)*1em;
+				@include respond-to(movil){
+					margin-bottom: 0.9em;
+				}
+	   		}
 		   	.mainClaim{
 		   		font-size: (24/$mainFontSize)*1em;
 		   	}
@@ -37,6 +48,12 @@
 		   			@include buttom(2px, $secondaryColor);
 		   			font-size: (20/$mainFontSize)*1em;
 		   			width: 50%;
+		   			@include respond-to(movil){
+		   				width: 100%;
+		   			}
+		   		}
+		   		@include respond-to(movil){
+		   			padding:2em 1em;
 		   		}
 		   	}
 		}

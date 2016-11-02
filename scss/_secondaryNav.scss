@@ -1,0 +1,39 @@
+.secondary-nav{
+	background:#f1f1f1;
+	width: 100%;
+	ul.wrapper{
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		width: 50%;
+		li{
+			a{
+				&:before{
+					content: "|";
+					position: absolute;
+					font-size: 2em;
+					margin:0 -1.2em;
+					color: rgba(186, 186, 186, 0.36);
+				}
+				color: $secondaryColor;
+				line-height: 2em;
+				text-transform: uppercase;
+				font-family: $mainFont;
+				font-weight: 300;
+				&.active{
+					color:#bababa;
+				}
+			}
+			&:last-child{
+				a:after{
+					content: "|";
+					position: absolute;
+					font-size: 2em;
+					margin:0 0.8em;
+					color: rgba(186, 186, 186, 0.36);
+				}
+			}
+		}
+	}
+}
