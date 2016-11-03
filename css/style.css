@@ -1269,6 +1269,12 @@ nav {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 50%; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .secondary-nav ul.wrapper {
+        width: 100%; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .secondary-nav ul.wrapper li:first-child a:before {
+        display: none; } }
     .secondary-nav ul.wrapper li a {
       color: #991359;
       line-height: 2em;
@@ -1281,6 +1287,12 @@ nav {
         font-size: 2em;
         margin: 0 -1.2em;
         color: rgba(186, 186, 186, 0.36); }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          .secondary-nav ul.wrapper li a:before {
+            margin: 0 -0.7em; } }
+        @media only screen and (min-width: 319px) and (max-width: 767px) {
+          .secondary-nav ul.wrapper li a:before {
+            display: none; } }
       .secondary-nav ul.wrapper li a.active {
         color: #bababa; }
     .secondary-nav ul.wrapper li:last-child a:after {
@@ -1297,9 +1309,15 @@ nav {
     position: relative;
     float: right;
     margin-left: 1.5em; }
+    .historiaSection .wrapper figure img {
+      width: 100%; }
     .historiaSection .wrapper figure.leftSide {
       float: left;
       margin-right: 1.5em; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .historiaSection .wrapper figure {
+        float: none !important;
+        margin: 1em 0 !important; } }
     .historiaSection .wrapper figure figcaption {
       background: rgba(64, 78, 91, 0.9);
       line-height: 3em;
@@ -1311,6 +1329,27 @@ nav {
       font-weight: 300;
       color: white;
       font-family: "Muli", sans-serif; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .historiaSection .wrapper figure figcaption {
+          font-size: 9px; } }
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%; }
+  .buttonContainer .button {
+    width: 48% !important; }
+  .buttonContainer .fullWidth {
+    width: 100% !important;
+    margin-top: 1em; }
+
+.empresasGrupo .empresa:nth-child(2) .button {
+  margin: auto 0; }
+.empresasGrupo .empresa:last-child .button {
+  margin: 1em 0 0; }
 
 footer {
   width: 100%;

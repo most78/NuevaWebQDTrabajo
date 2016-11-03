@@ -1,0 +1,27 @@
+.buttonContainer{
+	@include flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    .button{
+    	width: 48%!important;
+    }
+    .fullWidth{
+    	width: 100%!important;
+    	margin-top: 1em;
+    }
+}
+.empresasGrupo{
+	.empresa{
+		&:nth-child(2){
+			.button{
+				margin:auto 0;
+			}
+		}
+		&:last-child{
+			.button{
+				margin:1em 0 0;
+			}
+		}
+	}
+}
