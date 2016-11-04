@@ -1313,7 +1313,8 @@ nav {
       width: 100%; }
     .historiaSection .wrapper figure.leftSide {
       float: left;
-      margin-right: 1.5em; }
+      margin-right: 1.5em;
+      margin-left: 0; }
     @media only screen and (min-width: 319px) and (max-width: 1023px) {
       .historiaSection .wrapper figure {
         float: none !important;
@@ -1342,18 +1343,33 @@ nav {
   width: 100%; }
   .buttonContainer .button {
     width: 48% !important; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .buttonContainer .button {
+        font-size: 1em !important; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .buttonContainer .button {
+        width: 100% !important;
+        font-size: 1em !important;
+        margin-bottom: 1em; } }
   .buttonContainer .fullWidth {
     width: 100% !important;
     margin-top: 1em; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .buttonContainer .fullWidth {
+        margin-top: 0; } }
 
 .empresasGrupo .empresa:nth-child(2) .button {
   margin: auto 0; }
+  @media only screen and (min-width: 319px) and (max-width: 1023px) {
+    .empresasGrupo .empresa:nth-child(2) .button {
+      margin: initial; } }
 .empresasGrupo .empresa:last-child .button {
-  margin: 1em 0 0; }
+  margin: 1.2em 0 0; }
 
 footer {
   width: 100%;
   background-color: #404e5b;
+  margin-top: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

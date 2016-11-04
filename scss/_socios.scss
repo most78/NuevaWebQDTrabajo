@@ -5,10 +5,21 @@
     width: 100%;
     .button{
     	width: 48%!important;
+    	@include respond-to(tablet){
+    		font-size: 1em!important;
+    	}
+    	@include respond-to(movil){
+    		width: 100%!important;
+    		font-size: 1em!important;
+    		margin-bottom: 1em;
+    	}
     }
     .fullWidth{
     	width: 100%!important;
     	margin-top: 1em;
+    	@include respond-to(movil){
+    		margin-top: 0;
+    	}
     }
 }
 .empresasGrupo{
@@ -16,11 +27,14 @@
 		&:nth-child(2){
 			.button{
 				margin:auto 0;
+				@include respond-to(fablet){
+					margin:initial;
+				}
 			}
 		}
 		&:last-child{
 			.button{
-				margin:1em 0 0;
+				margin:1.2em 0 0;
 			}
 		}
 	}
