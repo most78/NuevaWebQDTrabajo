@@ -1441,6 +1441,82 @@ nav {
       font-family: 1em;
       margin-bottom: 1.5em; }
 
+table {
+  margin-top: 3.125em; }
+  table th {
+    background: #f8f8f8;
+    padding: 2em;
+    color: #35414c;
+    font-family: "Muli", sans-serif;
+    font-size: 0.875em;
+    border: 0.5px solid #e1e1e1; }
+    table th span {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.57143em;
+      display: block;
+      margin-bottom: 0.3em; }
+    table th:first-child {
+      color: #404e5b;
+      font-size: 1.125em;
+      text-transform: uppercase;
+      width: 35%;
+      vertical-align: middle;
+      font-family: "Oswald", sans-serif; }
+      table th:first-child span {
+        font-size: 1.88889em;
+        display: inline-block; }
+        table th:first-child span span {
+          vertical-align: super;
+          font-size: 0.5em; }
+    table th:nth-child(2) {
+      width: 24%; }
+    table th:nth-child(3) {
+      width: 20%; }
+  table td {
+    border: 0.5px solid #e1e1e1;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2em;
+    font-family: "Muli", sans-serif;
+    color: #556879; }
+    table td .ion-checkmark {
+      font-size: 1.625em;
+      color: #079335; }
+    table td:first-child {
+      text-align: left; }
+  table tr:nth-child(odd) td {
+    background: #f8f8f8; }
+  table tr:nth-last-child(2) td {
+    border: 0;
+    padding: 0.5em 0 1em; }
+    table tr:nth-last-child(2) td span {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.5em;
+      color: #404e5b; }
+  table tr:last-child td {
+    border: 0;
+    background: none;
+    padding: 0; }
+  table .button {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #991359;
+    border: #991359;
+    color: white;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.25em;
+    padding: 0.5em 1.5em;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    width: 75%; }
+
 .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;

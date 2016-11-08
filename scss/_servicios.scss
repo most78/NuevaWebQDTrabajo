@@ -1,0 +1,87 @@
+table{
+	margin-top:(50/$mainFontSize)*1em;
+	th{
+		background:#f8f8f8;
+		padding:2em;
+		color: darken($mainColor, 5);
+		font-family: $secondaryFont;
+		font-size: (14/$mainFontSize)*1em;
+		border:0.5px solid #e1e1e1;
+		span{
+			font-family: $mainFont;
+			text-transform: uppercase;
+			font-size: (22/14)*1em;
+			display: block;
+			margin-bottom: 0.3em;
+		}
+		&:first-child{
+			color:$mainColor;
+			font-size: (18/$mainFontSize)*1em;
+			text-transform: uppercase;
+			width: 35%;
+			vertical-align: middle;
+			font-family: $mainFont;
+			span{
+				font-size: (34/18)*1em;
+				display: inline-block;
+				span{
+					vertical-align: super;
+					font-size: 0.5em;
+				}
+			}
+		}
+		&:nth-child(2){
+			width: 24%;
+		}
+		&:nth-child(3){
+			width: 20%;
+		}
+	}
+	td{
+		border:0.5px solid #e1e1e1;
+		text-align: center;
+    	vertical-align: middle;
+    	padding: 2em;
+    	font-family: $secondaryFont;
+    	color: lighten($mainColor, 10);
+    	.ion-checkmark{
+    		font-size: (26/$mainFontSize)*1em;
+    		color: #079335;
+    	}
+    	&:first-child{
+    		text-align: left;
+
+    	}
+	}
+	tr{
+		&:nth-child(odd){
+			td{
+				background:#f8f8f8;	
+			}
+		}
+		&:nth-last-child(2){
+			td{
+				border:0;
+				padding:0.5em 0 1em;
+				span{
+					font-family: $mainFont;
+					font-size: (40/$mainFontSize)*1em;
+					color: $mainColor;
+				}
+			}
+		}
+		&:last-child{
+			td{
+				border:0;
+				background:none;
+				padding:0;
+			}
+		}
+	}
+	.button{
+		@include buttom(2px, $secondaryColor);
+		font-size: 20px;
+		width: 75%;
+	}
+
+}
