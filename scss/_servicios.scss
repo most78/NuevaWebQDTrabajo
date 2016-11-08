@@ -82,6 +82,56 @@ table{
 		@include buttom(2px, $secondaryColor);
 		font-size: 20px;
 		width: 75%;
+		margin-bottom: 2em;
 	}
 
+}
+
+.serviciosLanding{
+	background: $mainColor;
+	.wrapper{
+		flex-flow: column wrap;
+		padding:3em 0;
+		.mainClaim{
+			@include mainClaim((44/$mainFontSize)*1em);
+		}
+		.secondaryClaim{
+			@include secondaryClaim((20/$mainFontSize)*1em, $secondaryFont);
+		}
+		.serviceCategories{
+			font-family: $mainFont;
+			font-size: (20/$mainFontSize)*1em;
+			list-style: none;
+			text-transform: uppercase;
+			@include flex;
+			justify-content: space-between;
+			margin-top: 1em;
+			li{
+				background:darken($mainColor,10);
+				border: 1px solid white;
+				width: 100%;
+				text-align: center;
+				padding:1em 0;
+				align-self:center;
+    			-webkit-transition: background-color 2s ease-out;
+				transition: background-color 2s ease-out;
+    			&:hover{
+    				background:lighten($mainColor, 50);
+    				a{
+    					color:$mainColor;
+    				}
+    			}
+				a{
+					color: #f1f1f1;
+					text-decoration: none;
+					-webkit-transition: color 1.5s ease-in;
+					transition: color 1.5s ease-in;
+				}
+				&.active{
+					background:none;
+
+				}
+			}
+		}
+	}
 }

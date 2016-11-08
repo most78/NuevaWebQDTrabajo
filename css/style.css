@@ -1515,7 +1515,58 @@ table {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    width: 75%; }
+    width: 75%;
+    margin-bottom: 2em; }
+
+.serviciosLanding {
+  background: #404e5b; }
+  .serviciosLanding .wrapper {
+    flex-flow: column wrap;
+    padding: 3em 0; }
+    .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.75em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase; }
+    .serviciosLanding .wrapper .secondaryClaim {
+      font-family: "Muli", sans-serif;
+      font-weight: 300;
+      font-size: 1.25em;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1em; }
+    .serviciosLanding .wrapper .serviceCategories {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.25em;
+      list-style: none;
+      text-transform: uppercase;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em; }
+      .serviciosLanding .wrapper .serviceCategories li {
+        background: #2b343d;
+        border: 1px solid white;
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+        align-self: center;
+        -webkit-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out; }
+        .serviciosLanding .wrapper .serviceCategories li:hover {
+          background: #c4cdd6; }
+          .serviciosLanding .wrapper .serviceCategories li:hover a {
+            color: #404e5b; }
+        .serviciosLanding .wrapper .serviceCategories li a {
+          color: #f1f1f1;
+          text-decoration: none;
+          -webkit-transition: color 1.5s ease-in;
+          transition: color 1.5s ease-in; }
+        .serviciosLanding .wrapper .serviceCategories li.active {
+          background: none; }
 
 .buttonContainer {
   display: -webkit-box;

@@ -147,3 +147,16 @@
     </table>
   </div>
 </div>
+<section class="serviciosLanding">
+  <div class="wrapper">
+    <h1 class="mainClaim">¿Conoces todos nuestros productos?</h1>
+    <h2 class="secondaryClaim">Digitalizamos tu negocio para que crezca en internet</h2>
+    <ul class="serviceCategories">
+      <li class="active"><a href="">Diseño web</a></li>
+      <li><a href="">Posicionamiento</a></li>
+      <li><a href="">Campañas</a></li>
+      <li><a href="">Redes Sociales</a></li>
+      <li><a href="">Contenidos digitales</a></li>
+    </ul>
+  </div>
+</section>
