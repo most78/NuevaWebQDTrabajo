@@ -3,4 +3,3 @@
 		<h1 class="mainClaim"><?php echo $HeaderTitle?></h1>
 	</div>
 </div>
-<?php include "secondaryNav.php"; ?>

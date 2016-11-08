@@ -19,7 +19,7 @@
   				</div>
 				<ul class="fadeInRight">
 					<li><a itemprop='url' class="animsition-link <?php echo ($page_name=='home.php')?'active':'';?>" href="home.php"><span itemprop='name'>inicio</span></a></li>
-					<li><a itemprop='url'  class="animsition-link <?php echo ($page_name=='sobre-QDQmedia.php')?'active':'';?>" href="sobre-QDQmedia.php"><span itemprop='name'>quíenes somos</span></a></li>
+					<li><a itemprop='url'  class="animsition-link <?php echo ($page_name=='sobre-QDQmedia.php'||'historia-QDQmedia.php'||'socios-qdqmedia.php'||'equipo-QDQmedia.php')?'active':'';?>" href="sobre-QDQmedia.php"><span itemprop='name'>quíenes somos</span></a></li>
 					<li><a itemprop='url'  class="animsition-link <?php echo ($page_name=='ofertas.php')?'active':'';?>" href="ofertas.php"><span itemprop='name'>ofertas</span></a></li>
 					<li><a itemprop='url'  class="animsition-link <?php echo ($page_name=='blog.php')?'active':'';?>" href="blog.php"><span itemprop='name'>blog</span></a></li>
 					<li><a itemprop='url'  class="animsition-link <?php echo ($page_name=='opiniones.php')?'active':'';?>" href="opiniones.php"><span itemprop='name'>opiniones</span></a></li>

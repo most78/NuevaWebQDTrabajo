@@ -621,7 +621,7 @@ nav {
       -webkit-transition-delay: 2s;
       /* Safari */
       transition-delay: 2s;
-      top: -8.5em;
+      top: -4.5em;
       left: 1%; }
       @media only screen and (min-width: 319px) and (max-width: 767px) {
         .contenedorProducto .producto:first-child {
@@ -1334,6 +1334,113 @@ nav {
         .historiaSection .wrapper figure figcaption {
           font-size: 9px; } }
 
+.headerLandingBackground {
+  background: url("../img/webStepLanding.png") center;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 19.625em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+  .headerLandingBackground .wrapper {
+    flex-flow: row wrap; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .headerLandingBackground .wrapper {
+        flex-flow: column wrap; } }
+  .headerLandingBackground .landingHeaderSection {
+    flex: 2;
+    padding-right: 10em; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .headerLandingBackground .landingHeaderSection {
+        width: 100%;
+        padding: 0; } }
+    .headerLandingBackground .landingHeaderSection .landingPrimaryClaim {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.5em;
+      color: white;
+      margin-top: 15%;
+      margin-bottom: 2em;
+      width: 56%;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
+        .headerLandingBackground .landingHeaderSection .landingPrimaryClaim {
+          width: 100%;
+          margin-top: 18%; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .headerLandingBackground .landingHeaderSection .landingPrimaryClaim {
+          font-size: 2em;
+          margin-top: 38%; } }
+    .headerLandingBackground .landingHeaderSection .landingSecondaryClaim {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5em;
+      color: #333;
+      line-height: 1.33333em;
+      margin: 4em 0 1em; }
+    .headerLandingBackground .landingHeaderSection p {
+      font-family: "Muli", sans-serif;
+      color: #666;
+      margin: 18px 0; }
+  .headerLandingBackground .formBox {
+    width: 28%; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .headerLandingBackground .formBox {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 1em; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .headerLandingBackground .formBox {
+        margin-top: 0; } }
+    .headerLandingBackground .formBox form {
+      padding: 1em 0; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .headerLandingBackground .formBox form {
+          padding: 1em; } }
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
+        .headerLandingBackground .formBox form legend {
+          font-size: 1em; } }
+      .headerLandingBackground .formBox form input {
+        font-size: 1.3em; }
+      .headerLandingBackground .formBox form input[name="firstname"] {
+        margin-top: 0.5em; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .headerLandingBackground .formBox form input[type="checkbox"] {
+          margin-bottom: 0.5em; } }
+      .headerLandingBackground .formBox form .formButton {
+        font-size: 1.5em; }
+
+.beneficiosLanding {
+  width: 100%;
+  background: #f1f1f1 url(../img/webStepBeneficiosPC.png) no-repeat right;
+  padding: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  @media only screen and (min-width: 319px) and (max-width: 1023px) {
+    .beneficiosLanding {
+      background-image: none; } }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .beneficiosLanding {
+      margin-top: 1em; } }
+  .beneficiosLanding h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.75em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    color: #333;
+    text-align: left;
+    margin-bottom: 1em; }
+  .beneficiosLanding ul {
+    list-style: square;
+    padding-left: 1em; }
+    .beneficiosLanding ul li {
+      font-family: "Muli", sans-serif;
+      font-family: 1em;
+      margin-bottom: 1.5em; }
+
 .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1369,7 +1476,6 @@ nav {
 footer {
   width: 100%;
   background-color: #404e5b;
-  margin-top: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

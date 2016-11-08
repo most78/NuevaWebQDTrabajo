@@ -4,6 +4,7 @@
 <?php $HeaderTitle = "quiénes somos";  ?>
 <div class="opinionesWrapper">
 <?php include("innerHeaderBackground.php"); ?>
+<?php include "secondaryNav.php"; ?>
 <div class="wrapper">
 <h1 class="mainClaim">opiniones qdq media</h1>
 <p>Promover la comunicación de las empresas y personas que trabajan con nosotros es una de las principales motivaciones para seguir mejorando la calidad de nuestros servicios. Es también el motor que nos impulsa crecer y a consolidarnos como la mayor agencia de marketing online para los negocios. Por eso queremos darle voz a todos aquellos que depositan su confianza en nosotros día a día.</p>

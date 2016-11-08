@@ -130,7 +130,7 @@
 		&:first-child{
 			-webkit-transition-delay: 2s; /* Safari */
     		transition-delay: 2s;
-			top: -8.5em;
+			top: -4.5em;
 			left: 1%;
 			@include respond-to(movil){
 				top: 0;

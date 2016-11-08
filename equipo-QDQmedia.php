@@ -4,6 +4,7 @@
 <?php $HeaderTitle = "quiénes somos";  ?>
 <article class="sobreWrapper historiaSection">
 	<?php include("innerHeaderBackground.php"); ?>
+	<?php include "secondaryNav.php"; ?>
 	<section class="wrapper">
 		<h1 class="mainClaim">nuestro equipo</h1>
 		<p>Alrededor de 350 personas forman parte del equipo de QDQ media, repartidas por casi todas las ciudades de España, con oficinas en Madrid, Barcelona y Zaragoza.

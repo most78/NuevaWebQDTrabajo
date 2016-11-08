@@ -4,6 +4,7 @@
 <?php $HeaderTitle = "quiénes somos";  ?>
 <article class="sobreWrapper historiaSection">
 	<?php include("innerHeaderBackground.php"); ?>
+	<?php include "secondaryNav.php"; ?>
 	<section class="wrapper">
 		<h1 class="mainClaim">historia</h1>
 		<p>El inicio de QDQ media se remonta al año 1997 cuando, Un grupo de profesionales procedentes del Grupo Telefónica y del sector financiero, se unieron para crear un grupo editorial que pudiera posicionarse fuertemente en entornos multimedia, obteniendo sus ingresos de la publicidad y del comercio electrónico, naciendo así el Grupo Índice Multimedia, un conglomerado con capital 100% español.</p>

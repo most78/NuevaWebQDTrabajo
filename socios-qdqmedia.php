@@ -4,6 +4,7 @@
 <?php $HeaderTitle = "quiénes somos";  ?>
 <article class="sobreWrapper">
 	<?php include("innerHeaderBackground.php"); ?>
+	<?php include "secondaryNav.php"; ?>
 	<section class="wrapper">
 		<h1 class="mainClaim">Nuestros socios</h1>
 		<p>Enfocados en optimizar y ofrecer las mejores soluciones para nuestros clientes, QDQ media trabaja asociada con otras empresas punteras y de gran peso en el mundo de la publicidad dentro del ámbito de internet. Con estas asociaciones la agencia de marketing online para pymes ha conseguido desarrollar y ofrecer un servicio optimizado y diferenciado a sus clientes.</p>

@@ -1,0 +1,116 @@
+.headerLandingBackground{
+	@include background('../img/webStepLanding.png');
+	background-repeat:no-repeat;
+	background-position:top;
+	min-height:(314/$mainFontSize)*1em;
+	@include flex;
+    flex-flow: row wrap;
+    align-items: center;
+    .wrapper{
+    	flex-flow:row wrap;
+		@include respond-to(fablet){
+			flex-flow: column wrap;
+		}
+    }
+    .landingHeaderSection{
+    	flex:2;
+    	padding-right: 10em;
+    	@include respond-to(fablet){
+    		width: 100%;
+    		padding:0;
+    	}
+    	.landingPrimaryClaim{
+			font-family: $mainFont;
+			font-size: (40/$mainFontSize)*1em;
+			color: white;
+			margin-top: 15%;
+			margin-bottom: 2em;
+		    width: 56%;
+	    	text-transform: uppercase;
+	    	@include respond-to(fablet){
+	    		width: 100%;
+	    		margin-top: 18%;
+	    	}
+	    	@include respond-to(movil){
+	    		font-size: 2em;
+	    		margin-top: 38%;
+	    	}
+	    }
+	    .landingSecondaryClaim{
+	    	font-family: $mainFont;
+			font-size: (24/$mainFontSize)*1em;
+			color: #333;
+			line-height: (32/24)*1em;
+			margin: 4em 0 1em;	
+	    }
+	    p{
+	    	font-family: $secondaryFont;
+	    	color: #666;
+	    	margin:18px 0;
+	    }
+	}
+    .formBox{
+    	width: 28%;
+    	@include respond-to(fablet){
+    		width: 100%;
+    		max-width: 100%;
+    		margin-top: 1em;
+    	}
+    	@include respond-to(movil){
+			margin-top: 0;
+    	}
+    	form{
+    		padding: 1em 0;
+    		@include respond-to(movil){
+    			padding:1em;
+    		}
+    		legend{
+    			@include respond-to(fablet){
+    				font-size: 1em;
+    			}
+    		} 
+    		input{
+    			font-size: 1.3em;
+    		}
+    		input[name="firstname"] {
+    		margin-top: 0.5em;
+			}
+			input[type="checkbox"]{
+				@include respond-to(tablet){
+					margin-bottom: 0.5em;
+				}
+			}
+			.formButton{
+				font-size: 1.5em;
+			}
+		}
+    }
+}
+.beneficiosLanding{
+	width:100%;
+	background:#f1f1f1 url(../img/webStepBeneficiosPC.png) no-repeat right;
+	padding:2em;
+	margin-top: 3em;
+	margin-bottom:3em;
+	@include respond-to(fablet){
+		background-image:none;
+	}
+	@include respond-to(movil){
+		margin-top: 1em;
+	}
+	h2{
+		@include secondaryClaim((28/$mainFontSize)*1em , $mainFont);
+		color: #333;
+		text-align: left;
+		margin-bottom: 1em;
+	}
+	ul{
+		list-style: square;
+		padding-left:1em;
+		li{
+			font-family: $secondaryFont;
+			font-family: 1em;
+			margin-bottom: 1.5em;
+		}
+	}
+}

@@ -4,6 +4,7 @@
 <?php $HeaderTitle = "quiénes somos";  ?>
 <article class="sobreWrapper">
 	<?php include("innerHeaderBackground.php"); ?>
+	<?php include "secondaryNav.php"; ?>
 	<section class="wrapper">
 		<h1 class="mainClaim">Sobre qdq media</h1>
 		<p>QDQ media es una agencia de marketing online que forma parte de <a href="">Solocal Group.</a> Los servicios que ofrece son principalmente soluciones digitales dirigidas a las pymes, como son la creación de páginas web – más de 26.000 creadas hasta la fecha - , gestión de campañas de posicionamiento, publicidad online a través de Google Adwords™, posicionamiento SEO, e integración en redes sociales, entre otras.
