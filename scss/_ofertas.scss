@@ -1,3 +1,15 @@
+.ofertas{
+	.backgroundImg{
+		background:url(../img/ofertasBackground.png);
+	}
+}
+.ofertasWrapper{
+	@include respond-to(tablet){
+			width: 100%!important;
+			max-width: 100%!important;
+			margin-top: -3.3em!important;
+		}
+}
 table{
 	margin-top:(50/$mainFontSize)*1em;
 	th{
@@ -83,15 +95,23 @@ table{
 		font-size: 20px;
 		width: 75%;
 		margin-bottom: 2em;
+		@include respond-to(tablet){
+			font-size: 13px;
+		}
 	}
 
 }
-
 .serviciosLanding{
-	background: $mainColor;
+	background: lighten($mainColor, 10);
+	color:white;
+	font-family:$secondaryFont;
 	.wrapper{
+		background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat;
 		flex-flow: column wrap;
 		padding:3em 0;
+		@include respond-to(tablet){
+			background:none;
+		}
 		.mainClaim{
 			@include mainClaim((44/$mainFontSize)*1em);
 		}
@@ -106,6 +126,9 @@ table{
 			@include flex;
 			justify-content: space-between;
 			margin-top: 1em;
+			@include respond-to(tablet){
+				font-size: 0.75em;
+			}
 			li{
 				background:darken($mainColor,10);
 				border: 1px solid white;
@@ -133,5 +156,87 @@ table{
 				}
 			}
 		}
+	}
+
+	h3{
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		margin:1.5em 0;
+	}
+	.leftSide{
+		width: 48%;
+		@include respond-to(tablet){
+			width: 100%;
+		}
+		p{
+			line-height:(24/$mainFontSize)*1em;
+			margin-bottom: 2em; 
+		}
+		.beneficiosList{
+			list-style: none;
+			border-left:1px solid white;
+			padding-left:1em;
+			li{
+				margin: 1em 0;
+			}
+		}
+	}
+	.buttonList{
+		align-self: center;
+    	flex-flow: row wrap;
+    	@include flex;
+    	justify-content: space-between;
+    	list-style: none;
+    	width: 37%;
+    	margin-top: 1em;
+    	@include respond-to(tablet){
+    		width: 80%;
+    	}
+    	li:first-child a{
+	    		&:after{
+	    			content: "";
+	    			position: absolute;
+	    			width: 0; 
+	  				height: 0; 
+	  				border-left: 5px solid white;
+	  				border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+					top: 50%;
+	    			margin-top: -5px;
+	    			margin-left: 1em;
+	    		}
+	    	}
+    	.button{
+    		@include buttom(2px, black);
+    		font-size: (18/$mainFontSize)*1em;
+    		width: 240px;
+    		position:relative;
+    	}
+	}
+}
+.leftSideForm{
+	text-align:right;
+	font-family:$secondaryFont;
+	font-size:(18/$mainFontSize)*1em;
+	color:$mainColor;
+	text-transform:uppercase;
+	p:last-child{
+		font-size: (16/18)*1em;
+	}
+	.mainClaim{
+		font-family: $mainFont;
+		font-size: (44/18)*1em;
+		line-height: 1.2em;
+		span{
+			font-weight: bold;
+			display: block;
+		}
+	}
+}
+fieldset{
+	@include flex;
+	input{
+		border:1px solid $mainColor;
 	}
 }

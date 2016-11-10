@@ -1441,6 +1441,15 @@ nav {
       font-family: 1em;
       margin-bottom: 1.5em; }
 
+.ofertas .backgroundImg {
+  background: url(../img/ofertasBackground.png); }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .ofertasWrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: -3.3em !important; } }
+
 table {
   margin-top: 3.125em; }
   table th {
@@ -1517,12 +1526,21 @@ table {
     font-size: 20px;
     width: 75%;
     margin-bottom: 2em; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      table .button {
+        font-size: 13px; } }
 
 .serviciosLanding {
-  background: #404e5b; }
+  background: #556879;
+  color: white;
+  font-family: "Muli", sans-serif; }
   .serviciosLanding .wrapper {
+    background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat;
     flex-flow: column wrap;
     padding: 3em 0; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .serviciosLanding .wrapper {
+        background: none; } }
     .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
       font-family: "Oswald", sans-serif;
       font-size: 2.75em;
@@ -1547,6 +1565,9 @@ table {
       display: flex;
       justify-content: space-between;
       margin-top: 1em; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .serviciosLanding .wrapper .serviceCategories {
+          font-size: 0.75em; } }
       .serviciosLanding .wrapper .serviceCategories li {
         background: #2b343d;
         border: 1px solid white;
@@ -1567,6 +1588,91 @@ table {
           transition: color 1.5s ease-in; }
         .serviciosLanding .wrapper .serviceCategories li.active {
           background: none; }
+  .serviciosLanding h3 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5em 0; }
+  .serviciosLanding .leftSide {
+    width: 48%; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .serviciosLanding .leftSide {
+        width: 100%; } }
+    .serviciosLanding .leftSide p {
+      line-height: 1.5em;
+      margin-bottom: 2em; }
+    .serviciosLanding .leftSide .beneficiosList {
+      list-style: none;
+      border-left: 1px solid white;
+      padding-left: 1em; }
+      .serviciosLanding .leftSide .beneficiosList li {
+        margin: 1em 0; }
+  .serviciosLanding .buttonList {
+    align-self: center;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 37%;
+    margin-top: 1em; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .serviciosLanding .buttonList {
+        width: 80%; } }
+    .serviciosLanding .buttonList li:first-child a:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 5px solid white;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      top: 50%;
+      margin-top: -5px;
+      margin-left: 1em; }
+    .serviciosLanding .buttonList .button {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      background-color: black;
+      border: black;
+      color: white;
+      display: inline-block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.25em;
+      padding: 0.5em 1.5em;
+      line-height: 1em;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.125em;
+      width: 240px;
+      position: relative; }
+
+.leftSideForm {
+  text-align: right;
+  font-family: "Muli", sans-serif;
+  font-size: 1.125em;
+  color: #404e5b;
+  text-transform: uppercase; }
+  .leftSideForm p:last-child {
+    font-size: 0.88889em; }
+  .leftSideForm .mainClaim, .leftSideForm .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .leftSideForm strong {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.44444em;
+    line-height: 1.2em; }
+    .leftSideForm .mainClaim span, .leftSideForm .heroShot .heroClaim .secondaryClaim strong span, .heroShot .heroClaim .secondaryClaim .leftSideForm strong span {
+      font-weight: bold;
+      display: block; }
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  fieldset input {
+    border: 1px solid #404e5b; }
 
 .buttonContainer {
   display: -webkit-box;
