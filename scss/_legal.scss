@@ -1,0 +1,57 @@
+.legalWrapper{
+	font-family:$secondaryFont;
+	color:#666;
+	margin-bottom:(50/$mainFontSize)*1em;
+	.wrapper{
+		flex-flow: column wrap;
+		section{width:100%;}
+		.sectionTitle{
+		font-size:(30/$mainFontSize)*1em;
+		font-family: $mainFont;
+		color: $mainColor;
+		text-transform: uppercase;
+		margin: 1em 0;
+			@include respond-to(tablet){
+				font-size: (26/$mainFontSize)*1em;
+			}
+			@include respond-to(movil){
+				font-size: (20/$mainFontSize)*1em;
+			}
+		}
+		p{
+			margin: 2em 0;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		ol{
+			li{
+				margin-left: 1em;
+				margin-top: 2em;
+				margin-bottom: 2em;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		a{
+			color: $secondaryColor;
+			text-decoration: none;
+			word-wrap: break-word;
+		}
+		table{
+			border: 1px solid #e7e7e7; 
+		th{
+			color: #404e5b;
+    		font-size: 1.125em;
+    		text-transform: uppercase;
+    		width: 35%;
+    		vertical-align: middle;
+    		font-family: "Oswald", sans-serif;
+		}
+		td{
+			text-align: center;
+		}
+	}
+}
+}

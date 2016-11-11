@@ -1,3 +1,6 @@
+.ofertasFormSection{
+	margin:2em 0;
+}
 .ofertas{
 	.backgroundImg{
 		background:url(../img/ofertasBackground.png);
@@ -216,27 +219,88 @@ table{
 	}
 }
 .leftSideForm{
+	position:relative;
 	text-align:right;
 	font-family:$secondaryFont;
 	font-size:(18/$mainFontSize)*1em;
 	color:$mainColor;
 	text-transform:uppercase;
-	p:last-child{
+	margin-right: (50/$mainFontSize)*1em;
+	margin-top: 1em;
+	flex:1;
+	.arrow{
+	background: url(../img/arrow.png) no-repeat;
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 150px;
+    left: 94%;
+    top: 10.4em;
+	}
+	.smallText{
 		font-size: (16/18)*1em;
 	}
 	.mainClaim{
 		font-family: $mainFont;
 		font-size: (44/18)*1em;
 		line-height: 1.2em;
+		margin:0.3em 0;
 		span{
 			font-weight: bold;
 			display: block;
 		}
 	}
 }
-fieldset{
-	@include flex;
-	input{
-		border:1px solid $mainColor;
+.ofertasFormSection{
+form{
+	flex:1;
+	fieldset{
+		font-family: $mainFont;
+		font-size: (18/$mainFontSize)*1em;
+		text-transform: uppercase;
+		color: rgba($mainColor, 0.4);
+		// opacity: .4;
+		width: 80%;
+		label{
+			font-size: (14/18)*1em;
+			font-family: $secondaryFont;
+			font-style: italic;
+			text-transform: none;
+			position:relative;
+			top:-0.3em;
+			a{
+				color: $secondaryColor;
+				text-decoration: none;
+			}
+
+		}
+		input{
+			border:1px solid rgba($mainColor, 0.5);
+			background:#fafafa;
+			height: (60/18)*1em;
+			width: 65%;
+			margin-left: 1.03em;
+			margin-top: 1em;
+			padding-left:1em;
+			&[type="tel"]{
+				margin-left: 0.6em;
+			}
+			&[type="mail"]{
+				margin-left: 2.07em;
+			}
+			&[type="checkbox"]{
+				width: 20px;
+				height: 20px;
+				margin-left: 4.4em;
+			}
+			&[type="submit"]{
+				margin-left: 16%;
+				background-color:$secondaryColor;
+				border-radius:2px;
+				text-transform: uppercase;
+				color: white;
+			}
+		}
 	}
+}
 }

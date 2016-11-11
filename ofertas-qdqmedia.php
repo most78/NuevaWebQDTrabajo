@@ -176,21 +176,22 @@
       </ul>
   </div>
 </section>
-<section>
+<section class="ofertasFormSection">
   <div class="wrapper">
     <div class="leftSideForm">
       <p>Si quieres mas información o asesoramiento</p>
       <h2 class="mainClaim">Llama gratis al <span>900 100 134</span></h2>
-      <p>o rellena nuestro formulario y nosotros</br> nos pondremos en contacto contigo</p>
+      <p class="smallText">o rellena nuestro formulario y nosotros</br> nos pondremos en contacto contigo</p>
+      <span class="arrow"></span>
     </div>
     <form action="">
       <fieldset>
-      Nombre<input type="text" name="firstname">
-      Teléfono<input type="tel" name="telephone">
-        Email<input type="mail" name="email">
+      Nombre<input type="text" name="firstname"><br/>
+      Teléfono<input type="tel" name="telephone"><br/>
+        Email<input type="mail" name="email"><br/>
         <input type="checkbox" name="conditionsOK" value="conditionsOK">
         <label>He leido y acepto la <a href=""> política de uso de datos</a></label>
-        <input type="submit" name="Submit" class="formButton"/>
+        <input type="submit" name="Submit" value="Te llamamos gratis" class="formButton"/>
       </fieldset>
     </form>
   </div>

@@ -1441,6 +1441,9 @@ nav {
       font-family: 1em;
       margin-bottom: 1.5em; }
 
+.ofertasFormSection {
+  margin: 2em 0; }
+
 .ofertas .backgroundImg {
   background: url(../img/ofertasBackground.png); }
 
@@ -1652,27 +1655,120 @@ table {
       position: relative; }
 
 .leftSideForm {
+  position: relative;
   text-align: right;
   font-family: "Muli", sans-serif;
   font-size: 1.125em;
   color: #404e5b;
-  text-transform: uppercase; }
-  .leftSideForm p:last-child {
+  text-transform: uppercase;
+  margin-right: 3.125em;
+  margin-top: 1em;
+  flex: 1; }
+  .leftSideForm .arrow {
+    background: url(../img/arrow.png) no-repeat;
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 150px;
+    left: 94%;
+    top: 10.4em; }
+  .leftSideForm .smallText {
     font-size: 0.88889em; }
   .leftSideForm .mainClaim, .leftSideForm .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .leftSideForm strong {
     font-family: "Oswald", sans-serif;
     font-size: 2.44444em;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    margin: 0.3em 0; }
     .leftSideForm .mainClaim span, .leftSideForm .heroShot .heroClaim .secondaryClaim strong span, .heroShot .heroClaim .secondaryClaim .leftSideForm strong span {
       font-weight: bold;
       display: block; }
 
-fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  fieldset input {
-    border: 1px solid #404e5b; }
+.ofertasFormSection form {
+  flex: 1; }
+  .ofertasFormSection form fieldset {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: rgba(64, 78, 91, 0.4);
+    width: 80%; }
+    .ofertasFormSection form fieldset label {
+      font-size: 0.77778em;
+      font-family: "Muli", sans-serif;
+      font-style: italic;
+      text-transform: none;
+      position: relative;
+      top: -0.3em; }
+      .ofertasFormSection form fieldset label a {
+        color: #991359;
+        text-decoration: none; }
+    .ofertasFormSection form fieldset input {
+      border: 1px solid rgba(64, 78, 91, 0.5);
+      background: #fafafa;
+      height: 3.33333em;
+      width: 65%;
+      margin-left: 1.03em;
+      margin-top: 1em;
+      padding-left: 1em; }
+      .ofertasFormSection form fieldset input[type="tel"] {
+        margin-left: 0.6em; }
+      .ofertasFormSection form fieldset input[type="mail"] {
+        margin-left: 2.07em; }
+      .ofertasFormSection form fieldset input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-left: 4.4em; }
+      .ofertasFormSection form fieldset input[type="submit"] {
+        margin-left: 16%;
+        background-color: #991359;
+        border-radius: 2px;
+        text-transform: uppercase;
+        color: white; }
+
+.legalWrapper {
+  font-family: "Muli", sans-serif;
+  color: #666;
+  margin-bottom: 3.125em; }
+  .legalWrapper .wrapper {
+    flex-flow: column wrap; }
+    .legalWrapper .wrapper section {
+      width: 100%; }
+    .legalWrapper .wrapper .sectionTitle {
+      font-size: 1.875em;
+      font-family: "Oswald", sans-serif;
+      color: #404e5b;
+      text-transform: uppercase;
+      margin: 1em 0; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .legalWrapper .wrapper .sectionTitle {
+          font-size: 1.625em; } }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .legalWrapper .wrapper .sectionTitle {
+          font-size: 1.25em; } }
+    .legalWrapper .wrapper p {
+      margin: 2em 0; }
+      .legalWrapper .wrapper p:last-child {
+        margin-bottom: 0; }
+    .legalWrapper .wrapper ol li {
+      margin-left: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em; }
+      .legalWrapper .wrapper ol li:last-child {
+        margin-bottom: 0; }
+    .legalWrapper .wrapper a {
+      color: #991359;
+      text-decoration: none;
+      word-wrap: break-word; }
+    .legalWrapper .wrapper table {
+      border: 1px solid #e7e7e7; }
+      .legalWrapper .wrapper table th {
+        color: #404e5b;
+        font-size: 1.125em;
+        text-transform: uppercase;
+        width: 35%;
+        vertical-align: middle;
+        font-family: "Oswald", sans-serif; }
+      .legalWrapper .wrapper table td {
+        text-align: center; }
 
 .buttonContainer {
   display: -webkit-box;
