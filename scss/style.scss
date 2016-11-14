@@ -33,6 +33,9 @@ body{
 	width:$fullWidth;
 	max-width:1366px;
 	margin:auto;
+	@include respond-to(tablet){
+		width: 90%;
+	}
 }
 .invisible{
      opacity:0;

@@ -1443,9 +1443,50 @@ nav {
 
 .ofertasFormSection {
   margin: 2em 0; }
+  @media only screen and (min-width: 319px) and (max-width: 1023px) {
+    .ofertasFormSection .wrapper {
+      flex-flow: column wrap; } }
 
+.ofertas .wrapper {
+  flex-flow: column wrap; }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .ofertas .wrapper {
+      width: 100%; } }
+  .ofertas .wrapper .table-button-menu {
+    display: none;
+    list-style: none;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.125em;
+    background: #eee; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .ofertas .wrapper .table-button-menu {
+        display: flex; } }
+    .ofertas .wrapper .table-button-menu li {
+      flex: 1;
+      text-align: center;
+      border: 0.5px solid #e1e1e1;
+      border-bottom: 0;
+      line-height: 3.125em; }
+      .ofertas .wrapper .table-button-menu li.active a {
+        color: rgba(64, 78, 91, 0.7); }
+      .ofertas .wrapper .table-button-menu li:nth-child(2) {
+        border-right: 0.5px solid white; }
+      .ofertas .wrapper .table-button-menu li:nth-child(3) {
+        border-left: 0.5px solid white; }
+      .ofertas .wrapper .table-button-menu li a {
+        font-family: "Oswald", sans-serif;
+        font-size: 0.875em;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.15);
+        text-decoration: none; }
 .ofertas .backgroundImg {
   background: url(../img/ofertasBackground.png); }
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .ofertas .mainClaim, .ofertas .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .ofertas strong {
+    font-size: 2.9em !important; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .ofertasWrapper {
@@ -1455,6 +1496,13 @@ nav {
 
 table {
   margin-top: 3.125em; }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    table {
+      margin-top: 0;
+      border: 1px solid #e1e1e1;
+      border-top: 0; }
+      table tr:first-child {
+        display: none; } }
   table th {
     background: #f8f8f8;
     padding: 2em;
@@ -1462,12 +1510,19 @@ table {
     font-family: "Muli", sans-serif;
     font-size: 0.875em;
     border: 0.5px solid #e1e1e1; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      table th {
+        padding: 1em 0.5em;
+        vertical-align: middle; } }
     table th span {
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
       font-size: 1.57143em;
       display: block;
       margin-bottom: 0.3em; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        table th span {
+          font-size: 1.07143em; } }
     table th:first-child {
       color: #404e5b;
       font-size: 1.125em;
@@ -1478,6 +1533,9 @@ table {
       table th:first-child span {
         font-size: 1.88889em;
         display: inline-block; }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          table th:first-child span {
+            font-size: 1.22222em; } }
         table th:first-child span span {
           vertical-align: super;
           font-size: 0.5em; }
@@ -1492,16 +1550,35 @@ table {
     padding: 2em;
     font-family: "Muli", sans-serif;
     color: #556879; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      table td {
+        padding: 1em; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      table td {
+        font-size: 0.875em; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      table td span {
+        border: 0; }
+        table td span.invisible {
+          opacity: 0;
+          display: none;
+          visibility: hidden; } }
     table td .ion-checkmark {
       font-size: 1.625em;
       color: #079335; }
     table td:first-child {
       text-align: left; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      table td:nth-child(n+3) {
+        display: none; } }
   table tr:nth-child(odd) td {
     background: #f8f8f8; }
   table tr:nth-last-child(2) td {
     border: 0;
     padding: 0.5em 0 1em; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      table tr:nth-last-child(2) td:first-child {
+        display: none; } }
     table tr:nth-last-child(2) td span {
       font-family: "Oswald", sans-serif;
       font-size: 2.5em;
@@ -1538,18 +1615,30 @@ table {
   color: white;
   font-family: "Muli", sans-serif; }
   .serviciosLanding .wrapper {
-    background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat;
     flex-flow: column wrap;
     padding: 3em 0; }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .serviciosLanding .wrapper {
         background: none; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .serviciosLanding .wrapper {
+        width: 100%;
+        padding-top: 1em; } }
+    .serviciosLanding .wrapper .serviciosBackground {
+      background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat; }
     .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
       font-family: "Oswald", sans-serif;
       font-size: 2.75em;
       color: white;
       text-align: center;
       text-transform: uppercase; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
+          text-align: left;
+          padding: 0.7em;
+          font-size: 26px;
+          padding-top: 0;
+          padding-bottom: 0.2em; } }
     .serviciosLanding .wrapper .secondaryClaim {
       font-family: "Muli", sans-serif;
       font-weight: 300;
@@ -1558,6 +1647,11 @@ table {
       text-align: center;
       text-transform: uppercase;
       line-height: 1.1em; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .serviciosLanding .wrapper .secondaryClaim {
+          text-align: left;
+          margin-left: 1.2em;
+          font-size: 16px; } }
     .serviciosLanding .wrapper .serviceCategories {
       font-family: "Oswald", sans-serif;
       font-size: 1.25em;
@@ -1664,6 +1758,10 @@ table {
   margin-right: 3.125em;
   margin-top: 1em;
   flex: 1; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .leftSideForm {
+      margin-right: 0;
+      margin-top: -0.4em; } }
   .leftSideForm .arrow {
     background: url(../img/arrow.png) no-repeat;
     position: absolute;
@@ -1672,6 +1770,9 @@ table {
     height: 150px;
     left: 94%;
     top: 10.4em; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .leftSideForm .arrow {
+        display: none; } }
   .leftSideForm .smallText {
     font-size: 0.88889em; }
   .leftSideForm .mainClaim, .leftSideForm .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .leftSideForm strong {
@@ -1679,9 +1780,16 @@ table {
     font-size: 2.44444em;
     line-height: 1.2em;
     margin: 0.3em 0; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .leftSideForm .mainClaim, .leftSideForm .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .leftSideForm strong {
+        font-size: 2.33333em;
+        margin: 0.2em 0; } }
     .leftSideForm .mainClaim span, .leftSideForm .heroShot .heroClaim .secondaryClaim strong span, .heroShot .heroClaim .secondaryClaim .leftSideForm strong span {
       font-weight: bold;
       display: block; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .leftSideForm .mainClaim span, .leftSideForm .heroShot .heroClaim .secondaryClaim strong span, .heroShot .heroClaim .secondaryClaim .leftSideForm strong span {
+          display: inline; } }
 
 .ofertasFormSection form {
   flex: 1; }
@@ -1691,6 +1799,9 @@ table {
     text-transform: uppercase;
     color: rgba(64, 78, 91, 0.4);
     width: 80%; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .ofertasFormSection form fieldset {
+        width: 100%; } }
     .ofertasFormSection form fieldset label {
       font-size: 0.77778em;
       font-family: "Muli", sans-serif;
@@ -1709,6 +1820,10 @@ table {
       margin-left: 1.03em;
       margin-top: 1em;
       padding-left: 1em; }
+      @media only screen and (min-width: 319px) and (max-width: 1023px) {
+        .ofertasFormSection form fieldset input {
+          margin: 0.4em 0 !important;
+          width: 100%; } }
       .ofertasFormSection form fieldset input[type="tel"] {
         margin-left: 0.6em; }
       .ofertasFormSection form fieldset input[type="mail"] {
@@ -1976,6 +2091,9 @@ body {
   width: 84.25%;
   max-width: 1366px;
   margin: auto; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+      width: 90%; } }
 
 .invisible {
   opacity: 0; }

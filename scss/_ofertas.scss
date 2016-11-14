@@ -1,9 +1,61 @@
 .ofertasFormSection{
 	margin:2em 0;
+	.wrapper{
+		@include respond-to(fablet){
+			flex-flow: column wrap;
+		}
+	}
 }
 .ofertas{
+	.wrapper{
+			flex-flow: column wrap;
+			@include respond-to(movil){
+				width: 100%;
+			}
+			.table-button-menu{
+				display: none;
+				list-style: none;
+				width: 100%;
+				flex-flow: row nowrap;
+				justify-content: space-around;
+				align-items:center;
+				height: (50/$mainFontSize)*1em;
+				background:#eee;
+				@include respond-to(movil){
+					display: flex;
+				}
+				li{
+					flex: 1;
+    				text-align: center;
+    				border: 0.5px solid #e1e1e1;
+    				border-bottom:0;
+    				line-height: 3.125em;
+    				&.active a{
+    					color:rgba($mainColor, .7);
+    					}
+    				&:nth-child(2){
+    					border-right:0.5px solid white;
+    				}
+    				&:nth-child(3){
+    					border-left:0.5px solid white;
+    				}
+    				a{
+    					font-family: $mainFont;
+						font-size: (14/$mainFontSize)*1em;
+						text-transform: uppercase;
+						color:rgba(black, .15);
+						text-decoration: none;
+    				}
+				}
+			}
+		}
 	.backgroundImg{
 		background:url(../img/ofertasBackground.png);
+	}
+	.mainClaim{
+		@include respond-to(movil){
+			font-size: 2.9em!important;
+		}
 	}
 }
 .ofertasWrapper{
@@ -15,6 +67,15 @@
 }
 table{
 	margin-top:(50/$mainFontSize)*1em;
+	@include respond-to(movil){
+		margin-top: 0;
+		border:1px solid #e1e1e1;
+		border-top:0; 
+		tr:first-child{
+			display: none;
+		}
+	}
+
 	th{
 		background:#f8f8f8;
 		padding:2em;
@@ -22,12 +83,20 @@ table{
 		font-family: $secondaryFont;
 		font-size: (14/$mainFontSize)*1em;
 		border:0.5px solid #e1e1e1;
+		@include respond-to(fablet){
+			padding: 1em 0.5em;
+			vertical-align: middle;
+		}
 		span{
 			font-family: $mainFont;
 			text-transform: uppercase;
 			font-size: (22/14)*1em;
 			display: block;
 			margin-bottom: 0.3em;
+			@include respond-to(tablet){
+				font-size: (15/14)*1em;
+			}
+
 		}
 		&:first-child{
 			color:$mainColor;
@@ -39,6 +108,9 @@ table{
 			span{
 				font-size: (34/18)*1em;
 				display: inline-block;
+				@include respond-to(tablet){
+					font-size: (22/18)*1em;
+				}
 				span{
 					vertical-align: super;
 					font-size: 0.5em;
@@ -59,14 +131,35 @@ table{
     	padding: 2em;
     	font-family: $secondaryFont;
     	color: lighten($mainColor, 10);
+    	@include respond-to(fablet){
+    		padding:1em;
+    	}
+    	@include respond-to(movil){
+    		font-size: (14/$mainFontSize)*1em;
+    	}
+    	span{
+    		@include respond-to(movil){
+    		border:0;
+    		&.invisible{
+			opacity: 0;
+			display: none;
+			visibility: hidden;
+		}
+    		}
+    	}
     	.ion-checkmark{
     		font-size: (26/$mainFontSize)*1em;
     		color: #079335;
     	}
     	&:first-child{
     		text-align: left;
-
     	}
+		&:nth-child(n+3){
+			@include respond-to(movil){
+				display: none;
+				//visibility: hidden;			
+			}
+		}
 	}
 	tr{
 		&:nth-child(odd){
@@ -78,6 +171,12 @@ table{
 			td{
 				border:0;
 				padding:0.5em 0 1em;
+				&:first-child{
+					@include respond-to(movil){
+					display: none;
+					}
+				}
+
 				span{
 					font-family: $mainFont;
 					font-size: (40/$mainFontSize)*1em;
@@ -109,17 +208,35 @@ table{
 	color:white;
 	font-family:$secondaryFont;
 	.wrapper{
-		background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat;
 		flex-flow: column wrap;
 		padding:3em 0;
 		@include respond-to(tablet){
 			background:none;
 		}
+		@include respond-to(movil){
+			width: 100%;
+			padding-top: 1em;
+		}
+		.serviciosBackground{
+			background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat;
+		}
 		.mainClaim{
 			@include mainClaim((44/$mainFontSize)*1em);
+			@include respond-to(movil){
+				text-align: left;
+    			padding: 0.7em;
+    			font-size: 26px;
+    			padding-top: 0;
+    			padding-bottom: 0.2em;
+			}
 		}
 		.secondaryClaim{
 			@include secondaryClaim((20/$mainFontSize)*1em, $secondaryFont);
+			@include respond-to(movil){
+				text-align: left;
+			    margin-left: 1.2em;
+			    font-size: 16px;
+			}
 		}
 		.serviceCategories{
 			font-family: $mainFont;
@@ -228,6 +345,10 @@ table{
 	margin-right: (50/$mainFontSize)*1em;
 	margin-top: 1em;
 	flex:1;
+	@include respond-to(tablet){
+		margin-right: 0;
+    	margin-top: -0.4em;
+	}
 	.arrow{
 	background: url(../img/arrow.png) no-repeat;
     position: absolute;
@@ -236,6 +357,9 @@ table{
     height: 150px;
     left: 94%;
     top: 10.4em;
+    	@include respond-to(tablet){
+    		display: none;
+    	}
 	}
 	.smallText{
 		font-size: (16/18)*1em;
@@ -245,9 +369,16 @@ table{
 		font-size: (44/18)*1em;
 		line-height: 1.2em;
 		margin:0.3em 0;
+		@include respond-to(tablet){
+			font-size: (42/18)*1em;
+			margin:0.2em 0;
+		}
 		span{
 			font-weight: bold;
 			display: block;
+			@include respond-to(tablet){
+				display: inline;
+			}
 		}
 	}
 }
@@ -259,8 +390,10 @@ form{
 		font-size: (18/$mainFontSize)*1em;
 		text-transform: uppercase;
 		color: rgba($mainColor, 0.4);
-		// opacity: .4;
 		width: 80%;
+		@include respond-to(fablet){
+			width: 100%;
+		}
 		label{
 			font-size: (14/18)*1em;
 			font-family: $secondaryFont;
@@ -282,6 +415,10 @@ form{
 			margin-left: 1.03em;
 			margin-top: 1em;
 			padding-left:1em;
+			@include respond-to(fablet){
+				margin: 0.4em 0!important;
+    			width: 100%;
+			}
 			&[type="tel"]{
 				margin-left: 0.6em;
 			}

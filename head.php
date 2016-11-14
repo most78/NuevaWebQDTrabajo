@@ -43,6 +43,7 @@ switch($page) {
 <link rel="stylesheet" type="text/css" href="css/animate.css" />
 <link rel="stylesheet" href="css/animsition.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="js/fixed-header.js"></script>
 <script type="text/javascript" src="js/hide_show_mainMenu.js"></script>
 <script type="text/javascript" src="js/animation_elements.js"></script>
@@ -50,4 +51,5 @@ switch($page) {
 <script type="text/javascript" src="js/viewportchecker.js"></script>
 <script type="text/javascript" src="js/animsition.min.js"></script>
 <script type="text/javascript" src="js/pageTransition.js"></script>
+<script type="text/javascript" src="js/table-responsive.js"></script>
 </head>
