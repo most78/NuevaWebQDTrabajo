@@ -217,9 +217,12 @@ table{
 			width: 100%;
 			padding-top: 1em;
 		}
-		.serviciosBackground{
-			background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat;
-		}
+		/*.serviciosBackground{
+			background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
+			&.leftBackground{
+				background-position: left 45%;
+			}
+		}*/
 		.mainClaim{
 			@include mainClaim((44/$mainFontSize)*1em);
 			@include respond-to(movil){
@@ -249,7 +252,7 @@ table{
 			@include respond-to(tablet){
 				font-size: 0.75em;
 			}
-			li{
+			/*li{
 				background:darken($mainColor,10);
 				border: 1px solid white;
 				width: 100%;
@@ -274,18 +277,15 @@ table{
 					background:none;
 
 				}
-			}
+			}*/
 		}
 	}
 
-	h3{
-		width: 100%;
-		text-align: center;
-		text-transform: uppercase;
-		margin:1.5em 0;
-	}
-	.leftSide{
+	
+	.leftSide, .rightSide{
 		width: 48%;
+		margin-bottom: 6em;
+    	margin-top: 3em;
 		@include respond-to(tablet){
 			width: 100%;
 		}
@@ -302,18 +302,24 @@ table{
 			}
 		}
 	}
+	.rightSide{
+		float: right;
+		padding-left: 3em;
+	}
 	.buttonList{
 		align-self: center;
     	flex-flow: row wrap;
     	@include flex;
-    	justify-content: space-between;
+    	justify-content: center;
     	list-style: none;
-    	width: 37%;
+    	width: 100%;
     	margin-top: 1em;
     	@include respond-to(tablet){
     		width: 80%;
     	}
-    	li:first-child a{
+    	li{
+    		margin-right: 1em;
+    		a{
 	    		&:after{
 	    			content: "";
 	    			position: absolute;
@@ -327,10 +333,11 @@ table{
 	    			margin-left: 1em;
 	    		}
 	    	}
+	    }
     	.button{
     		@include buttom(2px, black);
     		font-size: (18/$mainFontSize)*1em;
-    		width: 240px;
+    		padding:0.5em 2em;
     		position:relative;
     	}
 	}

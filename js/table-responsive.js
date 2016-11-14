@@ -30,6 +30,6 @@ function checkSize(){
         	$('table tr:last-child td:first-child').css("display","none");
         	$('table tr:nth-last-child(2) td').attr("colspan",2);
         	$('table tr:last-child td').attr("colspan",2);
-        	$('.serviceCategories').parent().attr('id', 'accordion');
+        	//$('.serviceCategories').parent().attr('id', 'accordion');
     }
 }

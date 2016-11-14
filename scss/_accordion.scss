@@ -1,0 +1,69 @@
+#accordion{
+	position: relative;
+	margin-top: 3em;
+	h2{
+		position: absolute;
+    	top: 0em;
+    	padding: 1em;
+    	border: 0.5px solid #e1e1e1;
+    	width: 20%;
+    	display: inline-block;
+    	text-align: center;
+    	background:darken($mainColor,10);
+		border: 1px solid white;
+    	-webkit-transition: background-color 2s ease-out;
+		transition: background-color 2s ease-out;
+		color: #f1f1f1;
+		-webkit-transition: color 1.5s ease-in;
+		transition: color 1.5s ease-in;
+		text-transform: uppercase;
+		font-family: $mainFont;
+		font-size: (22/$mainFontSize)*1em;
+
+    	&.ui-state-active{
+			background:none;	
+    	}
+    	&:hover{
+    		background:lighten($mainColor, 50);
+   			color:$mainColor;
+    	}
+	}
+	#ui-id-3{
+   		margin-left: 20%;
+	}
+	#ui-id-5{
+		margin-left: 40%;
+	}
+	#ui-id-7{
+		margin-left: 60%;
+	}
+	#ui-id-9{
+		margin-left: 80%;
+	}
+	.serviciosBackground{
+		background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
+		display: inline-block;
+	    padding: 6em 0px;
+		&.leftBackground{
+			background-position: left 45%;
+		}
+	}
+	.posicionamientoBg{
+		background-image:url(../img/posicionamientoBg.png);
+	}
+	.campanasBg{
+		background:url(../img/campanasBg.png) right 38% no-repeat;
+	}
+	.RRSSBg{
+		background-image:url(../img/RRSSBg.png);
+	}
+	.contenidosDgBg{
+		background-image:url(../img/contenidosDgBg.png);
+	}
+	h3{
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		margin:1.5em 0;
+	}
+}

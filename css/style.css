@@ -1616,7 +1616,13 @@ table {
   font-family: "Muli", sans-serif; }
   .serviciosLanding .wrapper {
     flex-flow: column wrap;
-    padding: 3em 0; }
+    padding: 3em 0;
+    /*.serviciosBackground{
+    	background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
+    	&.leftBackground{
+    		background-position: left 45%;
+    	}
+    }*/ }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .serviciosLanding .wrapper {
         background: none; } }
@@ -1624,8 +1630,6 @@ table {
       .serviciosLanding .wrapper {
         width: 100%;
         padding-top: 1em; } }
-    .serviciosLanding .wrapper .serviciosBackground {
-      background: url(../img/disenoWebOfertasBg.png) right 80% no-repeat; }
     .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
       font-family: "Oswald", sans-serif;
       font-size: 2.75em;
@@ -1661,73 +1665,81 @@ table {
       display: -ms-flexbox;
       display: flex;
       justify-content: space-between;
-      margin-top: 1em; }
+      margin-top: 1em;
+      			/*li{
+      				background:darken($mainColor,10);
+      				border: 1px solid white;
+      				width: 100%;
+      				text-align: center;
+      				padding:1em 0;
+      				align-self:center;
+          			-webkit-transition: background-color 2s ease-out;
+      				transition: background-color 2s ease-out;
+          			&:hover{
+          				background:lighten($mainColor, 50);
+          				a{
+          					color:$mainColor;
+          				}
+          			}
+      				a{
+      					color: #f1f1f1;
+      					text-decoration: none;
+      					-webkit-transition: color 1.5s ease-in;
+      					transition: color 1.5s ease-in;
+      				}
+      				&.active{
+      					background:none;
+      
+      				}
+      			}*/ }
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .serviciosLanding .wrapper .serviceCategories {
           font-size: 0.75em; } }
-      .serviciosLanding .wrapper .serviceCategories li {
-        background: #2b343d;
-        border: 1px solid white;
-        width: 100%;
-        text-align: center;
-        padding: 1em 0;
-        align-self: center;
-        -webkit-transition: background-color 2s ease-out;
-        transition: background-color 2s ease-out; }
-        .serviciosLanding .wrapper .serviceCategories li:hover {
-          background: #c4cdd6; }
-          .serviciosLanding .wrapper .serviceCategories li:hover a {
-            color: #404e5b; }
-        .serviciosLanding .wrapper .serviceCategories li a {
-          color: #f1f1f1;
-          text-decoration: none;
-          -webkit-transition: color 1.5s ease-in;
-          transition: color 1.5s ease-in; }
-        .serviciosLanding .wrapper .serviceCategories li.active {
-          background: none; }
-  .serviciosLanding h3 {
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 1.5em 0; }
-  .serviciosLanding .leftSide {
-    width: 48%; }
+  .serviciosLanding .leftSide, .serviciosLanding .rightSide {
+    width: 48%;
+    margin-bottom: 6em;
+    margin-top: 3em; }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      .serviciosLanding .leftSide {
+      .serviciosLanding .leftSide, .serviciosLanding .rightSide {
         width: 100%; } }
-    .serviciosLanding .leftSide p {
+    .serviciosLanding .leftSide p, .serviciosLanding .rightSide p {
       line-height: 1.5em;
       margin-bottom: 2em; }
-    .serviciosLanding .leftSide .beneficiosList {
+    .serviciosLanding .leftSide .beneficiosList, .serviciosLanding .rightSide .beneficiosList {
       list-style: none;
       border-left: 1px solid white;
       padding-left: 1em; }
-      .serviciosLanding .leftSide .beneficiosList li {
+      .serviciosLanding .leftSide .beneficiosList li, .serviciosLanding .rightSide .beneficiosList li {
         margin: 1em 0; }
+  .serviciosLanding .rightSide {
+    float: right;
+    padding-left: 3em; }
   .serviciosLanding .buttonList {
     align-self: center;
     flex-flow: row wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
-    width: 37%;
+    width: 100%;
     margin-top: 1em; }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .serviciosLanding .buttonList {
         width: 80%; } }
-    .serviciosLanding .buttonList li:first-child a:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-left: 5px solid white;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
-      top: 50%;
-      margin-top: -5px;
-      margin-left: 1em; }
+    .serviciosLanding .buttonList li {
+      margin-right: 1em; }
+      .serviciosLanding .buttonList li a:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid white;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        top: 50%;
+        margin-top: -5px;
+        margin-left: 1em; }
     .serviciosLanding .buttonList .button {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
@@ -1745,7 +1757,7 @@ table {
       text-align: center;
       text-decoration: none;
       font-size: 1.125em;
-      width: 240px;
+      padding: 0.5em 2em;
       position: relative; }
 
 .leftSideForm {
@@ -1916,6 +1928,60 @@ table {
       margin: initial; } }
 .empresasGrupo .empresa:last-child .button {
   margin: 1.2em 0 0; }
+
+#accordion {
+  position: relative;
+  margin-top: 3em; }
+  #accordion h2 {
+    position: absolute;
+    top: 0em;
+    padding: 1em;
+    border: 0.5px solid #e1e1e1;
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    background: #2b343d;
+    border: 1px solid white;
+    -webkit-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+    color: #f1f1f1;
+    -webkit-transition: color 1.5s ease-in;
+    transition: color 1.5s ease-in;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.375em; }
+    #accordion h2.ui-state-active {
+      background: none; }
+    #accordion h2:hover {
+      background: #c4cdd6;
+      color: #404e5b; }
+  #accordion #ui-id-3 {
+    margin-left: 20%; }
+  #accordion #ui-id-5 {
+    margin-left: 40%; }
+  #accordion #ui-id-7 {
+    margin-left: 60%; }
+  #accordion #ui-id-9 {
+    margin-left: 80%; }
+  #accordion .serviciosBackground {
+    background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
+    display: inline-block;
+    padding: 6em 0px; }
+    #accordion .serviciosBackground.leftBackground {
+      background-position: left 45%; }
+  #accordion .posicionamientoBg {
+    background-image: url(../img/posicionamientoBg.png); }
+  #accordion .campanasBg {
+    background: url(../img/campanasBg.png) right 38% no-repeat; }
+  #accordion .RRSSBg {
+    background-image: url(../img/RRSSBg.png); }
+  #accordion .contenidosDgBg {
+    background-image: url(../img/contenidosDgBg.png); }
+  #accordion h3 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5em 0; }
 
 footer {
   width: 100%;
