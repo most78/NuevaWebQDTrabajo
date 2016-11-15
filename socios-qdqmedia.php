@@ -2,7 +2,7 @@
 <?php include("header.php"); ?>
 <?php global $HeaderTitle;  ?> 
 <?php $HeaderTitle = "quiénes somos";  ?>
-<article class="sobreWrapper">
+<article class="sobreWrapper sociosSection">
 	<?php include("innerHeaderBackground.php"); ?>
 	<?php include "secondaryNav.php"; ?>
 	<section class="wrapper">

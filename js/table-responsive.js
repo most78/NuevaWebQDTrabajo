@@ -19,17 +19,42 @@ $(document).ready(function() {
 			$("table td:nth-child(2)").css('display', 'table-cell');
 		}
 	});
+  $( function() {
+    var icons = {
+      header: "ui-icon-plus",
+      activeHeader: "ui-icon-less"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
+    $( "#toggle" ).button().on( "click", function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
+  } );  
 	$( function() {
     	$( "#accordion" ).accordion({
-      	collapsible: true
+      	collapsible: true,
     	});
-  	});
+  });
+  /*$(function(){
+    $('.ui-accordion-header').click(function(){
+        $("html, body").scrollTop($('#accordion').position().top);
+    });
+});*/
 });
 function checkSize(){
     if ($("table tr:nth-last-child(2) td:first-child").css("display") == "none" ){
         	$('table tr:last-child td:first-child').css("display","none");
         	$('table tr:nth-last-child(2) td').attr("colspan",2);
         	$('table tr:last-child td').attr("colspan",2);
-        	//$('.serviceCategories').parent().attr('id', 'accordion');
+          /*$('.accordion').attr('id', 'accordion');*/
+          $("#accordion").accordion({ header: "h2", collapsible: true, active: false });
+          $('.ui-accordion-header').click(function(){
+          $("html, body").scrollTop($('#accordion').position().top);
+    });
     }
 }

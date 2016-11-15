@@ -1,5 +1,8 @@
 .ofertasFormSection{
 	margin:2em 0;
+	@include respond-to(movil){
+		margin: 1em 0;
+	}
 	.wrapper{
 		@include respond-to(fablet){
 			flex-flow: column wrap;
@@ -11,6 +14,7 @@
 			flex-flow: column wrap;
 			@include respond-to(movil){
 				width: 100%;
+				padding: 0 1em;
 			}
 			.table-button-menu{
 				display: none;
@@ -23,6 +27,7 @@
 				background:#eee;
 				@include respond-to(movil){
 					display: flex;
+					margin-top: 1em;
 				}
 				li{
 					flex: 1;
@@ -50,7 +55,7 @@
 			}
 		}
 	.backgroundImg{
-		background:url(../img/ofertasBackground.png);
+		background:url(../img/ofertasBackground.jpg) center;
 	}
 	.mainClaim{
 		@include respond-to(movil){
@@ -69,6 +74,7 @@ table{
 	margin-top:(50/$mainFontSize)*1em;
 	@include respond-to(movil){
 		margin-top: 0;
+		margin-bottom: 1em;
 		border:1px solid #e1e1e1;
 		border-top:0; 
 		tr:first-child{
@@ -171,6 +177,9 @@ table{
 			td{
 				border:0;
 				padding:0.5em 0 1em;
+				@include respond-to(movil){
+					padding:1em 0 0;
+				}
 				&:first-child{
 					@include respond-to(movil){
 					display: none;
@@ -198,7 +207,7 @@ table{
 		width: 75%;
 		margin-bottom: 2em;
 		@include respond-to(tablet){
-			font-size: 13px;
+			font-size: (12/$mainFontSize)*1em;
 		}
 	}
 
@@ -212,19 +221,18 @@ table{
 		padding:3em 0;
 		@include respond-to(tablet){
 			background:none;
+			padding-top: 1.5em;
 		}
 		@include respond-to(movil){
 			width: 100%;
 			padding-top: 1em;
+			padding-bottom: 0em;
 		}
-		/*.serviciosBackground{
-			background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
-			&.leftBackground{
-				background-position: left 45%;
-			}
-		}*/
 		.mainClaim{
 			@include mainClaim((44/$mainFontSize)*1em);
+			@include respond-to(tablet){
+				font-size: 2.5em;
+			}
 			@include respond-to(movil){
 				text-align: left;
     			padding: 0.7em;
@@ -252,32 +260,6 @@ table{
 			@include respond-to(tablet){
 				font-size: 0.75em;
 			}
-			/*li{
-				background:darken($mainColor,10);
-				border: 1px solid white;
-				width: 100%;
-				text-align: center;
-				padding:1em 0;
-				align-self:center;
-    			-webkit-transition: background-color 2s ease-out;
-				transition: background-color 2s ease-out;
-    			&:hover{
-    				background:lighten($mainColor, 50);
-    				a{
-    					color:$mainColor;
-    				}
-    			}
-				a{
-					color: #f1f1f1;
-					text-decoration: none;
-					-webkit-transition: color 1.5s ease-in;
-					transition: color 1.5s ease-in;
-				}
-				&.active{
-					background:none;
-
-				}
-			}*/
 		}
 	}
 
@@ -286,8 +268,12 @@ table{
 		width: 48%;
 		margin-bottom: 6em;
     	margin-top: 3em;
-		@include respond-to(tablet){
+		@include respond-to(fablet){
 			width: 100%;
+		}
+		@include respond-to(movil){
+			margin-top: 1em;
+			margin-bottom: 2em;
 		}
 		p{
 			line-height:(24/$mainFontSize)*1em;
@@ -305,6 +291,9 @@ table{
 	.rightSide{
 		float: right;
 		padding-left: 3em;
+		@include respond-to(fablet){
+			padding-left: 0;
+		}
 	}
 	.buttonList{
 		align-self: center;
@@ -315,10 +304,19 @@ table{
     	width: 100%;
     	margin-top: 1em;
     	@include respond-to(tablet){
-    		width: 80%;
+    		width: 100%;
+    	}
+    	@include respond-to(movil){
+    		flex-flow: column;
+    		align-content: center;
+    		justify-content: center;
     	}
     	li{
     		margin-right: 1em;
+    		@include respond-to(movil){
+    			margin: 0 0 1em 0;
+    			width: 100%;
+    		}
     		a{
 	    		&:after{
 	    			content: "";
@@ -339,6 +337,9 @@ table{
     		font-size: (18/$mainFontSize)*1em;
     		padding:0.5em 2em;
     		position:relative;
+    		@include respond-to(movil){
+    			width: 100%;
+    		}
     	}
 	}
 }
@@ -356,6 +357,10 @@ table{
 		margin-right: 0;
     	margin-top: -0.4em;
 	}
+	@include respond-to(movil){
+		width: 100%;
+		font-size: 1em;
+	}
 	.arrow{
 	background: url(../img/arrow.png) no-repeat;
     position: absolute;
@@ -364,12 +369,20 @@ table{
     height: 150px;
     left: 94%;
     top: 10.4em;
-    	@include respond-to(tablet){
+    	@include respond-to(fablet){
     		display: none;
     	}
 	}
 	.smallText{
 		font-size: (16/18)*1em;
+		@include respond-to(movil){
+			margin-bottom: 1em;
+		}
+		br{
+			@include respond-to(movil){
+				display: none;
+			}
+		}
 	}
 	.mainClaim{
 		font-family: $mainFont;
@@ -392,6 +405,7 @@ table{
 .ofertasFormSection{
 form{
 	flex:1;
+	width:100%;
 	fieldset{
 		font-family: $mainFont;
 		font-size: (18/$mainFontSize)*1em;

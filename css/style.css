@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Ionicons";
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -829,7 +835,7 @@ nav {
           background: #404e5b; }
 
 .nuestroEquipo {
-  background: #fff url(../img/trabaja_con_nosotros.png) no-repeat;
+  background: #fff url(../img/trabaja_con_nosotros.jpg) no-repeat;
   background-position: right;
   padding: 4.375em 0;
   display: -webkit-box;
@@ -1302,6 +1308,10 @@ nav {
       margin: 0 0.8em;
       color: rgba(186, 186, 186, 0.36); }
 
+.historiaSection .backgroundImg {
+  background: url("../img/headerBackgroundHistoria.jpg") center; }
+.historiaSection.equipoBackground .backgroundImg {
+  background: url("../img/headerBackgroundEquipo.jpg") center; }
 .historiaSection .wrapper {
   display: block; }
   .historiaSection .wrapper figure {
@@ -1443,6 +1453,9 @@ nav {
 
 .ofertasFormSection {
   margin: 2em 0; }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .ofertasFormSection {
+      margin: 1em 0; } }
   @media only screen and (min-width: 319px) and (max-width: 1023px) {
     .ofertasFormSection .wrapper {
       flex-flow: column wrap; } }
@@ -1451,7 +1464,8 @@ nav {
   flex-flow: column wrap; }
   @media only screen and (min-width: 319px) and (max-width: 767px) {
     .ofertas .wrapper {
-      width: 100%; } }
+      width: 100%;
+      padding: 0 1em; } }
   .ofertas .wrapper .table-button-menu {
     display: none;
     list-style: none;
@@ -1463,7 +1477,8 @@ nav {
     background: #eee; }
     @media only screen and (min-width: 319px) and (max-width: 767px) {
       .ofertas .wrapper .table-button-menu {
-        display: flex; } }
+        display: flex;
+        margin-top: 1em; } }
     .ofertas .wrapper .table-button-menu li {
       flex: 1;
       text-align: center;
@@ -1483,7 +1498,7 @@ nav {
         color: rgba(0, 0, 0, 0.15);
         text-decoration: none; }
 .ofertas .backgroundImg {
-  background: url(../img/ofertasBackground.png); }
+  background: url(../img/ofertasBackground.jpg) center; }
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .ofertas .mainClaim, .ofertas .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .ofertas strong {
     font-size: 2.9em !important; } }
@@ -1499,6 +1514,7 @@ table {
   @media only screen and (min-width: 319px) and (max-width: 767px) {
     table {
       margin-top: 0;
+      margin-bottom: 1em;
       border: 1px solid #e1e1e1;
       border-top: 0; }
       table tr:first-child {
@@ -1577,6 +1593,9 @@ table {
     border: 0;
     padding: 0.5em 0 1em; }
     @media only screen and (min-width: 319px) and (max-width: 767px) {
+      table tr:nth-last-child(2) td {
+        padding: 1em 0 0; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
       table tr:nth-last-child(2) td:first-child {
         display: none; } }
     table tr:nth-last-child(2) td span {
@@ -1608,7 +1627,7 @@ table {
     margin-bottom: 2em; }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       table .button {
-        font-size: 13px; } }
+        font-size: 0.75em; } }
 
 .serviciosLanding {
   background: #556879;
@@ -1616,26 +1635,25 @@ table {
   font-family: "Muli", sans-serif; }
   .serviciosLanding .wrapper {
     flex-flow: column wrap;
-    padding: 3em 0;
-    /*.serviciosBackground{
-    	background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
-    	&.leftBackground{
-    		background-position: left 45%;
-    	}
-    }*/ }
+    padding: 3em 0; }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .serviciosLanding .wrapper {
-        background: none; } }
+        background: none;
+        padding-top: 1.5em; } }
     @media only screen and (min-width: 319px) and (max-width: 767px) {
       .serviciosLanding .wrapper {
         width: 100%;
-        padding-top: 1em; } }
+        padding-top: 1em;
+        padding-bottom: 0em; } }
     .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
       font-family: "Oswald", sans-serif;
       font-size: 2.75em;
       color: white;
       text-align: center;
       text-transform: uppercase; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
+          font-size: 2.5em; } }
       @media only screen and (min-width: 319px) and (max-width: 767px) {
         .serviciosLanding .wrapper .mainClaim, .serviciosLanding .wrapper .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .serviciosLanding .wrapper strong {
           text-align: left;
@@ -1665,33 +1683,7 @@ table {
       display: -ms-flexbox;
       display: flex;
       justify-content: space-between;
-      margin-top: 1em;
-      			/*li{
-      				background:darken($mainColor,10);
-      				border: 1px solid white;
-      				width: 100%;
-      				text-align: center;
-      				padding:1em 0;
-      				align-self:center;
-          			-webkit-transition: background-color 2s ease-out;
-      				transition: background-color 2s ease-out;
-          			&:hover{
-          				background:lighten($mainColor, 50);
-          				a{
-          					color:$mainColor;
-          				}
-          			}
-      				a{
-      					color: #f1f1f1;
-      					text-decoration: none;
-      					-webkit-transition: color 1.5s ease-in;
-      					transition: color 1.5s ease-in;
-      				}
-      				&.active{
-      					background:none;
-      
-      				}
-      			}*/ }
+      margin-top: 1em; }
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .serviciosLanding .wrapper .serviceCategories {
           font-size: 0.75em; } }
@@ -1699,9 +1691,13 @@ table {
     width: 48%;
     margin-bottom: 6em;
     margin-top: 3em; }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
       .serviciosLanding .leftSide, .serviciosLanding .rightSide {
         width: 100%; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .serviciosLanding .leftSide, .serviciosLanding .rightSide {
+        margin-top: 1em;
+        margin-bottom: 2em; } }
     .serviciosLanding .leftSide p, .serviciosLanding .rightSide p {
       line-height: 1.5em;
       margin-bottom: 2em; }
@@ -1714,6 +1710,9 @@ table {
   .serviciosLanding .rightSide {
     float: right;
     padding-left: 3em; }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .serviciosLanding .rightSide {
+        padding-left: 0; } }
   .serviciosLanding .buttonList {
     align-self: center;
     flex-flow: row wrap;
@@ -1726,9 +1725,18 @@ table {
     margin-top: 1em; }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .serviciosLanding .buttonList {
-        width: 80%; } }
+        width: 100%; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .serviciosLanding .buttonList {
+        flex-flow: column;
+        align-content: center;
+        justify-content: center; } }
     .serviciosLanding .buttonList li {
       margin-right: 1em; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .serviciosLanding .buttonList li {
+          margin: 0 0 1em 0;
+          width: 100%; } }
       .serviciosLanding .buttonList li a:after {
         content: "";
         position: absolute;
@@ -1759,6 +1767,9 @@ table {
       font-size: 1.125em;
       padding: 0.5em 2em;
       position: relative; }
+      @media only screen and (min-width: 319px) and (max-width: 767px) {
+        .serviciosLanding .buttonList .button {
+          width: 100%; } }
 
 .leftSideForm {
   position: relative;
@@ -1774,6 +1785,10 @@ table {
     .leftSideForm {
       margin-right: 0;
       margin-top: -0.4em; } }
+  @media only screen and (min-width: 319px) and (max-width: 767px) {
+    .leftSideForm {
+      width: 100%;
+      font-size: 1em; } }
   .leftSideForm .arrow {
     background: url(../img/arrow.png) no-repeat;
     position: absolute;
@@ -1782,11 +1797,17 @@ table {
     height: 150px;
     left: 94%;
     top: 10.4em; }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
       .leftSideForm .arrow {
         display: none; } }
   .leftSideForm .smallText {
     font-size: 0.88889em; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .leftSideForm .smallText {
+        margin-bottom: 1em; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .leftSideForm .smallText br {
+        display: none; } }
   .leftSideForm .mainClaim, .leftSideForm .heroShot .heroClaim .secondaryClaim strong, .heroShot .heroClaim .secondaryClaim .leftSideForm strong {
     font-family: "Oswald", sans-serif;
     font-size: 2.44444em;
@@ -1804,7 +1825,8 @@ table {
           display: inline; } }
 
 .ofertasFormSection form {
-  flex: 1; }
+  flex: 1;
+  width: 100%; }
   .ofertasFormSection form fieldset {
     font-family: "Oswald", sans-serif;
     font-size: 1.125em;
@@ -1897,6 +1919,9 @@ table {
       .legalWrapper .wrapper table td {
         text-align: center; }
 
+.sociosSection .backgroundImg {
+  background: url("../img/headerBackgroundNuestrossocios.jpg") center; }
+
 .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1929,10 +1954,13 @@ table {
 .empresasGrupo .empresa:last-child .button {
   margin: 1.2em 0 0; }
 
-#accordion {
+.accordion, #accordion {
   position: relative;
   margin-top: 3em; }
-  #accordion h2 {
+  @media only screen and (min-width: 319px) and (max-width: 1023px) {
+    .accordion, #accordion {
+      margin-top: 1.5em; } }
+  .accordion h2, #accordion h2 {
     position: absolute;
     top: 0em;
     padding: 1em;
@@ -1950,38 +1978,91 @@ table {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-size: 1.375em; }
-    #accordion h2.ui-state-active {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .accordion h2, #accordion h2 {
+        font-size: 0.75em; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .accordion h2, #accordion h2 {
+        position: relative;
+        top: initial;
+        width: 100%;
+        text-align: left;
+        border-right: 0px;
+        border-left: 0px;
+        -webkit-transition: none;
+        transition: none; } }
+    .accordion h2:nth-child(3), #accordion h2:nth-child(3) {
+      margin-left: 20%; }
+    .accordion h2:nth-child(5), #accordion h2:nth-child(5) {
+      margin-left: 40%; }
+    .accordion h2:nth-child(7), #accordion h2:nth-child(7) {
+      margin-left: 60%; }
+    .accordion h2:nth-child(9), #accordion h2:nth-child(9) {
+      margin-left: 80%; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .accordion h2:nth-child(n+3), #accordion h2:nth-child(n+3) {
+        margin-left: 0; } }
+    .accordion h2.ui-state-active, #accordion h2.ui-state-active {
       background: none; }
-    #accordion h2:hover {
+    .accordion h2:hover, #accordion h2:hover {
       background: #c4cdd6;
       color: #404e5b; }
-  #accordion #ui-id-3 {
-    margin-left: 20%; }
-  #accordion #ui-id-5 {
-    margin-left: 40%; }
-  #accordion #ui-id-7 {
-    margin-left: 60%; }
-  #accordion #ui-id-9 {
-    margin-left: 80%; }
-  #accordion .serviciosBackground {
+  .accordion .serviciosBackground, #accordion .serviciosBackground {
     background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
     display: inline-block;
     padding: 6em 0px; }
-    #accordion .serviciosBackground.leftBackground {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .accordion .serviciosBackground, #accordion .serviciosBackground {
+        padding-top: 3em; } }
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .accordion .serviciosBackground, #accordion .serviciosBackground {
+        background: none; } }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .accordion .serviciosBackground, #accordion .serviciosBackground {
+        padding: 1em; } }
+    .accordion .serviciosBackground.leftBackground, #accordion .serviciosBackground.leftBackground {
       background-position: left 45%; }
-  #accordion .posicionamientoBg {
+  .accordion .posicionamientoBg, #accordion .posicionamientoBg {
     background-image: url(../img/posicionamientoBg.png); }
-  #accordion .campanasBg {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .accordion .posicionamientoBg, #accordion .posicionamientoBg {
+        background: none; } }
+  .accordion .campanasBg, #accordion .campanasBg {
     background: url(../img/campanasBg.png) right 38% no-repeat; }
-  #accordion .RRSSBg {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .accordion .campanasBg, #accordion .campanasBg {
+        background: none; } }
+  .accordion .RRSSBg, #accordion .RRSSBg {
     background-image: url(../img/RRSSBg.png); }
-  #accordion .contenidosDgBg {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .accordion .RRSSBg, #accordion .RRSSBg {
+        background: none; } }
+  .accordion .contenidosDgBg, #accordion .contenidosDgBg {
     background-image: url(../img/contenidosDgBg.png); }
-  #accordion h3 {
+    @media only screen and (min-width: 319px) and (max-width: 1023px) {
+      .accordion .contenidosDgBg, #accordion .contenidosDgBg {
+        background: none; } }
+  .accordion h3, #accordion h3 {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     margin: 1.5em 0; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .accordion h3, #accordion h3 {
+        text-align: left;
+        margin: 0; } }
+  .accordion .ui-icon-plus::after, .accordion .ui-icon-less::after, .accordion #accordion .ui-icon-less::after, #accordion .accordion .ui-icon-less::after, #accordion .ui-icon-plus::after, #accordion .ui-icon-less::after {
+    display: none; }
+    @media only screen and (min-width: 319px) and (max-width: 767px) {
+      .accordion .ui-icon-plus::after, .accordion .ui-icon-less::after, .accordion #accordion .ui-icon-less::after, #accordion .accordion .ui-icon-less::after, #accordion .ui-icon-plus::after, #accordion .ui-icon-less::after {
+        display: inline-block;
+        content: "\f2c7";
+        font-family: "Ionicons";
+        position: relative;
+        left: 90%;
+        top: -0.2em; } }
+  .accordion .ui-icon-less::after, #accordion .ui-icon-less::after {
+    content: "\f462"; }
 
 footer {
   width: 100%;
@@ -2169,5 +2250,8 @@ body {
 
 .visible {
   opacity: 1; }
+
+input {
+  -webkit-appearance: none; }
 
 /*# sourceMappingURL=style.css.map */

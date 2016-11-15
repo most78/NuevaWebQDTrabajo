@@ -1,3 +1,8 @@
+.sociosSection{
+    .backgroundImg{
+        @include background('../img/headerBackgroundNuestrossocios.jpg');
+    }
+}
 .buttonContainer{
 	@include flex;
     flex-flow: row wrap;

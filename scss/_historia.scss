@@ -1,4 +1,12 @@
 .historiaSection{
+	.backgroundImg{
+		@include background('../img/headerBackgroundHistoria.jpg');
+	}
+	&.equipoBackground{
+		.backgroundImg{
+			@include background('../img/headerBackgroundEquipo.jpg');
+		}
+	}
 	.wrapper{
 	display:block;
 		figure{

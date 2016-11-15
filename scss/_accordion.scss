@@ -1,6 +1,9 @@
-#accordion{
+.accordion, #accordion{
 	position: relative;
 	margin-top: 3em;
+	@include respond-to(fablet){
+		margin-top: 1.5em;
+	}
 	h2{
 		position: absolute;
     	top: 0em;
@@ -19,7 +22,36 @@
 		text-transform: uppercase;
 		font-family: $mainFont;
 		font-size: (22/$mainFontSize)*1em;
-
+		@include respond-to(tablet){
+			font-size: (12/$mainFontSize)*1em;
+		}
+		@include respond-to(movil){
+			position: relative;
+			top:initial;
+			width: 100%;
+			text-align: left;
+			border-right:0px;
+			border-left:0px;
+			-webkit-transition: none;
+		transition: none;
+		}
+		&:nth-child(3){
+		margin-left: 20%;
+		}
+		&:nth-child(5){
+		margin-left: 40%;
+		}
+		&:nth-child(7){
+			margin-left: 60%;
+		}
+		&:nth-child(9){
+			margin-left: 80%;
+		}
+		&:nth-child(n+3){
+			@include respond-to(movil){
+				margin-left: 0;
+			}
+		}
     	&.ui-state-active{
 			background:none;	
     	}
@@ -28,42 +60,71 @@
    			color:$mainColor;
     	}
 	}
-	#ui-id-3{
-   		margin-left: 20%;
-	}
-	#ui-id-5{
-		margin-left: 40%;
-	}
-	#ui-id-7{
-		margin-left: 60%;
-	}
-	#ui-id-9{
-		margin-left: 80%;
-	}
 	.serviciosBackground{
 		background: url(../img/disenoWebOfertasBg.png) right 45% no-repeat;
 		display: inline-block;
 	    padding: 6em 0px;
+	    @include respond-to(tablet){
+	    	padding-top: 3em;
+	    }
+	    @include respond-to(fablet){
+	    	background:none;
+	    }
+	    @include respond-to(movil){
+	    	//height: 845px!important;
+	    	padding:1em;
+	    }
 		&.leftBackground{
 			background-position: left 45%;
 		}
 	}
 	.posicionamientoBg{
 		background-image:url(../img/posicionamientoBg.png);
+		@include respond-to(fablet){
+	    	background:none;
+	    }
 	}
 	.campanasBg{
 		background:url(../img/campanasBg.png) right 38% no-repeat;
+		@include respond-to(fablet){
+	    	background:none;
+	    }
 	}
 	.RRSSBg{
 		background-image:url(../img/RRSSBg.png);
+		@include respond-to(fablet){
+	    	background:none;
+	    }
 	}
 	.contenidosDgBg{
 		background-image:url(../img/contenidosDgBg.png);
+		@include respond-to(fablet){
+	    	background:none;
+	    }
 	}
 	h3{
 		width: 100%;
 		text-align: center;
 		text-transform: uppercase;
 		margin:1.5em 0;
+		@include respond-to(movil){
+			text-align: left;
+			margin:0;
+		}
+	}
+	.ui-icon-plus::after{
+		display: none;
+		@include respond-to(movil){
+		display: inline-block;
+		content: "\f2c7";
+    	font-family: "Ionicons";
+    	position: relative;
+    	left: 90%;
+    	top: -0.2em;
+    	}
+	}
+	.ui-icon-less::after{
+		@extend .ui-icon-plus::after;
+		content: "\f462";
 	}
 }
