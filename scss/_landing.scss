@@ -23,7 +23,7 @@
 			font-family: $mainFont;
 			font-size: (40/$mainFontSize)*1em;
 			color: white;
-			margin-top: 15%;
+			margin-top: 2.2em;
 			margin-bottom: 2em;
 		    width: 56%;
 	    	text-transform: uppercase;
@@ -75,7 +75,11 @@
     		input[name="firstname"] {
     		margin-top: 0.5em;
 			}
+			label{
+				font-size: (13/$mainFontSize)*1em;
+			}
 			input[type="checkbox"]{
+				margin-top: 0;
 				@include respond-to(tablet){
 					margin-bottom: 0.5em;
 				}
@@ -85,6 +89,12 @@
 			}
 		}
     }
+}
+.emailEmpresarial{
+	.beneficiosLanding{
+		background-image: url(../img/emailempresarial.png);
+		background-position: right 28%;
+	}
 }
 .beneficiosLanding{
 	width:100%;

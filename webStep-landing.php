@@ -1,13 +1,14 @@
-<?php include 'head.php'; ?>
+<?php $page = "webStep"; ?>
+<?php include ('head.php'); ?>
 <?php include("header.php"); ?>
 <div class="headerLandingBackground">
 	<div class="wrapper">
 		<section class="landingHeaderSection">
-			<h1 class="landingPrimaryClaim">Diseñamos y gestionamos la web de tu negocio</h1>
+			<h1 class="landingPrimaryClaim">La web de empresa inteligente orientada a la conversión.</h1>
 			<h2 class="landingSecondaryClaim">WEB STEP: La nueva web inteligente y evolutiva que mejora con la experiencia del usuario</h2>
 			<p>Mejora la visibilidad de tu negocio en internet con un diseño innovador y una tecnología revolucionaria. Una web evolutiva que almacena conocimientos sobre la navegación de los usuarios y adapta el diseño para responder a sus necesidades.</p>
 			<p>El uso de tecnologías como mapas de calor y tests A/B permiten analizan los
-			comportamientos de navegación y métricas de la web. Toda esta información,
+			comportamientos de navegación y métricas de la web empresa. Toda esta información,
 			combinada con la inteligencia que proporciona el Big Data, mejora la conversión y los resultados de las páginas.</p> 
 		</section>
 		<div class="formBox">

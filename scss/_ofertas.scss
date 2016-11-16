@@ -64,6 +64,12 @@
 	}
 }
 .ofertasWrapper{
+	.mainClaim{
+		@include mainClaim(2em);
+		color: $mainColor;
+		margin: 1em 0;
+	}
+
 	@include respond-to(tablet){
 			width: 100%!important;
 			max-width: 100%!important;
@@ -71,7 +77,7 @@
 		}
 }
 table{
-	margin-top:(50/$mainFontSize)*1em;
+	// margin-top:(50/$mainFontSize)*1em;
 	@include respond-to(movil){
 		margin-top: 0;
 		margin-bottom: 1em;

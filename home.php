@@ -28,7 +28,7 @@
 	<section class="productosBox">
 		<div class="wrapper">
 			<div class="macBackground">
-					<h1 class="mainClaim">Descubre qué podemos hacer por tu negocio</h1>
+					<h1 class="mainClaim">La principal agencia de marketing online para Pymes</h1>
 					<p class="secondaryClaim">somos la mayor agencia de marketing online para los negocios</p>
 					<a href="ofertas-qdqmedia.php" class="button">nuestros servicios</a>
 			</div>

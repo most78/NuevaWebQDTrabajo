@@ -1,10 +1,12 @@
-<?php include "head.php" ?>
+<?php $page = "ofertas"; ?>
+<?php include ("head.php") ?>
 <?php include("header.php"); ?>
 <?php global $HeaderTitle;  ?> 
 <?php $HeaderTitle = "¿Qué quieres para tu negocio?";  ?>
 <div class="ofertas">
 <?php include("innerHeaderBackground.php"); ?>
   <div class="wrapper ofertasWrapper">
+  <h1 class="mainClaim">Descubre todos los servicios de marketing online que te ofrece QDQ media.</h1>
       <ul class="table-button-menu">
         <li class="active"><a href="#">Posicionada</a></li>
         <li><a href="#">Visitas</a></li>
@@ -155,21 +157,13 @@
 <section class="serviciosLanding">
   <div class="wrapper">
     <h1 class="mainClaim">¿Conoces todos nuestros productos?</h1>
-    <h2 class="secondaryClaim">Digitalizamos tu negocio para que crezca en internet</h2>
-    <div id='accordion'><!--#accordion en movil-->
-      <!--Lista menu ya maquetada
-        <ul class="serviceCategories">
-          <li class="active"><a href="">Diseño web</a></li>
-          <li><a href="">Posicionamiento</a></li>
-          <li><a href="">Campañas</a></li>
-          <li><a href="">Redes Sociales</a></li>
-          <li><a href="">Contenidos digitales</a></li>
-      </ul>-->
+    <h2 class="secondaryClaim">Servicios de marketing online</h2>
+    <div id='accordion'>
         <h2>Diseño web</h2>
         <div class="serviciosBackground">
           <h3>Una web evolutiva orientada 100% a la  conversión adapta su diseño según el comportamiento de los usuarios</h3>
           <div class="leftSide">
-            <p>La web evolutiva mejora la experiencia de los usuarios al utilizar dos tecnologías, mapas de calor y tests A/B, que permiten analizar los comportamientos de navegación y métricas de la web, mejorando la conversión y los resultados de las páginas.</p> 
+            <p>La web evolutiva mejora la experiencia de los usuarios al utilizar dos tecnologías, mapas de calor y tests A/B, que permiten analizar los comportamientos de navegación y métricas de la web empresa, mejorando la conversión y los resultados de las páginas.</p> 
             <p>Incluimos email empresarial. Para que transmitas una imagen profesional y corporativa.</p>
             <ul class="beneficiosList">
               <li>Adaptación a dispositivos móviles</li>
@@ -181,7 +175,7 @@
           </div>
           <ul class="buttonList">
             <li><a href="webStep-landing.php" class="button">Web step</a></li>
-            <li><a href="" class="button">email empresarial</a></li>
+            <li><a href="email-empresarial-QDQmedia.php" class="button">email empresarial</a></li>
           </ul>
         </div>
         <!--Tab2-->
